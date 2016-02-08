@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/scripts/common/navigation/nav-itemView.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/common/navigation/nav-template.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/common/navigation/navPrimary-controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/common/navigation/nav_prim.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/common/navigation/nav_sec.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/css/main.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/css/test.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/mocha-main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/spec/common/nav-router.spec.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/spec/common/topNav-itemView.spec.js" charset="UTF-8" />
+  </component>
+</project>

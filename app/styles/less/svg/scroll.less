@@ -1,0 +1,43 @@
+@-webkit-keyframes bounce { 
+    0%, 2%, 10% {-webkit-transform: translateY(0);} 
+    4% {-webkit-transform: translateY(-10px);} 
+    6% {-webkit-transform: translateY(-5px);} 
+
+    5% {-webkit-transform: translateY(7px);} 
+    8% {-webkit-transform: translateY(2px);} 
+} 
+
+@keyframes bounce { 
+    0%, 2%, 10% {transform: translateY(0);} 
+    4% {transform: translateY(-10px);} 
+    6% {transform: translateY(-5px);}  
+    5% {transform: translateY(7px);} 
+    8% {transform: translateY(2px);} 
+} 
+
+#svg-scroll
+{
+	display: block;
+	height: 70px;
+	margin: 0 auto;
+	z-index: 1;
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	left: 0;
+	&-body
+	{
+
+	}
+	&-button
+	{
+		& { 
+		    .animation-duration(5s); 
+		    .animation-fill-mode(both);
+		    .animation-iteration-count(infinite); 
+		    .animation-delay(3s);
+		    .animation-timing-function(linear);
+		} 
+		.animation-name(bounce);	 
+	}
+}

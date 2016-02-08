@@ -1,0 +1,69 @@
+<section class="panel panel-success">
+    <a class="panel-heading reservation-accordion collapsed" role="tab" id="headingFour" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <h4 class="panel-title">
+                Payment
+                <i class="fa chevron"></i>
+                <i class="fa fa-check"></i>
+                <span class="value">{{creditCardInfo.cardName}} - {{creditCardInfo.cardNumber}} [{{creditCardInfo.expirationMonth}}, {{creditCardInfo.expirationYear}}]</span>
+            </h4>
+    </a>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div class="panel-body">
+
+            <form action="#" class="ws-validate">
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="radio row">
+                            <div class="col-sm-10 col-md-8">
+                                <input type="radio" name="optradio" id="opt1" {{#if creditCardInfo}} checked {{/if}}>
+                                <label for="opt1">Credit or Debit Card</label>
+                                <ul class="list-cc list-inline">
+                                    <li {{#ifCond creditCardInfo.cardName 'American Express'}} class="active" {{/ifCond}}><i class="fa fa-cc-amex"></i></li>
+                                    <li {{#ifCond creditCardInfo.cardName 'Discover'}} class="active" {{/ifCond}}><i class="fa fa-cc-discover"></i></li>
+                                    <li {{#ifCond creditCardInfo.cardName 'Mastercard'}} class="active" {{/ifCond}}><i class="fa fa-cc-mastercard"></i></li>
+                                    <li {{#ifCond creditCardInfo.cardName 'Visa'}} class="active" {{/ifCond}}><i class="fa fa-cc-visa"></i></li>
+                                </ul>
+                                <div class="content">
+                                    <div class="form-group">
+                                        <label for="ccNumber" class="sr-only">Month</label>
+                                        <input type="tel" class="form-control" name="credit_card" id="ccNumber" placeholder="Card Number - 16 digits" value="{{creditCardInfo.cardNumber}}">
+                                    </div>
+                                    <div class="form-group form-inline clearfix">
+                                        <div class="form-group">
+                                            <label for="expMonth">Expire</label>
+                                            <label for="expMonth" class="sr-only">Month</label>
+                                            <input type="tel" name="expMonth" placeholder="Mon" id="expMonth" class="form-control form-control-xs" value="{{creditCardInfo.expirationMonth}}">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="expYear" class="sr-only">Year</label>
+                                            <input type="tel" name="expYear" placeholder="Yr" id="expYear" class="form-control form-control-xs" value="{{creditCardInfo.expirationYear}}">
+                                        </div>
+                                        <div class="form-group secure">
+                                            <i class="fa fa-lock"></i>Secure Checkout
+                                        </div>
+                                    </div>
+                                    <div class="small">
+                                        <strong>Your card will not be changed in advance</strong>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="radio">
+                            <input type="radio" name="optradio" id="payment_opt2">
+                            <label for="payment_opt2">Google Wallet
+                                <br> <small>Lorem ipsum dolor</small></label>
+                        </div>
+
+                        <div class="radio">
+                            <input type="radio" name="optradio" id="payment_opt3">
+                            <label for="payment_opt3">eCheck(ACH)
+                                <br> <small>Lorem ipsum dolor</small></label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

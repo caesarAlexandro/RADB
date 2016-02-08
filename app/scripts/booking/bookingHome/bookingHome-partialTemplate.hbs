@@ -1,0 +1,50 @@
+<div class="list-group">	
+	<a class="list-group-item calendar check-in" id="calendar-toggler" data-toggle="collapse" href="#bt-datepicker" aria-expanded="false" aria-controls="bt-datepicker"  data-parent="#accordion">
+        <div class="wrapper wrapper-check-in">					
+            <div class="content">
+                <div class="title">Sun, Aug 23, 2015</div>
+            </div>
+        </div> 
+    </a>
+    <a class="list-group-item calendar check-out" id="calendar-toggler" data-toggle="collapse" href="#bt-datepicker" aria-expanded="false" aria-controls="bt-datepicker"  data-parent="#accordion">
+        <div class="wrapper wrapper-check-out">				
+			<div class="content">
+				<div class="title">Sat, Aug 29, 2015</div>
+			</div>
+		</div>	
+    </a>
+	<a class="list-group-item bed rooms" role="button" id="room-toggler" data-toggle="collapse" href="#collapseRoomGuest" aria-expanded="false" aria-controls="collapseRoomGuest" data-parent="#accordion">
+	 	<div class="wrapper wrapper-room">
+            <div class="content">
+				<div class="title">1 room, 1 guest</div>
+
+            </div><i class="fa fa-chevron-down pull-right"></i>
+		</div>
+	
+	</a>
+	<a id="findHotel" class="list-group-item">Go</a>
+</div>
+<div id="bt-datepicker" class="collapse" aria-expanded="false">
+	<input type="text" name="daterange" value="01/01/2015 - 01/31/2015" data-datepicker-type="double"/>
+	<input type="text" name="daterange" value="01/01/2015 - 01/31/2015" data-datepicker-type="single"/>
+</div>
+<div class="room-guests container-fluid collapse" id="collapseRoomGuest" aria-expanded="false">
+	<div class="form-group col-sm-6" id="room">
+		<label for="rooms" class="control-label">Rooms</label>
+		<select name="rooms" id="rooms" class="form-control">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+	</div>
+	<div class="form-group col-sm-6" id="guest">
+		<label for="guests" class="control-label">Guests</label>
+		<select name="guests" id="guests" class="form-control">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>	
+</div>

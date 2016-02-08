@@ -1,0 +1,28 @@
+.block-destinations
+{
+	margin: 15px 0;
+	a
+	{
+		
+	}
+	figure
+	{
+		height: (@block-destination-height*.6);
+		background-color: @block-destination-bg;
+		overflow: hidden;
+		img
+		{
+			max-height: 100%;
+		}
+		@media screen and (min-width:@screen-xs-min)
+		{
+			height: @block-destination-height;
+		}
+	}
+	figcaption
+	{
+		padding: 15px 0;
+		line-height: 1.5em;
+		height: 3em;
+	}
+}

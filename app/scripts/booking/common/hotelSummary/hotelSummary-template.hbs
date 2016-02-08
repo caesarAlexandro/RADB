@@ -1,0 +1,27 @@
+<div class="col-sm-8 page-header-body">
+    {{#ifCond currentPage 'booking/hotelList/hotelInfo'}} {{>hotelInfo}} {{>tripadvisorIcon}}
+    <h1 style="display: none">{{heading}}</h1> 
+    {{else}}
+    <h1>{{heading}}</h1>
+    {{/ifCond}}
+    <h5 class="collapse"></h5>
+    <h2 class="collapse"></h2>
+</div>
+
+<div class="col-sm-4 page-header-book hidden">
+        <section class="summary-reservation">
+            <header>
+                <h1 class="summary-reservation-heading">{{hotelBrandName}}</h1>
+                <h2 class="summary-reservation-hotel">{{hotelName}}</h2>
+                <h3 class="summary-reservation-dates">{{dateIn}} - {{dateOut}}</h3>
+                <h4 class="summary-reservation-room-guests">{{numRooms}} room, {{numGuests}} adult</h4>
+                <span>${{price}}</span>
+            </header>
+        </section>
+    </div>
+    {{#ifCond currentPage 'booking/hotelList/hotelInfo'}}
+    <div class="col-sm-4 page-header-cta">
+        {{>bookNow rates="BEST RATES GUARANTEED" bookNow="BOOK NOW" priceAmount="$120" perNight="PER NIGHT"}}
+    </div>
+    {{/ifCond}}
+</div>

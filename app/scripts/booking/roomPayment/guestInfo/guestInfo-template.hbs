@@ -1,0 +1,41 @@
+<div class="page-header clearfix" ></div>
+<article class="panel panel-default">
+	<header class="panel-heading">
+		<h1 class="panel-title" class="h2">{{ include.section1 }}</h2>
+	</header>
+	<div class="panel-body">
+		<p>{{ include.retGuest }} <a href="{{ include.href }}">{{ include.link }}</a></p>
+		<form action="#">
+	    	<div class="form-group">
+	    		<label for="firstname" class="sr-only">{{ include.fnplaceholder }}</label>
+	    		<input type="text" id='firstname' class="form-control" name="firstname" placeholder="{{ include.fnplaceholder }}" value="{{firstName}}">
+	    	</div>
+			<div class="form-group">
+				<label for="lastname" class="sr-only">{{ include.lnplaceholder }}</label>
+				<input type="text" id='lastname' class="form-control" name="lastname" placeholder="{{ include.lnplaceholder }}" value="{{lastName}}">
+			</div>
+			<div class="form-group">
+				<label for="email" class="sr-only"><input type="text" class="form-control" name="email" placeholder="{{ include.emplaceholder }}"></label>
+				<input type="text" id='email' class="form-control" name="email" placeholder="{{ include.emplaceholder }}" value="{{email}}">
+			</div>
+			<div class="form-group">
+				<label for="telephone" class="sr-only">{{ include.tpplaceholder }}</label>
+				<input type="text" id='telephone' class="form-control" name="telephone" placeholder="{{ include.tpplaceholder }}" value="{{phoneNumber}}">
+			</div>
+			<div class="form-group">
+				<label for="country" class="sr-only"></label>
+				<select name="country" id="country" class="form-control">
+					<option value="" disabled selected>{{ include.cnplaceholder }}</option>
+					<option value="us" {{#ifCond country 'United States' }} selected {{/ifCond}}>Unites States</option>
+					<option value="mx" {{#ifCond country 'Mexico' }} selected {{/ifCond}}>Mexico</option>
+					<option value="ch" {{#ifCond country 'China' }} selected {{/ifCond}}>China</option>
+					<option value="au" {{#ifCond country 'Australia' }} selected {{/ifCond}}>Australia</option>
+					<option value="uk" {{#ifCond country 'United Kingdom' }} selected {{/ifCond}}>United Kingdom</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<input type="text" id='zip' class="form-control" name="zipcode" placeholder="{{ include.zcplaceholder }}" value="{{zip}}">
+			</div>
+		</form>
+	</div>
+</article>

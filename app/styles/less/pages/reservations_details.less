@@ -1,0 +1,194 @@
+.image-pane
+{
+	height: 250px;
+	@media screen and (min-width:@screen-sm-min) {
+		height: 400px;	
+	}	
+}
+.map-pane
+{
+
+	@media screen and (max-width:@screen-xs-max) and (max-width:@screen-sm-max) {
+		padding-top: 10px;
+	}
+}
+.map-info
+{
+	background-color: @gray-lighter;
+	padding: 0 15px;
+	@media screen and (min-width:@screen-sm-min) {
+		height: @map-info-height;
+	}
+	.map-address
+	{
+		padding: 15px;
+		background-color: @brand-primary;
+		color: #fff;
+			
+	}
+	.name
+	{
+		font-size: @font-size-h4;
+		font-weight: 600;
+		margin: 0;
+	}
+	.address
+	{
+		font-size: @font-size-base;
+		font-weight: 400;
+	}
+	.telephone
+	{
+		
+	}
+	.email
+	{
+		
+	}
+	.website
+	{
+		
+	}
+}
+.list-links
+{
+	i
+	{
+		width: 30px;
+		display: inline-block;
+		color: @gray-light;
+	}
+	li
+	{
+		padding: 15px 0;
+	}
+}
+
+#menu-bar {
+    margin: 30px 0;
+}   
+#reservation-content
+{
+	padding-top: 15px;
+}
+#room-summary
+{
+	> .row
+	{
+		background-color: @gray-lighter; 
+		overflow: hidden;
+
+		@media screen and (min-width:@screen-sm-min) {
+			height: (@map-info-height - 15px);
+		}
+	}
+}
+#reservation-content
+{
+	#reservation-summary
+	{
+		#hotel-name
+		{
+			position:relative;
+			background-color:white;
+			padding-top:0px;
+			padding-bottom:11px;
+			@media screen and (max-width:@screen-xs-max) and (max-width:@screen-sm-max) {
+				padding-bottom:0px;
+			}
+			h1
+			{
+				margin:0;
+				font-size: 22px;
+				font-weight: 700;
+			}
+			
+		}
+		.wrapper
+		{
+			padding-bottom:0;
+			p
+			{
+				margin:0;
+			}
+		}
+		@media screen and (max-width:@screen-xs-max) and (max-width:@screen-sm-max) {
+			padding-bottom: 10px;
+		}		
+	}
+}
+
+#confirmation-pane
+{
+	padding:0;
+	border:0;
+	#image
+	{
+		padding:0;
+	}
+	.overlay-text
+	{
+		vertical-align: bottom;
+		text-align: left;
+		h2
+		{
+			font-size:50px;
+			margin:15px;
+		}
+		.number
+		{	
+			font-size:40px;
+		}
+		.subtitle
+		{
+			font-size:20px;
+		}
+		@media screen and (max-width: @screen-xs-max)
+		{
+			h2
+			{
+				font-size:40px;
+			}
+			.number
+			{
+				font-size:30px;
+			}
+			.subtitle
+			{
+				font-size:10px;
+			}
+		}
+	}	
+}
+.book-confirmation
+{
+	.guarantee-section{
+		background:#f0efed;
+		padding-bottom:10px;
+		@media screen and (min-width:@screen-md-min) and (max-width:@screen-md-max)
+    	{
+    		font-size: 90%;
+    	}
+	}
+	.need-to-know{
+		color:#ff051a;
+	}
+	.bottom-section{
+		padding: 20px 0px;
+	}
+	.guest-info-section{
+		font-size:1em;
+	}
+	.guest-title{
+		font-size:1.6em;
+	}
+	.crib{
+		font-size:0.9em;
+	}
+	#hotel-info
+	{
+		background-color:@brand-primary;
+		color:white;
+		float:right;	
+	}
+}    

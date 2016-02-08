@@ -1,0 +1,61 @@
+.list-decorated-coloring(@type, @color)
+{
+	&-@{type}
+	{
+		&:before, li:before
+		{
+			color: @color;
+		}
+	}
+}
+.list-decorated-item-coloring(@type, @color)
+{
+	&-@{type}
+	{
+		li&
+		{
+			&, &:before
+			{
+				color: @color;	
+			}			
+		}
+	}
+}
+.list-decorated
+{
+	&:extend(.list-unstyled);
+	li
+	{
+		padding-left: 1.5em;
+		position: relative;
+		line-height: @list-decorated-line-height;
+		&:before
+		{
+			.fa();
+			content: @list-decorated-icon;
+			font-size: unit(@list-decorated-icon-proportion,em);
+			display: inline-block;
+			margin: 0 (.5em+@list-decorated-icon-placement) 0 (-1.5em-@list-decorated-icon-placement);
+  			vertical-align: middle;
+		}
+	}
+	.list-decorated-coloring(primary, @brand-primary);
+	.list-decorated-coloring(success, @brand-success);
+	.list-decorated-coloring(warning, @brand-warning);
+	.list-decorated-coloring(danger, @brand-danger);
+	.list-decorated-coloring(info, @brand-info);
+
+	.list-decorated-item-coloring(primary, @brand-primary);
+	.list-decorated-item-coloring(success, @brand-success);
+	.list-decorated-item-coloring(warning, @brand-warning);
+	.list-decorated-item-coloring(danger, @brand-danger);
+	.list-decorated-item-coloring(info, @brand-info);
+}
+
+.list-home-actions
+{
+	i
+	{
+		margin-right: 15px;
+	}
+}

@@ -1,0 +1,191 @@
+.banner-info
+{
+	background-color: @gray-light;
+}
+
+.hotel-info
+{
+	position: relative;
+	&-content
+	{
+		&-pane
+		{
+			.make-xs-column(12);
+			.make-sm-column(6);
+			.make-md-column(5);
+			z-index: 1;
+			background-color: white;
+			margin-left: 0px;
+			padding: 15px;
+		}
+	}
+	&-images
+	{
+<<<<<<< HEAD
+		@media screen and (min-width:@screen-sm-min) {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;							
+		}
+
+=======
+		left: 0;
+		right: 0;
+		top: 0;
+		@media not screen and (max-width:@screen-xs-max){
+		position: absolute;
+		}
+		
+>>>>>>> 169861466ad727bcba59d4bae401cea81dd5baf6
+	}
+	&-image
+	{
+		max-height: 330px;
+		margin-bottom: 10px; 
+		overflow:hidden;
+		img
+		{
+			width: 100%;
+			height: auto;
+		}
+
+	}
+	&-amenities
+	{
+		background-color: #69645e;
+	}
+	.hotel-description
+	{
+		background-color: white;
+	}
+}
+.reviews
+	{
+		margin-top:60px;
+	}
+.amenities-list
+{
+	width: 100%;
+	margin-bottom: 30px;
+	.left
+	{
+		float:left;
+		width:50%;
+	}
+	.right
+	{
+		float:right;
+		width:50%;
+	}
+	p
+	{
+		font-size: 1.4em;
+		margin-bottom: 2px;
+	}
+	.border
+	{
+		border-top: 1px solid #ccc;
+		margin: 15px 0px;
+	}
+	i
+	{
+		margin-right: 20px;
+		color: #ccc;
+		margin-top: 2px;
+	}
+	label
+	{
+		padding: 3px;
+		font-weight: 100;
+	}
+	a{
+		cursor: default;
+		border: 0px;
+	}
+}
+
+.head-label
+{
+	padding-top: 11px;
+    color: white;
+    font-size: 1.5em;
+
+    @media screen and (max-width:@screen-xs-max){
+		font-size: 1em;
+	}
+}
+
+.book-now
+{
+	padding: 5px 0;
+	&-price
+	{
+		.make-xs-column(4);	
+		.make-sm-column(12);
+		.price, .time
+		{
+			display: block;
+			margin: 0;
+			width: 100%;
+			text-align: left;
+			@media screen and (min-width:@screen-sm-min){
+				text-align: right;
+			}
+		}
+		.price
+		{
+			
+		}
+		.time
+		{
+			
+		}		
+		
+	}
+	&-button
+	{
+		.make-xs-column(8);	
+		.make-sm-column(12);			
+		text-align: right;
+		a
+		{
+			.btn-lg();
+			@media screen and (min-width:@screen-sm-min){
+				.btn-lg();
+				margin-top: 15px;
+			}		
+			border: 1px solid;				
+		}
+		.guarantee
+		{
+		    margin: 5px 0;
+			font-size: 13px;
+		}
+	}
+}
+<<<<<<< HEAD
+=======
+
+.hotel-info-data
+{
+	visibility: visible;
+	@media not screen and (max-width:@screen-xs-max){
+		visibility: hidden;
+		height: 0px;
+	}
+	.border
+	{
+		border-top: 1px solid #ccc;
+		margin: 15px 0px;
+	}
+	.address
+	{
+		width: 70%;
+	}
+	h5,h3
+	{
+		margin: 0px;
+	}
+}
+>>>>>>> 169861466ad727bcba59d4bae401cea81dd5baf6

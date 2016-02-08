@@ -1,0 +1,60 @@
+
+.ribbon-theme(@color, @bg)
+{
+	background-color: @bg;
+	.ribbon-heading
+	{
+		color: @color;
+	}
+	.ribbon-actions
+	{
+		background-color: darken(@bg, 10%);		
+	}
+}
+
+.ribbon
+{
+	.clearfix();	
+	.ribbon-heading
+	{
+		padding: @ribbon-padding;
+		float: left;
+		h1, h2, h3, h4, h5, h6
+		{
+			float: left;
+			margin: 0;
+		}
+		@media screen and (max-width:@screen-xs-max){
+			h4
+			{
+				font-size: 18px;
+			}
+		}
+	}
+	.ribbon-actions
+	{
+		float: right;		
+	}
+	&-default
+	{
+		.ribbon-theme(@ribbon-default-text, @ribbon-default-bg);
+		@media screen and (max-width:@screen-xs-max){
+			h3
+			{
+				font-size: 1.7em;
+			}
+		}
+	}
+	&-success
+	{
+		.ribbon-theme(@ribbon-success-text, @ribbon-success-bg);
+	}
+	&-danger
+	{
+		.ribbon-theme(@ribbon-danger-text, @ribbon-danger-bg);
+	}
+	&-warning
+	{
+		.ribbon-theme(@ribbon-warning-text, @ribbon-warning-bg);
+	}
+}

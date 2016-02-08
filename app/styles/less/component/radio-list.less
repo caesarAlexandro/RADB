@@ -1,0 +1,95 @@
+@radio-list-height: 150px;
+
+.radio-list
+{
+	.cover
+	{
+		.grid-bg-block(@gray-darker);
+	}
+	&-block
+	{
+		padding: 0;
+		input
+		{
+			&:checked
+			{
+				+ label
+				{
+					&.cover
+					{
+						.grid-bg-static(@brand-primary);
+					}
+					.radio-list-overlay
+					{
+						.title
+						{
+							font-size: 36px;
+						}
+						.subtitle
+						{
+							font-size: 20px;
+						}
+						.price
+						{
+							font-size: 24px;
+						}
+
+						&:before
+						{
+							content: @fa-var-check-circle;
+						}
+					}
+				}
+			}
+		}
+		label
+		{
+			display: table;
+			height: @radio-list-height;
+			width: 100%;
+			&:before, &:after
+			{
+				display: none!important;
+
+			}
+		}
+	}
+	&-overlay
+	{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: left;
+		color: #fff;		
+		.title, .subtitle, .price
+		{
+			.transition(all .5s ease-in-out);	
+		}
+		.title
+		{
+			font-size: 30px;
+			margin: 0;
+		}
+		.subtitle
+		{
+
+		}
+		.price
+		{
+			font-size: 20px;
+		}
+		padding-left: 100px;
+		&:before
+		{
+			.fa();
+			content: @fa-var-circle-o;
+			position: absolute;
+			left: 30px;
+			top: 0;
+			bottom: 0;
+			line-height: @radio-list-height;
+			font-size: 50px;
+			color: #fff;
+		}
+	}
+	
+}

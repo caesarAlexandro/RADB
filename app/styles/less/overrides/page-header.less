@@ -1,0 +1,206 @@
+.page-header, .main-wrapper
+{
+	.transition(height .2s ease-in-out);	
+	.transition(background-color .6s ease-in-out);
+}
+.page-header
+{
+	padding: 0;	
+    &.fixed
+	{
+		position: static;
+		top: @navbar-height;
+		right:0;
+		left:0;
+		z-index: 16;		
+		/*& ~ .main-wrapper
+		{
+			margin-top: (@navbar-height + @page-header-size);		
+		}*/
+		.box-shadow(0px 4px 11px 0px rgba(0,0,0,0.3));
+		
+	}	
+	.top-search-pane + & 
+	{
+		top: (@navbar-height + @top-search-pane-height);
+		& ~ .main-wrapper
+		{
+			margin-top: (@navbar-height + @top-search-pane-height + @page-header-size);		
+		}
+	}	
+	
+	height: @page-header-size;
+	&-xs
+	{
+		height: (@page-header-size*.5);
+		&.fixed
+		{
+			& ~ .main-wrapper
+			{
+				margin-top: (@navbar-height + @page-header-size*.5);		
+			}
+		}
+	}
+	&-sm
+	{
+		height: (@page-header-size*.75);
+		&.fixed
+		{
+			& ~ .main-wrapper
+			{
+				margin-top: (@navbar-height + @page-header-size*.75);		
+			}
+		}
+	}
+	&-md
+	{
+		height: (@page-header-size*1.25);
+		&.fixed
+		{
+			& ~ .main-wrapper
+			{
+				margin-top: (@navbar-height + @page-header-size*1.25);		
+			}
+		}
+	}
+	&-lg
+	{
+		height: (@page-header-size*1.5);
+		&.fixed
+		{
+			& ~ .main-wrapper
+			{
+				margin-top: (@navbar-height + @page-header-size*1.25);		
+			}
+		}
+		&:not(.fixed)
+		{
+			margin-top: @navbar-height;
+			&.coverImage
+			{
+				background-color: rgba(0, 0, 0, 0.2);
+			}			
+		}
+	}
+	@media screen and (max-width:@screen-xs-max){
+		height: (@page-header-size*.8);	
+
+		&.fixed
+		{
+			& ~ .main-wrapper
+			{
+				margin-top: (@navbar-height + @page-header-size*.8);		
+			}
+		}
+	}
+	&.fixed
+	{
+		&.hidden
+		{
+			& ~ .main-wrapper
+			{
+				margin-top: 0;		   
+			}	
+		}
+	}
+	&-wrapper
+	{
+		color:#ffffff;
+		position: relative;	
+		//padding: @page-header-padding;	
+		height: 100%;	
+	}
+	&-body
+	{
+		.position-bottom-left();
+		@media screen and (max-width:@screen-xs-max){
+			h1
+			{
+				font-size: 20px;
+			}
+		}
+	}
+	&-body, .book-now-price, .guarantee
+	{
+		text-shadow: 0px 2px 3px rgba(0,0,0,.75);
+	}
+	&-cta
+	{
+		.position-bottom-right();
+	}
+	&-book
+	{
+		.position-top-right(@top: 0);
+	}
+
+	body.page-hotelInfo &
+	{
+		@media screen and (max-width:@screen-xs-max){
+			height: (@page-header-size*.375);
+			&.fixed
+			{
+				& ~ .main-wrapper
+				{
+					margin-top: (@navbar-height + @page-header-size*.375);		
+				}
+
+			}
+			&-cta
+			{
+				position: static;	
+			}
+		}
+		&-body
+		{
+			.hidden-xs();
+		}
+		.main-wrapper
+		{
+			overflow: hidden;
+		}
+	}
+
+	body.page-guestInfo &
+	{
+		@media screen and (max-width:@screen-xs-max){
+			height: (@page-header-size*.4);
+			&.fixed
+			{
+				& ~ .main-wrapper
+				{
+					margin-top: (@navbar-height + @page-header-size*.4);		
+				}
+			}
+			.summary-reservation
+			{
+				padding: 10px 15px;
+				&-room-guests,&-dates
+				{
+					.hide();
+				}
+			}
+			&-body
+			{
+				.make-xs-column(6);
+				position: absolute;
+				h1
+				{
+					font-size: 20px;
+				}
+			}	
+		}		
+	}
+	body.page-confirmation &
+	{
+		@media screen and (max-width:@screen-xs-max){
+			&-body
+			{
+				//padding: 15px;
+					h1
+				{
+					font-size: 20px;
+				}
+			}	
+		}		
+	}
+}

@@ -1,0 +1,38 @@
+.panel
+{
+	border-width: 1px 0;
+	& + &
+	{
+		margin-top: -23px;
+	}
+	.panel-title 
+	{
+		.value {
+		    font-weight: 400;
+		    margin-left: 10px;
+		}
+	}
+}  
+
+.panel-variant(@border; @heading-text-color; @heading-bg-color; @heading-border) {
+  & > a.panel-heading {
+    + .panel-collapse > .panel-body {
+      border: 1px solid @border;
+    }
+    &:hover, &:focus
+    {
+    	background-color: fade(@heading-bg-color, 75%);
+    }
+    i
+	{
+		float: right;
+		margin-left: 15px;  
+		&.chevron
+		{
+			
+		}	
+	}
+  }  
+}
+
+

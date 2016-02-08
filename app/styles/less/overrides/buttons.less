@@ -1,0 +1,120 @@
+.button-variant(@color; @background; @border) {
+	font-weight: 700;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+}
+.btn-inverse
+{
+	&.btn-default {
+	  .button-variant(@btn-default-bg; @btn-default-color; @btn-default-border);
+	}
+	&.btn-primary {
+	  .button-variant(@btn-primary-bg; @btn-primary-color; @btn-primary-border);
+	}
+	// Success appears as green
+	&.btn-success {
+	  .button-variant(@btn-success-bg; @btn-success-color; @btn-success-border);
+	}
+	// Info appears as blue-green
+	&.btn-info {
+	  .button-variant(@btn-info-bg; @btn-info-color; @btn-info-border);
+	}
+	// Warning appears as orange
+	&.btn-warning {
+	  .button-variant(@btn-warning-bg; @btn-warning-color; @btn-warning-border);
+	}
+	// Danger and error appear as red
+	&.btn-danger {
+	  .button-variant(@btn-danger-bg; @btn-danger-color; @btn-danger-border);
+	}
+} 
+
+@btn-icon-size: 		125px;
+@btn-icon-line-height:	1em;
+@btn-icon-xs-size:		100px;
+
+.btn-icon(@size, @title-ratio:.16, @icon-ratio:.38, @subtitle-ratio:.104)
+{
+	height: @size;
+    line-height: 1em;
+	i
+	{
+		font-size: (@size*@icon-ratio);
+	}
+	.title
+	{
+		font-size: (@size*@title-ratio);
+		display: inline-block;
+		white-space: normal;
+		line-height: 1.3em;
+	}
+	.subtitle
+	{
+		font-size: (@size*@subtitle-ratio);
+	}
+}
+
+.btn-icon
+{
+	// line-height: ensure even-numbered height of button next to large input
+  	.button-size((@btn-icon-size*.10); (@btn-icon-size*.12); (@btn-icon-size*.16); @btn-icon-line-height; @btn-border-radius-large);
+  	overflow: hidden;
+  	text-align: center;
+	.icon-wrapper 
+	{
+		/*padding: 5px;*/
+	}
+	.title, .subtitle
+	{
+		text-transform: none;
+		font-weight: 400;
+    	line-height: 1em;
+	}
+	.subtitle
+	{
+		.hidden-xs;
+	}
+	.btn-icon(@btn-icon-xs-size); 
+	@media screen and (min-width:@screen-sm-min)
+	{
+		.btn-icon(@btn-icon-size);	
+
+	}
+	&-sm
+	{
+		padding: 5px;
+    	line-height: 1.5em;
+		.btn-icon(60px, @icon-ratio:.26, @title-ratio:.217); 
+		i
+		{
+			padding: 5px;			
+		}
+		.title
+		{
+			text-transform: uppercase;
+			font-weight: 600;	
+		}
+
+		@media screen and (max-width:@screen-xs-max) and (max-width:@screen-sm-max) {
+			line-height: 0.2em;
+		}
+	}
+} 
+
+.btn-icon-group
+{
+	margin: 0;
+    padding: 0;
+    li
+    {
+    	padding: 0;
+    }
+    .content
+	{
+		font-size: 12px;
+	}
+}
+.btn-action
+{
+	.button-variant(@btn-action-color; @btn-action-background; @btn-action-border)
+} 

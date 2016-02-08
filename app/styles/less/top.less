@@ -1,0 +1,78 @@
+.navbar
+{
+	.transition(all 1s ease);
+}
+.nav-clear
+{
+	clear: both;
+}
+.navbar-default
+{
+	.navbar-brand {
+		text-transform: uppercase;
+		> img
+		{
+			height: 100%;
+			width: auto;
+		}
+		height: @brand-size-xs;
+		padding: @brand-padding-xs 0;
+		.transition(all 1s ease);
+		i.fa-navicon
+		{
+			font-size: (@brand-size-xs/4);
+			line-height: @brand-size-xs;
+		}	
+		border-width: 0;
+	}
+	i.fa-navicon
+	{
+		.transition(all 1s ease);
+		font-size: 30px;
+	  	line-height: @brand-size-xs;
+		width: @brand-size-xs;
+	}
+	@media screen and (min-width:@screen-sm-min)
+	{
+		.navbar-brand {
+			height: @brand-size;
+	  		padding: @brand-padding 0;
+		}
+		i.fa-navicon
+		{
+			line-height: @brand-size;
+			width: @brand-size;
+		}
+	}
+}
+
+
+
+.navbar-inverse
+{
+	.navbar-brand {
+		height: @brand-size-inv;
+  		padding: @brand-padding-inv 0;
+	}
+
+	i.fa-navicon
+	{
+		font-size: 16px;
+		line-height: @brand-size-inv;
+	}	
+	border-width: 0;
+}
+
+.navbar-toggle {
+	float: left;
+	margin: 0;
+	margin-left: 15px;
+	margin-right: 0;
+	padding: 0;
+}
+#home-search .search-inverse{
+	position:fixed;
+	top: 85px;
+	background: #000;
+	z-index: 1000;
+}

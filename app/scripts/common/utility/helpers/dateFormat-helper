@@ -1,0 +1,4 @@
+Handlebars.registerHelper('dateFormat', function(dateShort) {
+    date = dateShort.toString();
+    return moment(date).format('ddd, MMM DD, YYYY');
+});

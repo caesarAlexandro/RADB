@@ -1,0 +1,218 @@
+.banner-info
+{
+	background-color: @gray-light;
+}
+
+.hotel-info
+{
+	position: relative;
+	&-top
+	{
+		background-color: #f2f2f2;
+		> .container
+		{
+			background-color: white;
+		}
+	}
+	&-content
+	{
+		&-pane
+		{
+			.make-xs-column(12);
+			.make-sm-column(6);
+			.make-md-column(5);
+			z-index: 1;
+			background-color: white;
+			margin-left: 0px;
+			padding: 15px;
+		}
+	}
+	&-images
+	{
+		@media screen and (min-width:@screen-sm-min) {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;							
+		}	
+	}
+	&-image
+	{
+		margin-bottom: 5px; 
+		overflow:hidden;
+		height: 330px;
+	    overflow: hidden;
+	    width: 100%;
+	    display: block;
+	}
+	&-amenities
+	{
+		background-color: #69645e;
+	}
+	.hotel-description
+	{
+		background-color: white;
+	}
+	&-mobile-buttons
+	{
+		.row();
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 99999;
+		#tripadvisor-icon
+		{
+			fill: #fff;
+		    height: 20px;
+		    display: inline-block;
+		    vertical-align: middle;
+		    width: 30px;
+		    margin-right: 5px;
+		}
+	}
+	.carousel
+	{
+		.carousel-indicators
+		{
+			z-index: 1;
+		}
+	}
+}
+.hotel-description
+{
+	padding-top: 15px;
+}
+.reviews
+{
+	margin-top:60px;
+}
+.amenities-list
+{
+	width: 100%;
+	margin-bottom: 30px;
+	.left
+	{
+		float:left;
+		width:50%;
+	}
+	.right
+	{
+		float:right;
+		width:50%;
+	}
+	p
+	{
+		font-size: 1.4em;
+		margin-bottom: 2px;
+	}
+	.border
+	{
+		border-top: 1px solid #ccc;
+		margin: 15px 0px;
+	}
+	i
+	{
+		margin-right: 20px;
+		color: #ccc;
+		margin-top: 2px;
+	}
+	label
+	{
+		padding: 3px;
+		font-weight: 400;
+	}
+	a{
+		cursor: default;
+		border: 0px;
+	}
+}
+
+.head-label
+{
+	padding-top: 11px;
+    color: white;
+    font-size: 1.5em;
+
+    @media screen and (max-width:@screen-xs-max){
+		font-size: 1em;
+	}
+}
+
+.book-now
+{
+	padding: 5px 0;
+	&-price
+	{
+		.make-xs-column(4);	
+		.make-sm-column(12);
+		.price, .time
+		{
+			display: block;
+			margin: 0;
+			width: 100%;
+			text-align: left;
+			@media screen and (min-width:@screen-sm-min){
+				text-align: right;
+			}			
+		}
+		.price
+		{
+			font-size: 48px;
+		    font-weight: 600;
+		    line-height: 1;
+		}
+		.time
+		{
+			font-size: 15px;
+		}		
+		
+	}
+	&-button
+	{
+		.make-xs-column(8);	
+		.make-sm-column(12);			
+		text-align: right;
+		a
+		{
+			.btn-lg();
+			@media screen and (min-width:@screen-sm-min){
+				font-size: 30px;
+				padding: 6px 12px;	
+				margin-top: 15px;
+			}		
+			border: 1px solid;				
+		}
+		.guarantee
+		{
+		    margin: 5px 0;
+			font-size: 13px;
+		}
+	}
+}
+.hotel-info-data
+{
+	visibility: visible;
+	/*@media not screen and (max-width:@screen-xs-max){
+		visibility: hidden;
+		height: 0px;
+	}*/
+	.border
+	{
+		border-top: 1px solid #ccc;
+		margin: 15px 0px;
+	}
+	.address
+	{
+		width: 70%;
+	}
+	h5,h3
+	{
+		margin: 0px;
+	}
+}
+
+#carousel-example-generic, 
+.carousel-inner .item {
+    height: calc(100vh - 300px);
+}

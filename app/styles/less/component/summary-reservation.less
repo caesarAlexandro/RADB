@@ -1,0 +1,148 @@
+.reservation(@affix-bg, @affix-color, @affix-heading-color, @affix-text-color, @affix-text-size, @affix-footer-bg)
+{
+	background-color: @affix-bg;
+	padding: @affix-padding;
+	color: @affix-heading-color;
+
+	&-heading
+	{
+		font-size: @font-size-small;
+		margin: 0 0 15px;
+		font-weight: 700;
+		color: @brand-warning;
+	}
+	&-hotel
+	{
+		font-size: @font-size-base;
+		margin: 0 0 5px;
+	}
+	&-dates
+	{
+		font-size: (@font-size-small*.9);
+		margin: 0 0 5px;
+	}
+	&-room-guests
+	{
+		font-size: (@font-size-small*.9);
+		margin: 0 0 20px;
+	}
+	&-row, &-calcs
+	{
+		&:extend(.clearfix all);		
+		padding-top: 7px;
+		padding-bottom: 7px;
+		position: relative;
+		//.inner-border(1px 0 0, @affix-text-color);
+
+		border: 1px solid @affix-text-color;
+		border-width: 1px 0 0;
+		color: @affix-text-color;		
+	}
+
+	&-row
+	{
+		&-left
+		{
+			padding-right: 0;
+		}
+		&-right
+		{
+
+		}
+	}
+	&-name, &-room, &-price, &-calcs, &-promise, &-terms
+	{
+		font-size: @affix-text-size;
+	}
+	&-subtotal, &-tax
+	{
+		color: @affix-text-color;
+		font-size: @affix-text-size;		
+		&-title
+		{
+			
+		}
+		&-price
+		{
+			
+		}
+	}
+	&-total
+	{
+		border: 1px solid @affix-text-color;
+		border-width: 1px 0 0;
+		padding: 7px 0 0 0;
+
+		&-label
+		{
+			
+		}
+		&-price
+		{
+			font-weight: 700;
+			font-size: (@affix-text-size*1.5);	
+			&-wrapper
+			{
+				margin-bottom: 15px;
+			}
+		}
+	}
+	&-name
+	{
+		margin: 0;		
+	}
+	&-room
+	{
+		
+	}
+	&-price
+	{
+		
+	}
+	&-calcs
+	{
+
+	}
+	&-subtotal
+	{
+
+	}
+	&-total
+	{
+
+	}
+	&-due
+	{
+		background-color: @affix-footer-bg;
+		padding:15px;
+  		margin: 15px -15px -15px;
+	}
+	&-promise
+	{
+		color: @brand-success;		
+	}
+	&-terms
+	{
+		color: @brand-warning;
+	}
+}
+
+.summary-reservation
+{
+	.reservation(@affix-bg, @affix-color, @affix-heading-color, @affix-text-color, @affix-text-size, @affix-footer-bg);
+	.inverse &
+	{
+		.reservation(@affix-inverse-bg, @affix-inverse-color, @affix-inverse-heading-color, @affix-inverse-text-color, @affix-inverse-text-size, @affix-inverse-footer-bg);
+	}
+}
+
+.e-certificate
+{
+	margin-top: 15px;
+	vertical-align: middle;
+	.fa
+	{
+		  font-size: 1.25em;
+  
+	}
+}

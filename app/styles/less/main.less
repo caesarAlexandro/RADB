@@ -1,0 +1,64 @@
+
+
+@bower: "../../vendor/";
+
+@import "@{bower}bootstrap/less/bootstrap.less";
+@import (reference) "@{bower}components-font-awesome/less/font-awesome.less";
+@import (less) "@{bower}components-font-awesome/css/font-awesome.css";
+@import "variables.less";
+@import "mixins.less";
+@import "icons.less";
+
+/*	Overrides
+*/ 
+@import "overrides/panel.less"; 
+@import "overrides/affix.less"; 
+@import "overrides/form.less"; 
+@import "overrides/media.less"; 
+@import "overrides/type.less"; 
+@import "overrides/nav.less";  
+@import "overrides/page-header.less"; 
+@import "overrides/buttons.less";  
+ 
+/*	Main Sections
+*/ 
+@import "top.less"; 
+@import "footer.less"; 
+
+/*	Pages
+*/ 
+
+@import "pages/general-layout.less";
+@import "pages/home.less";
+@import "pages/reservations_details.less";
+@import "pages/choose-room.less";
+@import "pages/hotel-info.less";
+@import "pages/guest-info.less";
+@import "pages/confirmation_page.less";
+
+/*	Components
+*/ 
+@import "component/search.less";
+@import "component/list-actions.less";
+@import "component/lists.less";
+@import "component/datepicker.less";
+@import "component/summary-reservation.less";
+@import "component/radio.less";
+@import "component/payment_pane.less"; 
+@import "component/overlay.less";
+@import "component/grid.less";
+@import "component/hotel-info.less";
+@import "component/radio-list.less";
+@import "component/hotel-search.less";
+@import "component/ribbon.less";
+@import "component/loading.less";
+
+/*	Blocks
+*/
+@import "blocks/destination.less";
+
+
+/*	Animation and SVGs
+*/
+@import "svg/scroll.less"; 
+

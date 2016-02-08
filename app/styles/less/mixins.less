@@ -1,0 +1,81 @@
+.icon-circle(@size, @color: #fff, @bg: @brand-primary, @border-radius: 50%, @icon-scale:.5)
+{
+	width: @size;
+	line-height: @size;
+	font-size: (@size*@icon-scale);
+	border-radius: 50%;
+	background-color: @bg;
+	color: @color;
+	text-align: center;
+	display: inline-block;
+}
+.icon-circle-size(@size, @icon-scale:.5)
+{
+	width: @size;
+	line-height: @size;
+	font-size: (@size*@icon-scale);
+}
+
+.icon-square(@size, @color: #fff, @bg: @brand-primary)
+{
+	.icon-circle(@size, @color, @bg, 0);
+
+}
+
+.fa-icon()
+{
+	.fa();
+	width: auto;
+	height:auto;
+}
+
+.inner-border(@border-width: 1px 0 0, @border-color:#fff)
+{
+	&:before
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 15px;
+		right: 15px;
+		bottom: 0;	
+		display: block;	
+
+		border: 1px solid @border-color;
+		border-width: @border-width;
+	}
+}
+
+
+.form-control-sizes(@width) {
+	width: @width;
+	margin: 0 5px;
+}
+
+
+//== Positions
+
+.position-top-right()
+{
+	position: absolute;
+  	top: 15px;
+  	right: 0;
+}
+.position-top-right(@top:15px)
+{
+	position: absolute;
+  	top: @top;
+  	right: 0;
+}
+.position-bottom-left()
+{
+	position: absolute;
+  	bottom: 15px;
+  	left: 0;
+}
+.position-bottom-right()
+{
+	position: absolute;
+  	bottom: 15px;
+  	right: 0;
+}

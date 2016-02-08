@@ -1,0 +1,508 @@
+svg#tripadvisor path {
+    fill: @search-result-tripadvisor-color;
+}
+.hotel-search
+{
+	padding-top: 30px;
+	background-color: @search-results-bg;
+
+}
+.recommendations
+{
+	background-color: @search-results-recommended-bg;
+	margin-top: 30px;
+}
+.hotel-results
+{
+	@media screen and (max-width:@screen-xs-max)
+	{
+		.row(); 
+	}
+}
+.hotel-result
+{
+	margin-bottom: 15px;
+	cursor: pointer;
+	&:extend(.clearfix all);
+    background-color: @search-result-bg;
+    border: 1px solid @search-result-border;
+    .transition(all .5s ease);
+
+    @media screen and (max-width:@screen-xs-max)
+    {
+    	.grid-bg-block(@gray-darker, coverImage);	
+    }    
+
+    &:hover, &:focus
+    {
+    	background-color: lighten(@search-result-bg, 5%);
+    	border-color: darken(@search-result-border, 5%);
+    	@media screen and (min-width:(@screen-sm-min*@search-result-scale)) and (max-width:@screen-sm-max)
+    	{
+    		.scale(@search-result-scale);
+    	}
+    	@media screen and (min-width:(@screen-md-min*@search-result-scale)) and (max-width:@screen-md-max)
+    	{
+    		.scale(@search-result-scale);
+    	}
+    	@media screen and (min-width:(@screen-lg-min*@search-result-scale))
+    	{
+    		.scale(@search-result-scale);
+    	}
+    }   
+	&-image
+	{
+		height: @search-result-height-xs;
+    	overflow: hidden;    	
+		.coverImage
+		{
+			height: 100%;
+			width: 100%;
+		}
+		@media screen and (min-width:@screen-sm-min)
+		{
+			height: @search-result-height;
+			padding-right: 0;
+		}
+	}
+	&-content
+	{
+		color: @gray-base;	    
+	}
+	&-description
+	{
+	   	height: @search-result-height;
+	    padding: 25px 15px;
+	    cursor: pointer;
+	    .more-details
+		{
+			i
+			{
+				margin-left: 5px;
+				font-size: .6em;
+			}
+		}
+	   	@media screen and (max-width:@screen-xs-max)
+	   	{
+			position: absolute;
+			top: -217px;
+			background: transparent;
+			color: #fff;
+			width: 100%;
+		}
+	   	@media screen and (min-width:@screen-sm-min) and (max-width:@screen-sm-max)
+	   	{
+			padding: 15px;
+			.hotel-type
+			{
+				&-name
+				{
+					font-size: 16px;
+				}
+				&-location
+				{
+					font-size: 24px;
+				}
+				&-description
+				{
+					
+					margin-bottom: 5px;
+					p
+					{
+						margin-bottom: 0;
+					}
+				}
+			}
+			.more-details
+			{
+
+			}
+		}
+	}
+	&-block
+	{
+		font-size: 15px;
+		text-align: center;	
+    	padding: 25px 15px;	 	
+		.amount
+		{
+			display: block;	
+			line-height: 1em;		
+			@media screen and (min-width:@screen-sm-min)
+			{
+				font-size: 50px;	
+				text-align: center;
+			}
+			@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+			{
+				font-size: 33px;
+			}
+			&.price
+			{
+				font-weight: 800;
+				text-align: right;
+				@media screen and (max-width:@screen-xs-max)
+				{
+					font-size: 45px;
+				}
+				@media(min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+				{
+					font-size: 33px;
+				}
+			}
+		}
+		.miles
+		{
+			font-weight: bold;
+			@media screen and (min-width:@screen-sm-min)
+			{
+				display: inline-block;
+				font-size: 24px;
+			}
+		}
+		.location
+		{
+			
+		}
+		.per-night
+		{
+			text-align: right;
+		    font-weight: 900;
+			@media screen and (max-width:@screen-xs-max)
+			{
+				font-size: 20px;
+				margin-top: 37%;
+				margin-right: -55%;
+			}
+			@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+			{
+				padding-top: 8px;
+				padding-bottom: 5px;
+
+			}
+		}
+		svg#tripadvisor
+		{
+			height: 24px;
+    		margin-top: 5px;
+    		width: 100%;
+		}
+		
+		@media(min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+		{
+			.value
+			{
+				padding-top: 11px;
+			}
+		}
+	}
+	&-reviews, &-location
+	{
+		height: 156px;
+		text-align: center;
+		@media screen and (max-width:@screen-xs-max)
+		{
+			height: 43px;
+			display: inline-block;
+		}
+	}
+
+	&-location
+	{
+		color:black;
+	}
+	&-reviews
+	{
+		color:@brand-tripadvisor;
+	}
+	&-tripadvisor
+	{
+		width: 35px;
+		@media screen and (max-width:@screen-xs-max)
+		{
+			width: 20px;
+			vertical-align: sub;
+			&-xs
+			{
+				display: inline-block;
+				width: 25px;
+			}
+		}
+		@media(min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+		{
+			margin-top: -2px;
+		}
+	}
+	&-tripadvisor-rate
+	{
+		text-align: center;
+		@media screen and (max-width:@screen-xs-max)
+		{
+			&-tripadvisor-rate
+			{
+				font-size: 13px;
+			}
+		}
+	}
+	&-price
+	{
+		height: 156px;
+		text-align: right;		
+		@media screen and (max-width:@screen-xs-max)
+		{
+			&-xs
+			{
+				float: right;
+				margin-right: 18%;
+			}
+
+			position: absolute;
+			top: -219%;
+			left: 44px;
+			background-color: transparent;
+		}
+
+		.btn
+		{
+
+		}
+	}
+}
+
+.hotel-type
+{
+	&-name
+	{
+		text-transform: inherit;
+		font-size: 20px;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	&-location
+	{
+		font-size: 30px;
+		text-transform: uppercase;
+		font-weight: 900;
+		margin: 0;
+    
+	}
+	&-description
+	{
+		color: @gray-light;
+		p
+		{
+			margin-bottom: 0;
+		}
+		@media screen and (max-width:@screen-xs-max)
+		{
+			color: #ffffff;
+			width: 50%;
+			font-weight: 900;
+			font-size: 17px;
+		}
+	}
+	&-name, &-location, &-description
+	{
+		text-overflow: ellipsis;
+		overflow: hidden;
+		display: inline-block;
+		width: 100%;
+		white-space: nowrap;
+	}
+}
+
+
+
+.recommended-title
+{
+	color: @gray-base;
+	font-size: 22px;
+	font-weight: 800;
+	line-height: 70px;
+	margin-left: 15px;
+	@media screen and (max-width:@screen-xs-max)
+	{
+		text-align: center;
+		text-transform: uppercase;
+		background-color: #ffffff;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media(min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+{
+	.results-centered
+	{
+		padding-top: 10px;
+	}
+}
+
+/*
+	FILTER BAR
+*/
+.btn
+{
+	&-distance
+	{
+		.button-variant(#fff; @search-result-location-color; transparent);		
+	}
+	&-rating
+	{
+		.button-variant(#fff; @search-result-tripadvisor-color; transparent);		
+	}
+	&-price
+	{
+		.button-variant(#fff; @search-result-price-color; transparent);		
+	}
+	&-distance, &-rating, &-price
+	{
+		border: none;
+	}
+}
+.search-filter
+{
+	background-color: @search-results-sort-bg;
+	color: @search-results-sort-color;
+	line-height: @search-results-sort-height;
+	height: @search-results-sort-height;
+	margin: 0 0 0 0;	
+	.sort-by
+	{
+		font-size: 20px;
+		padding: 0;
+	}
+	.btn
+	{
+		line-height: @search-results-sort-height;		
+		padding: 0;
+		i
+		{
+			font-size: .8em;
+			margin: 0 5px;
+			color: @search-results-sort-color;
+		}
+	}
+	.sort-actions
+	{
+		padding:0;
+		.btn
+		{
+			&:not(.active):not(.reverse)
+			{
+				i
+				{
+					display: none;
+				}
+			}
+			&.reverse
+			{
+				i
+				{
+					.rotate(180deg);
+				}
+			}
+		}
+	}
+	.search-filter-mobile
+	{
+		position: relative;
+		.dropdown-menu
+		{
+			width: 100%;
+			li
+			{
+				
+			}
+		}
+	}
+	.filter-dropdown
+	{
+		background-color: @search-results-sort-bg;
+		border: none;
+	}
+}
+
+@media screen and (max-width:@screen-xs-max) {
+	.hotel-result {
+	    position: relative;
+	    &-content {
+		    position: static;
+		}
+		&-price {
+		    color: #fff;
+		    padding: 0;
+		    position: absolute;      
+		    bottom: 65px;      
+		    right: 15px;
+		    top: initial;
+		    height: auto;
+		    left: 15px;
+		    padding: 0;
+	    	margin: 0;
+		    .btn { 
+			    float: left;
+			    width: 33%;
+			    position: absolute;
+			    left: 0;
+			    bottom: 0;
+			}
+			&-xs {
+			    margin: 0;
+			}
+		}
+		&-description
+		{
+			top: 0;
+		}
+		.price
+		{
+			margin: 0;
+		}
+		svg#tripadvisor {
+		    width: 100%;
+		    margin-top: 0!important;
+		    path {
+			    fill: #fff;
+			}
+		}
+		
+		&-block {
+		    padding: 0;
+		}	
+		&-location, &-reviews
+		{
+			line-height: 43px;
+		    
+			.amount {
+			    font-size: 24px;
+			    display: inline-block!important;
+			    width: auto;
+			    vertical-align: middle;
+			    margin: 0;
+			    @media(min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+				{
+					font-size: 45px;
+    				text-align: center;
+				}
+			}
+			* {
+			    display: inline-block;
+			    color: #fff;
+			    vertical-align: middle;
+			    margin: 0 5px;
+			}
+		}
+		&-location
+		{
+			background-color: @search-result-location-color;
+		}
+		&-reviews
+		{
+			background-color: @search-result-tripadvisor-color;
+		}
+	}
+	.per-night {
+	    margin: 0!important;
+	}
+}

@@ -1,0 +1,42 @@
+<section class="panel panel-default">
+    <a class="panel-heading reservation-accordion collapsed" role="tab" id="headingFive" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        <h4 class="panel-title">
+              REVIEW &amp; BOOK
+              <i class="fa chevron"></i>
+            </h4>
+    </a>
+    <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
+        <div class="panel-body">
+            <div class="row inverse">
+                <div class="col-sm-5">
+                    {{>summaryReservation}}
+                </div>
+                <div class="col-sm-7">                    
+                    <!-- START review_pane.html -->
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Garanty Policy</strong>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Cancelation Policy</strong>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Taxes &amp; Fees</strong>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                        </li>
+                    </ul>
+                    <div class="col-sm-10 col-md-8 pull-right text-right">
+                        <p class="small">
+                            I acknowledge that I have read and agree to the <a href="javascript:void(0)">hotel policies</a>, <a href="javascript:void(0)">privacy policy</a> and <a href="javascript:void(0)">terms &amp; conditions</a> by completing this booking.
+                        </p>
+                        <a class="btn btn-lg btn-primary btn-block btn-reservation" id="completeReservation">Complete My Reservation</a>
+                    </div>
+                    <!-- END review_pane.html -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>

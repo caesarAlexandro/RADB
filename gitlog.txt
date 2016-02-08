@@ -1,0 +1,1502 @@
+commit 3f75c6b3d05660e1a85fd608f243a9a15667c6ff
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Tue Aug 11 10:09:06 2015 -0500
+
+    Remove comments
+
+commit d661b4fc337bcb28e21ede8312afd00fed922d2e
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Tue Aug 11 00:46:33 2015 -0500
+
+    Change Header image and Update images
+
+commit cb05c740f2414fea58d2c80903ea7d95989d3ca8
+Merge: a003729 5343213
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 10 20:55:40 2015 -0500
+
+    Merge Tony Responsive Images Branch
+
+commit a003729840009b9106fce78be5eb29798d63f236
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 10 20:05:56 2015 -0500
+
+    Fix JS style issues
+
+commit 642d05505aa7f908fcb3df25ec3dda8fe01d3a3d
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 10 17:31:14 2015 -0500
+
+    Country Inn style  change
+
+commit 53432133632fdb6515814c4c2bf4087c13e50369
+Merge: 3aa672f 9f0158c
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Mon Aug 10 16:49:03 2015 -0500
+
+    Merge branch 'newMaster' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into newMaster
+
+commit 3aa672f9ae48294609b9de280d6678fd33912426
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Mon Aug 10 16:48:39 2015 -0500
+
+    Responsive Images, Payment adjustment and Home Calendar Accordion like behaviour
+
+commit 9f0158c23589127a620d46cb0c940e26405c321f
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 10 15:52:26 2015 -0500
+
+    Add payment model to Confirmation
+
+commit c1cff7aeb3f96ce348b5b840278da7ebc18d6ad3
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 10 15:25:52 2015 -0500
+
+    Load guestpayment information with hotel information
+
+commit f317fe277e4161df83a0823009240eca603fed58
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 10 14:25:47 2015 -0500
+
+    Add summary model to Payment
+
+commit f05ab9c9bc483f378feafd5592134a7384f85518
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 10 12:08:24 2015 -0500
+
+    Booking controller fix with viewManagers
+
+commit e5c1905a64944becfac09c9f1cf023fef822b15c
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Fri Aug 7 17:31:58 2015 -0500
+
+    changes model mike and new images for payment
+
+commit ddf826985f06ea12183a324ae5df9de619f5bc58
+Merge: a66b1dd b103fda
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Fri Aug 7 15:40:46 2015 -0500
+
+    merge ana
+
+commit a66b1ddf4f66823fd9c92e7e3ab6130ef75c542c
+Merge: e77416c bb63c51
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Fri Aug 7 15:07:48 2015 -0500
+
+    merge guillermo
+
+commit b103fda0233948ba3d6fde6d52a0fcc479e942c1
+Author: Ana <ana.k.lopez.amaya@MTYTM14280T5M.dir.svc.accenture.com>
+Date:   Fri Aug 7 14:34:50 2015 -0500
+
+    calendar fix
+
+commit f88e19e8db5a0125adba632704e6c564dfc9459a
+Author: Ana <ana.k.lopez.amaya@MTYTM14280T5M.dir.svc.accenture.com>
+Date:   Fri Aug 7 11:40:40 2015 -0500
+
+    calendar fix
+
+commit 35f5b91b29e7bddb30e30e93199fcb6cd1dc86ca
+Merge: e8604ed 8ecd9ca
+Author: Ana <ana.k.lopez.amaya@MTYTM14280T5M.dir.svc.accenture.com>
+Date:   Thu Aug 6 17:51:07 2015 -0500
+
+    Merge conflicts
+
+commit 8ecd9ca5f5a78c15aa956c27faaf6bdba984d35f
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Thu Aug 6 17:46:29 2015 -0500
+
+    Page Header Partials for Confirmation Number, fixes in Payment for the Page Header and footer stlying.
+
+commit bb63c51dd61b4443f68921d4da8df0bed76358b9
+Author: g.lam.hernandez <g.lam.hernandez@accenture.com>
+Date:   Thu Aug 6 15:08:52 2015 -0500
+
+    Hotel List images added
+
+commit a084aaef7010a83bcba7fc53f5158034f72a563d
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Thu Aug 6 15:00:56 2015 -0500
+
+    Removed CSS Files from being added to Git.
+
+commit 4e6b1a198c517322f7392f65a21e81f68d683060
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Thu Aug 6 14:58:48 2015 -0500
+
+    Guest info Page Header
+
+commit e77416c7ddefbde981cb9dac6cc9ffc20eb23e58
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Thu Aug 6 14:04:47 2015 -0500
+
+    fix data cover images
+
+commit e8604eddcbffb065a210fe9eb05fefd077c639ca
+Merge: 336b4b5 5d1cfd7
+Author: Ana <ana.k.lopez.amaya@MTYTM14280T5M.dir.svc.accenture.com>
+Date:   Thu Aug 6 10:41:08 2015 -0500
+
+    Merge branch 'generalFixes_Tony' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into UI-Fixes_Ana
+
+commit 5d1cfd74cca7a8816376e1a90269f169e4c56f65
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Thu Aug 6 10:35:07 2015 -0500
+
+    Changes for the Calendar in Mobile
+
+commit 336b4b5ced39d61b78b2400a21049b222ba8aa9b
+Author: Ana <ana.k.lopez.amaya@MTYTM14280T5M.dir.svc.accenture.com>
+Date:   Wed Aug 5 16:35:34 2015 -0500
+
+    UI Fixes
+
+commit 3bab11137c465e7fe457d1134cf5210124d8b45c
+Merge: 0673579 8db69f9
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Aug 5 16:21:27 2015 -0500
+
+    Merge with Tony and oswaldo Branches
+
+commit 0673579b61ecc599649d37d6ef40a9e9dfdaca9e
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Aug 5 15:46:13 2015 -0500
+
+    Modify build grunt tasks
+
+commit 8db69f90f3289d5d1c0a0b39f8d152ae9a1a11df
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Wed Aug 5 15:24:59 2015 -0500
+
+    Merging errors resolved
+
+commit df27262e608161f0fb16c66491613a150417799e
+Merge: cdb48ce 857c6bf
+Author: Ana <ana.k.lopez.amaya@MTYTM14280T5M.dir.svc.accenture.com>
+Date:   Wed Aug 5 14:54:30 2015 -0500
+
+    merge conflicts
+
+commit cdb48ce09718089d2ddbdd19aaaab415ebe804b9
+Author: Ana <ana.k.lopez.amaya@MTYTM14280T5M.dir.svc.accenture.com>
+Date:   Wed Aug 5 14:46:50 2015 -0500
+
+    Images added in payment
+
+commit 889cdb78348a1195f22f68bff7b8389e914940bb
+Merge: 0e6a984 857c6bf
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Wed Aug 5 14:43:51 2015 -0500
+
+    Merge branch 'generalFixes_Tony' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into informationRed_Oswaldo
+
+commit 4c12160af7db99ed3e89f3f2761041c5a57ffef2
+Author: Ana <ana.k.lopez.amaya@MTYTM14280T5M.dir.svc.accenture.com>
+Date:   Wed Aug 5 14:34:12 2015 -0500
+
+    Hotel Info UI Fixes
+
+commit 0e6a984ea46e52e1a4f0034ec753d9879b48f5de
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Wed Aug 5 14:08:04 2015 -0500
+
+    Payment Modifications: Type of room and bed checked by default
+
+commit e389da5f501fedc1c1c4362d08688cf286d8ea43
+Merge: 250c1a7 f5581ec
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Aug 5 13:28:45 2015 -0500
+
+    Merge branch 'FixesStyle_Aileen' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into Sprint4
+
+commit 857c6bfb819006e532165896070db13205daf6d8
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Wed Aug 5 13:28:44 2015 -0500
+
+    Removed Blue Theme and an extra file for hotelInfo (unused)
+
+commit 250c1a7621811195024abf731497ebd7c0b00a05
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Aug 5 13:28:16 2015 -0500
+
+    Updage Usemin
+
+commit 5fca27a36b3ce54f79d89391e11717da81bd886b
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Wed Aug 5 13:27:20 2015 -0500
+
+    Hotel Info, Page header animation and slight changes for price/rates
+
+commit bab5184e9fd2b6f4fa6decb4582e1cd479675532
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Wed Aug 5 13:13:18 2015 -0500
+
+    Console Errors fixes
+
+commit f5581ec9317a2d0a17d3668480000b5654e449b0
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Aug 5 13:11:50 2015 -0500
+
+    countryInn less
+
+commit 280fec5be7716162b7b1f5b524a2469e18ea19c9
+Merge: bb86abb 1698614
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Wed Aug 5 12:52:36 2015 -0500
+
+    HotelInfo Template, Partial and Info Less while merging with Ana's
+
+commit bb86abbfa093207404afd2771fba3e277f5e766c
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Wed Aug 5 12:45:20 2015 -0500
+
+    Booking Hotel Information
+
+commit 5ce671be9071f599cf8bf87224a781645e5e46ae
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Wed Aug 5 11:52:02 2015 -0500
+
+    Information chages and merge with Spring4 branch
+
+commit 88c83894bda6f99734f488218bb07d5b88e6e839
+Merge: 487a8f8 6252fd8
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Aug 5 11:50:12 2015 -0500
+
+    Merge branch 'Sprint4' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into FixesSprint3_Mike
+
+commit 487a8f85e18a69b890438e42e7492d88392ec6b9
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Aug 5 11:49:33 2015 -0500
+
+    comments
+
+commit 169861466ad727bcba59d4bae401cea81dd5baf6
+Author: Ana <ana.k.lopez.amaya@MTYTM14280T5M.dir.svc.accenture.com>
+Date:   Wed Aug 5 11:49:09 2015 -0500
+
+    Hotel Information UI Fixes
+
+commit 7da5438816f678f537eb4b04e37f800c9e5f26bd
+Merge: 60cfe39 6252fd8
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Wed Aug 5 11:47:28 2015 -0500
+
+    Merge branch 'Sprint4' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into hotelListFixes_Oswaldo
+
+commit 6252fd86ce6432e677d0c6e957e7fd9d3df6f0aa
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Aug 5 11:42:41 2015 -0500
+
+    Add img dynamic
+
+commit 8354588bbdb59a88845a66af3b545425d77f012e
+Merge: 60cfe39 78ee940
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Aug 5 10:05:18 2015 -0500
+
+    Merge branch 'Sprint4' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into FixesSprint3_Mike
+
+commit dd2558867ed70b6952ef8fb76fdb2a88f9ac6cbd
+Merge: b32b5d1 78ee940
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Wed Aug 5 10:03:37 2015 -0500
+
+    Merge branch 'Sprint4' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into generalFixes_Tony
+
+commit b32b5d1e8bdf262e498b24955c40b51c309d8731
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Wed Aug 5 10:03:11 2015 -0500
+
+    Booking LayoutView
+
+commit 78ee940a9bdf2883ee6ac5d8f4a6a5f50f064365
+Merge: 1c41afc 40920e9
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Aug 5 09:55:51 2015 -0500
+
+    Merge with Tonys work on NavBar
+
+commit 1c41afc2efcbdbe7796a5ef1390099ae7e391a1d
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Aug 5 08:28:19 2015 -0500
+
+    Update requirement structure for controller
+
+commit b05bed46860aa5a1a93a09ed3e588c576579a474
+Merge: 7bbb99f cae74e7
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Tue Aug 4 18:17:13 2015 -0500
+
+    Merge branch 'Sprint3_UTFixes_Lam' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into MergeSprint4
+
+commit 7bbb99fc87ec0627bebfca566d0b89a5da92f402
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Tue Aug 4 18:12:36 2015 -0500
+
+    Change Header style format logic
+
+commit 60cfe391b30acb40bd03d2a972fef31382652b77
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Tue Aug 4 16:39:51 2015 -0500
+
+    Comments and set default values on models for HotelList
+
+commit 40920e9ba9bdc3d0868c800d44b10f3f2b8ec093
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Tue Aug 4 16:26:18 2015 -0500
+
+    Fixed Nav and Page header in hotelListing
+
+commit 78804bf4ec1534ce97efc0ad8c535e33beb0c5ae
+Merge: 7bf59e3 d80384a
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Tue Aug 4 16:09:04 2015 -0500
+
+    Merge branch 'hotelListFixes_Oswaldo' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into hotelListFixes_Oswaldo
+
+commit d80384a2060976e4f250d20c841199a704be4073
+Merge: 015b206 3378133
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Tue Aug 4 12:18:43 2015 -0500
+
+    Merging errors solved
+
+commit 015b2061fce90142408d80e301e60485c3a67882
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Tue Aug 4 11:20:49 2015 -0500
+
+    HotelList modification. hotelName split into hotelBrand and hotelName in description
+
+commit 7bf59e30f1cca314ff46a4e29d151e816decc5f3
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Tue Aug 4 11:00:47 2015 -0500
+
+    Reduce lines on routeChange
+
+commit cae74e729b0652db714a1a8bdd58b927620f4c7a
+Author: g.lam.hernandez <g.lam.hernandez@accenture.com>
+Date:   Tue Aug 4 10:28:56 2015 -0500
+
+    Unit Testing fixes
+
+commit 3378133189b6bcdd8cbc7011f285291d081e8dd3
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Tue Aug 4 10:25:09 2015 -0500
+
+    Change page header for confirmation page
+
+commit 5de78de5b9725255c88d737f5562dd88729df440
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Tue Aug 4 09:58:56 2015 -0500
+
+    Add Styles for Confirmation page
+
+commit 86d9b1a156ac992ddaad6b17569bbab98151fcc7
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Tue Aug 4 09:07:32 2015 -0500
+
+    Improve Navigation, and Header
+
+commit c03e5c2fd2f26b2d331cebb40543d15c6d5007d3
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 3 17:33:51 2015 -0500
+
+    Update comments
+
+commit 50c3cd9c96b2c2c008207de14f995fce46efe84a
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 3 17:05:04 2015 -0500
+
+    Update comments
+
+commit 35a8cfbbe758df5a8bfe3c3208e8698ad69aad05
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 3 16:41:19 2015 -0500
+
+    Update Comments and componentsTemplates
+
+commit 105b53b0faf4063b952acc271cd574fec5846ddd
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 3 16:07:09 2015 -0500
+
+    Update comments
+
+commit d21a98e46ec51e131ef25ee93c462af46d49b0aa
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 3 13:02:30 2015 -0500
+
+    Add comments
+
+commit 1f0a827d03726bdbd36a9ec91da794031e6e6dc5
+Merge: 0d936fa 6b34c83
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Mon Aug 3 12:39:46 2015 -0500
+
+    Merge conflicts resolved
+
+commit 0d936fa2f182ad7eaf3071d99864600a57bc3063
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Mon Aug 3 12:38:37 2015 -0500
+
+    hotelList modifications: change services and data in templates
+
+commit 3c08f60d3c9a204d4b7269cc2ad2d6296454ad7a
+Merge: c1897ff 15ff75b
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 3 11:08:23 2015 -0500
+
+    Add Hotel Information Test
+
+commit c1897ff0c39180259bff7cd36d35445eb0ee63c3
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 3 10:52:45 2015 -0500
+
+    Add paymentRoom test on Main
+
+commit 3081c31164dffaf2d6a9afaf7900c84197412004
+Merge: 6b34c83 211069a
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 3 10:38:51 2015 -0500
+
+    Merge branch 'unit-test-payment' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into FixesSprint3_Mike
+    
+    Conflicts:
+    	.tmp/scripts/templates.js
+
+commit 6b34c83d8b512aeb2aabde4d0e78e3716af9c64a
+Merge: 88c4cb9 188e3b8
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Aug 3 10:13:00 2015 -0500
+
+    Add Unit test of Booking Home and Search list
+
+commit 15ff75b39428b86bcdba5408f400bb5ba1224942
+Author: Nayeli Altamirano <n.altamirano.garza@accenture.com>
+Date:   Fri Jul 31 17:47:59 2015 -0500
+
+    fixed issues
+
+commit 796446ab8affc347b9fa1b8d4df085f87cb6dfe6
+Author: Nayeli Altamirano <n.altamirano.garza@accenture.com>
+Date:   Fri Jul 31 17:36:02 2015 -0500
+
+    test hotelInformation
+
+commit 88c4cb9442607b30b9274842efd6451d5c38543f
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 31 16:07:58 2015 -0500
+
+    Add dinamic class for Container, Fix width issues
+
+commit 4651be98466a68a0d1c488cb16d1c0b5c968a8f4
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 31 13:07:48 2015 -0500
+
+    Update Hotel List view
+
+commit 067d2c175f444603485a46d23bee6ada8f415990
+Author: Nayeli Altamirano <n.altamirano.garza@accenture.com>
+Date:   Fri Jul 31 12:32:33 2015 -0500
+
+    Test header
+
+commit 188e3b8401f4ad8a8b138cb069d2e179cd67012b
+Author: g.lam.hernandez <g.lam.hernandez@accenture.com>
+Date:   Fri Jul 31 12:23:44 2015 -0500
+
+    bookingHome-itemView.spec added
+
+commit df7ca9082e6159b61110a4433bc2fd3d78018878
+Author: g.lam.hernandez <g.lam.hernandez@accenture.com>
+Date:   Fri Jul 31 12:14:02 2015 -0500
+
+    bookingHome-itemView.spec added
+
+commit a72b7dfcaca8460b65e3a4f5e0019549a17565a3
+Author: g.lam.hernandez <g.lam.hernandez@accenture.com>
+Date:   Fri Jul 31 10:26:28 2015 -0500
+
+    Booking Home Unit Testing
+
+commit b1a4509be2f7226688b07b99f06910361ae8d92f
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 31 08:59:37 2015 -0500
+
+    Add Confirmation Page to the workflow
+
+commit a199376be719773859b17833ce99e0f81744a9f6
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Thu Jul 30 22:12:02 2015 -0500
+
+    Create Partial Views for Guest Information, Add guest Information to the View
+
+commit 131fac61d3a1dd39cb76f1007e40cd7abc9e0982
+Merge: 3e5666d 04f4e7a
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Thu Jul 30 12:00:20 2015 -0500
+
+    Merge branch 'FixesSprint3_Mike' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into Home_Aileen
+
+commit 04f4e7a87580d63978a830e965ea02cefd53c517
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Thu Jul 30 11:57:39 2015 -0500
+
+    UnitTest Env Fix
+
+commit 62245f102009b88df593510efbba42ea93ec71f5
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Thu Jul 30 10:37:31 2015 -0500
+
+    Fix on Main test file
+
+commit 1fbf61061d3e3c5ee459a55c3a17ff88d67401c8
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Thu Jul 30 10:16:28 2015 -0500
+
+    Fix Payment View, PageHeader, and mayor change in controller
+
+commit 211069ae0e7cba9557854e1f885fd181b4bf170f
+Author: Ana <ana.k.lopez.amaya@MTYTM14280T5M.dir.svc.accenture.com>
+Date:   Thu Jul 30 10:13:38 2015 -0500
+
+    save changes
+
+commit 357324c05561fba42bd9a8ca6d5d1b18df37df1b
+Author: Nayeli Altamirano <n.altamirano.garza@accenture.com>
+Date:   Thu Jul 30 10:02:30 2015 -0500
+
+    Pull from Sprint3
+
+commit 3e5666d8b5d4a43a634afae94e51f5094e07d338
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Jul 29 17:33:23 2015 -0500
+
+    nav blank space fix
+
+commit 2e61ac55d8d3dfee8fa69fc00e0862780afd4f42
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Jul 29 16:35:54 2015 -0500
+
+    jshint fix on item
+
+commit 3228ca8efec843c5a7653fcff7e1ec624c0057ad
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Jul 29 16:22:37 2015 -0500
+
+    calendar fix
+
+commit 06f69c9e6c9d5560dde616bcfb75c3b6833b258a
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Jul 29 15:30:36 2015 -0500
+
+    calendar fix
+
+commit 025af8378275ddb0d5dd13a18e8d8a7aa9b02f47
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Jul 29 12:36:13 2015 -0500
+
+    Fix bookingHome JS style and Update Less files of hotel-search and variables
+
+commit 0274a0d2d790f744be7ec5f086540bc750273657
+Merge: 63453bb 55e9ac2
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Jul 29 10:31:40 2015 -0500
+
+    Merge remote-tracking branch 'remotes/origin/hotel-information' into Sprint3
+    
+    Conflicts:
+    	app/scripts/booking/common/hotelSummary/hotelSummary-itemView.js
+    	app/styles/css/main.css
+    	app/styles/css/sites/base/main.css
+    	app/styles/css/sites/blue/main.css
+    	app/styles/css/sites/red/main.css
+    	app/styles/less/component/hotel-info.less
+
+commit 63453bb200fe27472808ddf524a96ae07b8d1f24
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Jul 29 10:05:07 2015 -0500
+
+    Merge Aileen and Mikes work
+
+commit 260572b25363523478e783eff3a5595c79d911b5
+Merge: 60f3ad4 f7f7b68
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Jul 29 09:27:16 2015 -0500
+
+    Merge remote-tracking branch 'remotes/origin/Home_Aileen' into Sprint3
+    
+    Conflicts:
+    	app/scripts/booking/common/hotelSummary/hotelSummary-itemView.js
+
+commit 60f3ad44d2520670ac3a4e26e74ebacf43ed50d8
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Jul 29 09:04:24 2015 -0500
+
+    Modify Header , and roomPayment with last UI changes
+
+commit f7f7b6823f4132de4c11cc52f12c8ac4a0cb8eba
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Jul 29 09:00:59 2015 -0500
+
+    remove bootstapindex and hotel list modification filter
+
+commit c3da7a2a2e6ca512631ad0a92045f91c0a23ff18
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Tue Jul 28 22:19:38 2015 -0500
+
+    hotelListtemplate
+
+commit 2a4e854f613257aa9662f5b132e848d6916c90ed
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Tue Jul 28 21:55:53 2015 -0500
+
+    fix calendar
+
+commit 55e9ac265f68ad6d1a4b5fb20414d0a60591d5fb
+Author: Ana <ana.k.lopez.amaya@MTYTM14280T5M.dir.svc.accenture.com>
+Date:   Tue Jul 28 18:06:38 2015 -0500
+
+    hotel informatio changes
+
+commit b74e6516092f5200aa6498c99f06db6e91c4c416
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Tue Jul 28 09:06:41 2015 -0500
+
+    correct
+
+commit fa7a58f457af23e6cfd455caa760a46831a7b3ce
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Tue Jul 28 08:50:37 2015 -0500
+
+    Adjust nav style and code based on the templates. Update CSS- Home and Hotel List
+
+commit 1e9d80df7c5fb39763306bb38b85183e37f57bd0
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Jul 27 17:51:04 2015 -0500
+
+    Add Route Change method and modify Layouts structure, based on Tony's current template structure
+
+commit 686d1a33e50d592f7232c1b4c4c9db6b604616a6
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Mon Jul 27 17:05:23 2015 -0500
+
+    homesearchclass
+
+commit 00adf21959a60ac388645ba69b78a16443600e08
+Merge: e9e1ce7 93d6ce8
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Mon Jul 27 11:44:40 2015 -0500
+
+    merge unittest
+
+commit e9e1ce7da128000406a83eff521fa4a899a80041
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Jul 27 10:39:08 2015 -0500
+
+    Merge Home View with  Payment, Hotel List and Hotel Info
+
+commit b9bc9bb50c51f21849e24ed68a37c974f1afd776
+Merge: 10155fe eddb311
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 24 17:20:55 2015 -0500
+
+    Merge branch 'Sprint_2' into MergeSprint3
+    
+    Conflicts:
+    	app/scripts/booking/bookingHome/bookingHome-itemView.js
+    	app/scripts/booking/bookingHome/bookingHome-template.hbs
+    	app/scripts/common/utility/misc/search.js
+
+commit eddb311bde042116a77052301f8faa85431ea7fa
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 24 17:15:43 2015 -0500
+
+    Modify HomeView
+
+commit 454311803ec147c3ff71206ba3c72c62203137ef
+Merge: 5013cad df90f7a
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 24 17:12:30 2015 -0500
+
+    Merge branch 'Home_Aileen' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into Sprint_2
+
+commit df90f7af102b8bfd1ffbb0e0987f2b55e6fa93b6
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Fri Jul 24 16:58:23 2015 -0500
+
+    fixhome
+
+commit 5013cad93c4369304baca1278c998d88215b751d
+Merge: 7e07538 8e14b07
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 24 15:18:46 2015 -0500
+
+    Merge branch 'Home_Aileen' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into Sprint_2
+    
+    Conflicts:
+    	.tmp/scripts/templates.js
+
+commit 10155fe7ff2da02f846e0488382d0ac44a9f25a0
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 24 15:01:52 2015 -0500
+
+    Change Search script and BookingHome Item View
+
+commit aa535fd70088322afe2efcc968c89152c0bc987f
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 24 14:55:25 2015 -0500
+
+    Merge Updates Home Aileen Hotel List
+
+commit 8e14b07693c511344a18d82934afb6eda6db7ce2
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Fri Jul 24 14:48:57 2015 -0500
+
+    update
+
+commit 6086534effa290c37d48ba14a3c7b264e6bea83d
+Merge: 81e5cb4 7e07538
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 24 14:33:35 2015 -0500
+
+    Merge branch 'Sprint_2' into MergeSprint3
+    
+    Conflicts:
+    	.tmp/scripts/templates.js
+    	app/scripts/common/navigation/navPrimary-controller.js
+
+commit 7e0753869bb745c0598f3f65a47278e0acde85e7
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 24 14:07:55 2015 -0500
+
+    Add Aileen Changes
+
+commit 81e5cb489c3cf5a711ca7fb93081516396a212c0
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 24 13:52:43 2015 -0500
+
+    HotelList and Guest Info Added
+
+commit 373a416906eb29248337551e6106462158eb4138
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Fri Jul 24 13:26:05 2015 -0500
+
+    fix
+
+commit 38a5e3ebdb79eb789c471dfb103a521e280fd833
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Fri Jul 24 12:31:29 2015 -0500
+
+    searchdom
+
+commit e9eeb57ed069fd165763e8a153237c7a5246ca0e
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Fri Jul 24 11:51:07 2015 -0500
+
+    event
+
+commit 0269c05f841792fadf9762a8a277c9e2fbb76a20
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Fri Jul 24 10:19:42 2015 -0500
+
+    searchpane
+
+commit 0bcd48f4b9aab88a66b3eb211096a7a8e88796f1
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Fri Jul 24 01:40:09 2015 -0500
+
+    imgback
+
+commit 93d6ce85cec27da48abc1806bf8a2a1f4a826806
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Thu Jul 23 11:33:30 2015 -0500
+
+    Add file searchList-view.spec with unit testing
+
+commit 59f5b64b65d13cf94725c2654f900272a1107d47
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Thu Jul 23 10:56:11 2015 -0500
+
+     renamed file to bookingHome-layoutView.spec.js
+
+commit 1ba53dc04605e3fd9419de79b284763a594a2815
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Thu Jul 23 10:53:02 2015 -0500
+
+    Relocated file to a new folder
+
+commit 3646a63171b5aced591cc1a87b42ac4d3ab40af8
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Thu Jul 23 10:47:37 2015 -0500
+
+    Files relocated to new folders
+
+commit 81cc17edb95821b599f2967e998b3aee6767d657
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Thu Jul 23 10:34:59 2015 -0500
+
+    Adding code to make files the test
+
+commit fac5e3d77c79cab0569e3ff54501e834d16552da
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Thu Jul 23 08:55:05 2015 -0500
+
+    Add collection View for Hotel List
+
+commit 182401fcd77ca153628c579bea3e684ddb324567
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Thu Jul 23 08:54:37 2015 -0500
+
+    Add collection View for Hotel List
+
+commit d8cf14442140362803484fdd699c92323d65cf6b
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Wed Jul 22 17:33:35 2015 -0500
+
+    File relocated
+
+commit c5bd82b56258e60c37096c59a3034a3eca341faf
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Wed Jul 22 16:56:02 2015 -0500
+
+    Add payment-view.spec with initial unit testing
+
+commit 49c61d6268d5c15bc5d37a653791a88cc6b885a2
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Wed Jul 22 16:08:52 2015 -0500
+
+    Add file hotelInformatrion-view with some test
+
+commit 15d6738c1274a30156e185e8f314f1b5a14b295c
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Jul 22 13:12:54 2015 -0500
+
+    Add Collection and Model for Hotel List
+
+commit beb84a206b3b8250a6b3b21cdefed5900118c7c8
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Jul 22 12:15:31 2015 -0500
+
+     Merge
+
+commit 0bb79b0b79915aad924c1cff8b502d3e35f2d62c
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Wed Jul 22 12:10:19 2015 -0500
+
+    Created the main-layoutview spec and addins some test
+
+commit eb2540f8c8bf7e1423edf1fbed50f97f2a14b167
+Merge: 04bb18b 807cc75
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Jul 22 11:01:52 2015 -0500
+
+    Merge branch 'Sprint_2' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into Merge
+    
+    Conflicts:
+    	app/scripts/booking/bookingHome/bookingHome-layoutView.js
+    	app/scripts/common/footer/footer-controller.js
+    	app/scripts/common/footer/footer-itemView.js
+    	app/scripts/common/footer/footer-template.hbs
+    	app/scripts/common/main-layoutView.js
+    	app/scripts/common/utility/helpers/valueCompare-helper.js
+    	app/scripts/common/utility/misc/validator-utility.js
+
+commit 04bb18b20b2b434dd7c25198365f3a48e023edfb
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Jul 22 10:59:21 2015 -0500
+
+    merge2
+
+commit c3944542a4ad3b44e74ad4280fa7a21785c4825c
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Wed Jul 22 10:55:15 2015 -0500
+
+    Add unit  test to topNav-itemView
+
+commit 807cc75ed63856eb9a2bb29aa9719ae7c9cd0ac9
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Jul 22 10:40:59 2015 -0500
+
+    Modify the footer and Navigation structure. Add utility folder
+
+commit 55196729b702894cc12cef10302c1c9549bc03e8
+Merge: 660855d ef8383f
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Jul 22 10:34:24 2015 -0500
+
+    Merge branch 'Sprint_2' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into Merge
+    
+    Conflicts:
+    	.tmp/scripts/templates.js
+    	app/index.html
+    	app/scripts/booking/guestInfo/guestInfo-pane-itemView.js
+    	app/scripts/booking/guestInfo/guestInfo-pane.hbs
+    	app/scripts/booking/guestInfo/payment-pane.hbs
+    	app/scripts/booking/guestInfo/reservation-details.hbs
+    	app/scripts/booking/guestInfo/review-pane.hbs
+    	app/scripts/booking/roomPayment/guestInfo/guestInfo-template.hbs
+    	app/scripts/booking/roomPayment/payment/payment-template.hbs
+    	app/scripts/booking/roomPayment/reservation-details.hbs
+    	app/scripts/booking/roomPayment/review/review-template.hbs
+    	app/scripts/common/main-layoutView.js
+    	app/scripts/common/navigation/navPrimary-controller.js
+    	app/scripts/common/navigation/navPrimary-router.js
+    	app/scripts/guestInfo/guestInfo-pane.hbs
+    	app/scripts/guestInfo/payment-pane.hbs
+    	app/scripts/guestInfo/reservation-details.hbs
+    	app/scripts/guestInfo/review-pane.hbs
+    	app/scripts/main.js
+    	test/mocha-main.js
+
+commit 660855de7d8a5b25b7c3bc55d4f65b33bb87f2ce
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Jul 22 10:22:06 2015 -0500
+
+    merge
+
+commit ef8383fde1336b69539503c47c414ca2089b5a51
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Tue Jul 21 18:07:32 2015 -0500
+
+    Merge with Guest Info Daniel branch
+
+commit b0eb4fafd5ae58275dc9db51748d7afb1fb38e08
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Tue Jul 21 17:49:22 2015 -0500
+
+    Remove Router Test
+
+commit 7f063d1f84b3c02ce52d53086866ffdf416a261b
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Tue Jul 21 16:39:10 2015 -0500
+
+    last update2
+
+commit a29c3818f1fba5fdf79829c6a9777051c67dca97
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Tue Jul 21 16:38:48 2015 -0500
+
+    last update
+
+commit 5729e6b896d97a352fbd7823a8653273f6e83c04
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Tue Jul 21 10:49:52 2015 -0500
+
+    Fixed problems with comments
+
+commit 4033b5fb55fb16c88ccc716820ab246dcb70174f
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Mon Jul 20 21:09:05 2015 -0500
+
+    demo
+
+commit 4b2b57076dbe3c64cbeadfd1a6cbf63554c492e6
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Mon Jul 20 21:03:37 2015 -0500
+
+    styles and promo
+
+commit 076ff17880d9dd411040a657ed848bf4cfdfcde1
+Merge: 62471e1 ad9f97c
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Mon Jul 20 18:16:46 2015 -0500
+
+    Merge branch 'Sprint_2' into guestInfo_Daniel
+
+commit ad9f97ccc7cf92b943339311b232d55d5678dd46
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Mon Jul 20 18:13:40 2015 -0500
+
+    Fixed isues in router spec and also adding a div with id appcontainer in the index file pertaining to test folder
+
+commit bf4bb10881a09b39c400b3d35c4180849061dbf9
+Merge: d7228df 222c437
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Mon Jul 20 17:48:00 2015 -0500
+
+    Fixed conflicts from merge pull request
+
+commit 222c43710ede9a6587bcd619f85d2893dc4c5ad8
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Jul 20 16:58:45 2015 -0500
+
+    GuestInfo Test Change
+
+commit 62471e129af20d01dac496c594717b1a5ae97e4a
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Mon Jul 20 14:08:54 2015 -0500
+
+    Add comments like guide style of jsdoc
+
+commit d7228df63f1fd58f1a47021cf3a56ebc595a90e6
+Merge: 7bcc610 b3d5905
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Mon Jul 20 11:51:21 2015 -0500
+
+    Fixed conflicts from merge
+
+commit b3d5905607b9f681eb479a99860d5a9417979844
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Mon Jul 20 11:44:38 2015 -0500
+
+    <Created a factory folder with a file validator, and form imputs from guestInfo  are validate using the file validator
+
+commit 4294ab8c92f2cde7b7faed72e3b08be8e88ca480
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Mon Jul 20 10:17:11 2015 -0500
+
+    less compile
+
+commit 924bab01dc8d81782ccf79588042d49a76cdc397
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Mon Jul 20 09:19:33 2015 -0500
+
+    Modify Guest Information Structure
+
+commit 9a3035bb5d4832cccbe6c516135d44fde66cd2c2
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Mon Jul 20 00:48:09 2015 -0500
+
+    promo setup
+
+commit cd038a434db787e6b5be1eda3646609c60ad9da5
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Fri Jul 17 23:36:53 2015 -0500
+
+    'working_template'
+
+commit 7809cc264e088e41bc84fa6b4b9781860534b9a1
+Merge: 037df97 7bcc610
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 17 17:52:37 2015 -0500
+
+    Merge branch 'Sprint_2' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into Sprint_2
+
+commit 037df97e48cf9e9dd9bcf1ddafab418d2aa28c4d
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jul 17 17:51:53 2015 -0500
+
+    Add guest Info Test
+
+commit 7bcc6107ad60c6e3c3789df0cb54d0f4f7f98108
+Merge: 3b1e6c6 63cf84f
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Fri Jul 17 15:53:27 2015 -0500
+
+    Conflict solved from merge  Spring
+
+commit d8bb916af08e7727104e66bf6c37b42c2e5709a6
+Merge: d9ce9af a007d2a
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Fri Jul 17 14:48:01 2015 -0500
+
+    Merge branch 'guestInfo_Daniel' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into Home_Aileen
+    
+    Conflicts:
+    	.tmp/scripts/templates.js
+    	app/scripts/common/main-layoutView.js
+    	app/scripts/common/navigation/navPrimary-controller.js
+    	app/scripts/main.js
+    	gss/app/less/main.less
+    	gss/app/less/mixins.less
+    	gss/app/less/variables.less
+
+commit d9ce9af98ee4726122a056ad97a5bb6e3f103fdf
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Fri Jul 17 14:40:51 2015 -0500
+
+    'styling'
+
+commit 63cf84f51f813c9791011195429014da3ae101a6
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Fri Jul 17 14:36:20 2015 -0500
+
+    Se agrego una validacion para el correo electronico en la ventana de guestInfo
+
+commit a007d2adbb79c05275a6a7fea615e011efce991c
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Fri Jul 17 12:28:33 2015 -0500
+
+    Se cambio la url de el servicio en guestInfo-collection
+
+commit 7d386477b21a3b1caf9a40ee3a45aff3658912c8
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Fri Jul 17 11:15:50 2015 -0500
+
+    Se agregaron funciones para renderizar el guestInfo y mandar unparametro al onRender del mainlayout para que renderise guestinfo en ves de homeview
+
+commit 3b1e6c6c10fc61bd81c2eba74a1109aaa9bf6a01
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Thu Jul 16 17:49:32 2015 -0500
+
+    modificado .tml
+
+commit bf40c1f839f7d96a99e8869bc0c507354a87befc
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Thu Jul 16 17:41:11 2015 -0500
+
+    Se hicieron modificaciones en el render del guestingo
+
+commit cdba6d7e7233797446cac0d6b678977db1d23a42
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Thu Jul 16 15:45:02 2015 -0500
+
+    home and footer
+
+commit 86b5b4b8f5dd6abaeeec2c069f8ac5cb6ed493b2
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Thu Jul 16 13:54:40 2015 -0500
+
+    Se renderiza la vista de guestInfo  y se comseme el servicio para obetener la informacio de el usuario, haciendo uso de una collecion y un modelo tambien se creo un helper personalizado para handlebars
+
+commit f77f4322de2815cbadcf94f1d353b2399abf9dfd
+Merge: 8e3050a cdd57de
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Wed Jul 15 11:40:44 2015 -0500
+
+    Se hiso merge con la rama navbar_bookingSummary_Moises
+
+commit cdd57de80ad4ef9dcfa789482cb4fb91a0a31f9e
+Merge: 34e3337 7b7274c
+Author: unknown <d.aguirre.linares@MTYTM1BQMTPW1.dir.svc.accenture.com>
+Date:   Wed Jul 15 11:37:16 2015 -0500
+
+    Se bajo la rama navbar_bokingSummary_MOises
+
+commit 92f0bffb045c8b971204871af450a0a38a24d64e
+Merge: c25a0d8 7b7274c
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Mon Jul 13 11:22:35 2015 -0500
+
+    'merge
+
+commit c25a0d876e121576c9e54260d1774c594c2eb2af
+Merge: c271f2d 8e3050a
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Mon Jul 13 11:21:24 2015 -0500
+
+    'merge'
+
+commit 61edaddf3e523c10b957855f1c36ae5862948ed2
+Merge: e95fd1c 46b90ce
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Mon Jul 13 11:17:19 2015 -0500
+
+    Merge branch 'navbar_bookingSummary_Moises'
+
+commit 46b90ce08e4208d41af82595f89811bd751410bb
+Merge: 7abd6c4 7b7274c
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Mon Jul 13 11:14:18 2015 -0500
+
+    'navbar'
+
+commit e95fd1c6f572a382176b9d19eac48533b9eb753d
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Mon Jul 13 11:08:55 2015 -0500
+
+    'guestinfo'
+
+commit c271f2d79163cac3f7f0cb9d04f4136e0e603b3a
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Mon Jul 13 11:03:50 2015 -0500
+
+    'promocollection'
+
+commit 8e3050a568bbf586712a970e9eb40eb3cd87a541
+Author: unknown <m.leal.villarreal@MTYTM152202J2.dir.svc.accenture.com>
+Date:   Mon Jul 13 10:52:18 2015 -0500
+
+    Added guest information folder. Inside: 4 .hbs files and a .js file
+
+commit 7b7274c8e27add9ceb9667daf0c337b1fedd0696
+Author: Lira, Jesus <jesus.lira@accenture.com>
+Date:   Fri Jul 10 11:25:32 2015 -0500
+
+    added unit test for topNav, added common directory inside test/spec added test to mocha
+
+commit 57004c68fcabed55d1b0ae3b952a5fc7c5612b46
+Author: unknown <m.leal.villarreal@MTYTM152202J2.dir.svc.accenture.com>
+Date:   Fri Jul 10 11:15:01 2015 -0500
+
+    Want to checkout a branch
+
+commit 12ec0f1372cc9871a8069583d81fe79c30d4f203
+Author: Lira, Jesus <jesus.lira@accenture.com>
+Date:   Fri Jul 10 10:49:48 2015 -0500
+
+    deleted original moises and navbar_Moises branch, created navbar-bookingSummary-moises branch
+
+commit 1918e5c779b093e3774e45e13c3635fdc4523eff
+Author: Lira, Jesus <jesus.lira@accenture.com>
+Date:   Fri Jul 10 10:44:38 2015 -0500
+
+    fixed gramatic errors nav-router.spec.js test
+
+commit c75063f4b2b7030c855787c162c718e93d911739
+Author: unknown <jesus.lira@MTYTM152202BD.dir.svc.accenture.com>
+Date:   Fri Jul 10 07:48:43 2015 -0500
+
+    added router functionality
+
+commit ed940d6b97a92ecd4c0dea359fff26dfbc3fb583
+Author: unknown <jesus.lira@MTYTM152202BD.dir.svc.accenture.com>
+Date:   Thu Jul 9 15:48:18 2015 -0500
+
+    showed navbar
+
+commit 7abd6c47dc8d07df42b19606e0a461894ee1bc7c
+Merge: 59a7d8c 269c287
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Thu Jul 9 11:13:31 2015 -0500
+
+    Merge branch 'Footer_Mike' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep
+
+commit 59a7d8c669eeb6eb7d600dbcb047216380bcfae0
+Merge: 34e3337 7649c52
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Thu Jul 9 11:05:58 2015 -0500
+
+    initial
+
+commit 269c287c39b40f4b82f0888187148259fc860469
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Thu Jul 9 10:37:28 2015 -0500
+
+    Add Footer
+
+commit 94a6a535f160bdb1f130288e8b9817bfd7c509b2
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Jul 8 14:09:43 2015 -0500
+
+    Add Footer Test
+
+commit 672fc056ad3c999f5a0963aacd12e0119b798c1a
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Jul 8 14:07:51 2015 -0500
+
+    Add Footer Test
+
+commit 34e33373b006f1cfcd6fe6ebe73494a435f340ab
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Wed Jul 1 16:33:09 2015 -0500
+
+    changes
+
+commit 7649c525bb0ec42076077c9789d6a047da6f1bf8
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Tue Jun 30 00:31:08 2015 -0500
+
+    Add Main Layout
+
+commit 8c3339b3553e539524f1d68b8eac1a02966de372
+Merge: 2400180 4354a33
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Mon Jun 29 14:31:28 2015 -0500
+
+    Merge branch 'master' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep
+
+commit 2400180c09e4055e4b305cc345057622c8d22f96
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Mon Jun 29 14:30:14 2015 -0500
+
+    Refactored Search Pane list to be consistent with Bootstrap.
+
+commit 4354a3357558169440fa78c89b295383dd25e035
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Mon Jun 29 11:51:08 2015 -0500
+
+    Summary Confirmation
+
+commit 60831981be4852a5d1599a1228b2679a077cb277
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Fri Jun 26 17:19:09 2015 -0500
+
+    Footer Implementation and Styling
+
+commit 9cd4ac4e1d0b2961560d758afacf3e0743395bd6
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Fri Jun 26 17:13:34 2015 -0500
+
+    Footer Implementation and Styling
+
+commit b968a54c69c79ea19ca2485d8f1a151b76d5c4c4
+Merge: da380b4 50cd78b
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Fri Jun 26 16:16:43 2015 -0500
+
+    Merge Conflicts Solved in Main Less and JS
+
+commit 50cd78b922155746cb24cd1ccd85e8e2bfcf7485
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Fri Jun 26 15:05:54 2015 -0500
+
+    Calendar Styling and Responsive adjustments
+
+commit da380b43c96cf1ed359ccc0fc44404bc9049aea3
+Merge: 806eb1a 458de9f
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Fri Jun 26 12:44:10 2015 -0500
+
+    Merge branch 'master' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep
+
+commit 806eb1a394e85730d45bd7708366d6b157b00a14
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Fri Jun 26 12:43:06 2015 -0500
+
+    Changes due to merging
+
+commit bb641827f8deeb57c0da8f9cac3b585c9a8b557a
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jun 26 08:33:44 2015 -0500
+
+    Add Layout structure file with new update on enviroment
+
+commit f6453b8edee4ff38e0b20ee02d147cab3846d226
+Merge: 3fa3a21 458de9f
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Fri Jun 26 00:11:32 2015 -0500
+
+    Merge branch 'master' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into MainLayout_Mike
+
+commit 3fa3a2108a705c764f49f98a561fa1cd96f35ff9
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Thu Jun 25 23:59:57 2015 -0500
+
+    Add main Layout
+
+commit 458de9ff3b9457b8255f9905b14ca156dd8bcf35
+Merge: a7f52c9 c0251ae
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Thu Jun 25 17:50:57 2015 -0500
+
+    Merge branch 'master' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into Jshint
+
+commit a7f52c9d03bea12ff2a6dd3f7275087b7267b281
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Thu Jun 25 17:49:53 2015 -0500
+
+     jscs doc
+
+commit 5a5fd9816e9ceb62ff987c4b21b2a42b184bd1a2
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Thu Jun 25 17:49:10 2015 -0500
+
+    Jshint fix
+
+commit c0251ae27d378ce15de361277f1d4a1554b08e90
+Merge: d93fa28 fe5c783
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Thu Jun 25 16:07:20 2015 -0500
+
+    Changes to reservation details
+
+commit d93fa28e65447effc4d0e88c6f00635feca80a6b
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Thu Jun 25 16:02:51 2015 -0500
+
+    Guest Information page
+
+commit 51e88b249867ce18e49c75ea6431b1a4bd589537
+Merge: 15b13db fe5c783
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Thu Jun 25 15:28:15 2015 -0500
+
+    merge conflicts
+
+commit fe5c783bfacf64264734cb01216d0a8924ef6f89
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Thu Jun 25 13:17:40 2015 -0500
+
+    Add Router & Unit Testing Config
+
+commit 15b13db4fb35dbcba685de31ecf98d8d356613a3
+Author: unknown <a.villanueva.lecuona@MTYTM14151BQ5.dir.svc.accenture.com>
+Date:   Wed Jun 24 17:46:03 2015 -0500
+
+    added injector, jscs file and jshint rules
+
+commit 1c31fc344383ad306085b9a4e8ec2ac1a31202c3
+Merge: bd977b2 0532e02
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Wed Jun 24 12:38:14 2015 -0500
+
+    Main JS Merged
+
+commit 0532e025079db9c4bd785cdc9c0ace572bac6692
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Wed Jun 24 12:32:08 2015 -0500
+
+    Interactions for Home
+
+commit bd977b2a663b2918c04a1af609cead2e26868601
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Wed Jun 24 11:55:59 2015 -0500
+
+    Calendar
+
+commit 10d9d6c64753efcdbdee9a4e722cb76fc6103ee6
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Jun 24 11:26:27 2015 -0500
+
+    Add plato task
+
+commit 72143c849d75cc8f7a7273827449c86a79ba25ed
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Jun 24 10:46:16 2015 -0500
+
+    Add Backbone project structure
+
+commit 421a9b51c419cf27727919a508e2e7a76353c2ec
+Merge: 3c83167 7917ee3
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Jun 24 10:38:58 2015 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 3c83167474cab89e6331ad50ffedc3d6c4626b1b
+Author: Minvielle, Miguel R <miguel.r.minvielle@accenture.com>
+Date:   Wed Jun 24 10:31:10 2015 -0500
+
+    .gitignore created by brackets-git extension
+
+commit 7917ee373692a1b4a8e11de8dc69138f0cf6f817
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Tue Jun 23 17:31:15 2015 -0500
+
+    Home Page Search Pane -Results, Trip Resume Styling
+
+commit 835bd6247c86ca4c4d56011f6edc85161f4334b1
+Merge: 2220b66 ad1de9e
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Mon Jun 22 17:42:17 2015 -0500
+
+    Merge branch 'master' of https://innersource.accenture.com/carlson-demo/carlson-demo-rep into markup
+
+commit 2220b6651f746fdd9f6aeda3f0ef05853c20b31b
+Author: unknown <o.malacara.rico@MTYTM1FD59GV1.dir.svc.accenture.com>
+Date:   Mon Jun 22 17:40:08 2015 -0500
+
+    promo
+
+commit ad1de9ef68bb29c0ad6023f9c4036af273af64c6
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Mon Jun 22 17:26:28 2015 -0500
+
+    Home Destinations Calls and Section formatting in Home
+
+commit 6adf24ce4760d1baf0f41628b028ad5dade84c1f
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Mon Jun 22 17:08:48 2015 -0500
+
+    Search Pane with Icons
+
+commit c7a3ccd47aed9ff88635dd7643513d5ae342e1c9
+Author: Assad Santos, Antonio <antonio.assad.santos@accenture.com>
+Date:   Mon Jun 22 11:58:21 2015 -0500
+
+    Initial commit GSS Jekyll

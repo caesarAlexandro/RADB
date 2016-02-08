@@ -1,0 +1,40 @@
+.overlaying(@name, @color)
+{
+	&-@{name}
+	{
+		&:before
+		{
+			background-color: fade(@color, 50%);
+		}
+	}
+}
+.overlay
+{
+	&:before
+	{
+		content: '';
+		background-color: @image-overlay;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 15px;
+		right: 15px;
+		display: block;
+		z-index: 0;
+	}
+	.overlaying(primary, @brand-primary);
+	.overlaying(success, @brand-success);
+	.overlaying(warning, @brand-warning);
+
+	display: table;	
+	width: 100%;
+	&-text
+	{
+		position: relative;
+		display: table-cell;
+		z-index: 1;
+		vertical-align: middle;
+		text-align: center;
+		color: #fff;
+	}	
+}

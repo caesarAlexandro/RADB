@@ -1,0 +1,19 @@
+.affix
+{
+	&, &-top, &-bottom
+	{
+		top: 0px;
+		@media screen and (max-width:@screen-sm-max) {
+			position: static;
+		}	
+		@media screen and (min-width:@screen-sm-min) {
+			//width: 220px;
+		}	
+		@media screen and (min-width:@screen-md-min) {
+			width: 293px;
+		}	
+		@media screen and (min-width:@screen-lg-min) {
+			width: 360px;
+		}
+	}			
+} 

@@ -1,0 +1,70 @@
+.icon-social-round, .icon-round
+{
+	.icon-circle(40px, #fff, @brand-primary, .9);	
+}
+@icon-round-size: 40px;
+.icon-round
+{
+	.icon-circle-size(@icon-round-size, .9);	
+	&-xs
+	{
+		.icon-circle-size((@icon-round-size*.25), .9);
+	}
+	&-sm
+	{
+		.icon-circle-size((@icon-round-size*.5), .9);
+	}
+	&-lg
+	{
+		.icon-circle-size((@icon-round-size*1.5), .9);
+	}
+	&-xl
+	{
+		.icon-circle-size((@icon-round-size*2), .5); 
+	}
+}
+.icon-inverse(@name, @color)
+{
+	&-@{name}
+	{
+		background-color: @color;
+	}
+}
+.icon
+{
+	&-xl
+	{
+		font-size: (@font-size-large*1.75);
+	}
+	&-lg
+	{
+		font-size: @font-size-large;
+	}
+	&-sm
+	{
+		font-size: @font-size-small;
+	}
+	&-xs
+	{
+		font-size: (@font-size-small*.75);
+	}
+	&-inverse
+	{
+		.icon-inverse(success, @brand-success);
+		.icon-inverse(warning, @brand-warning);
+		.icon-inverse(danger, @brand-danger);
+	}
+}
+
+.chevron
+{
+	.transition(all .2s ease);
+	&:before
+	{
+		content: @fa-var-chevron-up;
+	}
+	.collapsed &
+	{
+		.rotate(180deg);
+	}
+}
