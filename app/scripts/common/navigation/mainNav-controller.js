@@ -43,7 +43,7 @@ define([
                         bookingViewManager.clearLayout();
                         Data.fullBg('[data-cover]');
                         mainLayout.changeToHeaderFloating();
-                    }, 500);
+                    }, 300);
                 });
             },
         };

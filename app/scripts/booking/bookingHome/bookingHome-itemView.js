@@ -72,7 +72,7 @@ define([
                 lazyCustomMessages: true
             });
             webshim.polyfill('forms forms-ext');*/
-            this.loadBotContainerData();
+            // this.loadBotContainerData();
         },
         renderCarousel : function () {
             $('#owl-demo').owlCarousel({
