@@ -33,15 +33,17 @@ define([
                     var currentRoute =  Backbone.history.getFragment();
                     var homeView = new HomeView({brand : currentRoute});
                     var mainLayout = mainViewManager.init();
-                    Data.themeSwitch(currentRoute);
-                    mainLayout.getRegion('content').show(homeView);
-                    //mainLayout.changeLogo(currentRoute);
-                    homeView.changeImg(currentRoute);
-                    homeView.renderDatepicker();
-                    homeView.renderCarousel();
-                    bookingViewManager.clearLayout();
-                    Data.fullBg('[data-cover]');
-                    mainLayout.changeToHeaderFloating();
+                    setTimeout(function () {
+                        Data.themeSwitch(currentRoute);
+                        mainLayout.getRegion('content').show(homeView);
+                        //mainLayout.changeLogo(currentRoute);
+                        homeView.changeImg(currentRoute);
+                        homeView.renderDatepicker();
+                        homeView.renderCarousel();
+                        bookingViewManager.clearLayout();
+                        Data.fullBg('[data-cover]');
+                        mainLayout.changeToHeaderFloating();
+                    }, 500);
                 });
             },
         };

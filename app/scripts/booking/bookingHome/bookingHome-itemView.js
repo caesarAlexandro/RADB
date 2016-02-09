@@ -9,10 +9,11 @@ define([
 	'common/utility/misc/data',
 	'vendor/webshim/js-webshim/dev/polyfiller.js',
     'booking/bookingHome/data/bookingHome-model',
+    'booking/bookingHome/data/bookingHomePromo-model',
 	'moment',
     'rangedatepicker',
     'owlcarousel'
-], function ($, _, Backbone, Marionette, Handlebars, JST, Data, Calendar, BookingHomeModel, moment, dateRangePicker, owlcarousel) {
+], function ($, _, Backbone, Marionette, Handlebars, JST, Data, Calendar, BookingHomeModel, bookingHomePromoModel, moment, dateRangePicker, owlcarousel) {
     'use strict';
     var bookingChannel;
     return Marionette.ItemView.extend({
@@ -27,6 +28,8 @@ define([
                 JST['app/scripts/booking/bookingHome/bookingHome-HomeCarousel.hbs']);
             Handlebars.registerPartial('PopularDestinations',
                 JST['app/scripts/booking/bookingHome/bookingHome-partialPopularDestinations.hbs']);
+            Handlebars.registerPartial('BotContainer',
+                JST['app/scripts/booking/bookingHome/bookingHomeBotContainer-partialTemplate.hbs']);
         },
         /**
          *
@@ -41,10 +44,15 @@ define([
             'click .list-group-item.calendar.check-in' : 'renderDatepicker',
             'click #findHotel' : 'findHotel',
             'click a[href=#]' : 'prevent',
+            'click #firstCont' : 'loadBotContainerData',
             'change #collapseRoomGuest #room #rooms': 'setRooms',
             'change #collapseRoomGuest #guest #guests': 'setGuests'
         },
         model : new BookingHomeModel(),
+        promoModel : new bookingHomePromoModel(),
+        onBeforeRender: function () {
+            this.loadBotContainerData();
+        },
         onRender: function () {
             /**
              * @functions
@@ -64,6 +72,7 @@ define([
                 lazyCustomMessages: true
             });
             webshim.polyfill('forms forms-ext');*/
+            this.loadBotContainerData();
         },
         renderCarousel : function () {
             $('#owl-demo').owlCarousel({
@@ -379,6 +388,11 @@ define([
         },
         changeImg: function (query) {
             $('div.coverImage').data('cover', 'assets/img/full_bg1.jpg');
+        },
+        loadBotContainerData: function () {
+            var x = this.promoModel.attributes[0];
+            this.model.set({'promoTitle': x.title});
+            console.log(x.title);
         },
         prevent : function (event) {
             event.preventDefault();
