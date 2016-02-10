@@ -15,15 +15,47 @@ this["JST"]["app/scripts/booking/bookingHome/bookingHome-HomeCarousel.hbs"] = Ha
 },"useData":true});
 
 this["JST"]["app/scripts/booking/bookingHome/bookingHome-partialPopularDestinations.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    return "<h2>Popular Destionaations</h2>\r\n\r\n<!--\r\n	<div class=\"container\">\r\n	<div class=\"row\">\r\n	<h1>Todays Deals</h1>\r\n	<div class=\"col-sm-4\">\r\n		<div class=\"promotion\">\r\n			<img src=\"assets/img/promotions/promotion1.jpg\" />\r\n			<div>\r\n				<h3>Kids Stay and Eat Free</h3>\r\n				<p>Your VIP's stay and eat for free, and are free to eplore all the hotel has to offer</p>\r\n			</div>\r\n			<a href=\"#\">Find out more</a>\r\n		</div>\r\n	</div>\r\n	<div class=\"col-sm-4\">\r\n		<div class=\"promotion\">\r\n			<img src=\"assets/img/promotions/promotion1.jpg\" />\r\n			<div>\r\n				<h3>Kids Stay and Eat Free</h3>\r\n				<p>Your VIP's stay and eat for free, and are free to eplore all the hotel has to offer</p>\r\n			</div>\r\n			<a href=\"#\">Find out more</a>\r\n		</div>\r\n	</div>\r\n	<div class=\"col-sm-4\">\r\n		<div class=\"promotion\">\r\n			<img src=\"assets/img/promotions/promotion1.jpg\" />\r\n			<div>\r\n				<h3>Kids Stay and Eat Free</h3>\r\n				<p>Your VIP's stay and eat for free, and are free to eplore all the hotel has to offer</p>\r\n			</div>\r\n			<a href=\"#\">Find out more</a>\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n</div>-->";
+    var stack1, helper, alias1=this.lambda, alias2=this.escapeExpression, alias3=helpers.helperMissing, alias4="function";
+
+  return "<h2>Popular Destinations</h2>\r\n<div class=\"row destinations\">\r\n    	<div class=\"col-md-4 destination col-xs-4\">\r\n    		<img src="
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.destImg : depth0)) != null ? stack1.destinationImageLarge : stack1), depth0))
+    + ">\r\n    		<div>\r\n    			<h3>"
+    + alias2(((helper = (helper = helpers.destTitle || (depth0 != null ? depth0.destTitle : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(depth0,{"name":"destTitle","hash":{},"data":data}) : helper)))
+    + "</h3>\r\n    			<p>"
+    + alias2(((helper = (helper = helpers.destDesc || (depth0 != null ? depth0.destDesc : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(depth0,{"name":"destDesc","hash":{},"data":data}) : helper)))
+    + "</p>\r\n    			<a href=\"#\">Explore</a>\r\n    		</div>\r\n    	</div>\r\n    	<div class=\"col-md-4 col-xs-12\">\r\n    		<div class=\"row\">\r\n    			<div class=\"col-md-6 destination col-xs-4\">\r\n    				<img src="
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.destImg : depth0)) != null ? stack1.destinationImageSmall : stack1), depth0))
+    + ">\r\n    				<div>\r\n    					<h3>"
+    + alias2(((helper = (helper = helpers.destTitle || (depth0 != null ? depth0.destTitle : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(depth0,{"name":"destTitle","hash":{},"data":data}) : helper)))
+    + "</h3>\r\n    					<p>"
+    + alias2(((helper = (helper = helpers.destDesc || (depth0 != null ? depth0.destDesc : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(depth0,{"name":"destDesc","hash":{},"data":data}) : helper)))
+    + "</p>\r\n    					<a href=\"#\">Explore</a>\r\n    				</div>\r\n    			</div>\r\n    			<div class=\"col-md-6 destination col-xs-4\">\r\n    				<img src="
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.destImg : depth0)) != null ? stack1.destinationImageSmall : stack1), depth0))
+    + ">\r\n    				<div>\r\n    					<h3>"
+    + alias2(((helper = (helper = helpers.destTitle || (depth0 != null ? depth0.destTitle : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(depth0,{"name":"destTitle","hash":{},"data":data}) : helper)))
+    + "</h3>\r\n    					<p>"
+    + alias2(((helper = (helper = helpers.destDesc || (depth0 != null ? depth0.destDesc : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(depth0,{"name":"destDesc","hash":{},"data":data}) : helper)))
+    + "</p>\r\n    					<a href=\"#\">Explore</a>\r\n    				</div>\r\n    			</div>\r\n    		</div>\r\n    		<div class=\"row\">\r\n    			<div class=\"col-md-12 destination col-xs-4\">\r\n    				<img src="
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.destImg : depth0)) != null ? stack1.destinationImageMedium : stack1), depth0))
+    + ">\r\n    				<div>\r\n    					<h3>"
+    + alias2(((helper = (helper = helpers.destTitle || (depth0 != null ? depth0.destTitle : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(depth0,{"name":"destTitle","hash":{},"data":data}) : helper)))
+    + "</h3>\r\n    					<p>"
+    + alias2(((helper = (helper = helpers.destDesc || (depth0 != null ? depth0.destDesc : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(depth0,{"name":"destDesc","hash":{},"data":data}) : helper)))
+    + "</p>\r\n    					<a href=\"#\">Explore</a>\r\n    				</div>\r\n    			</div>\r\n    		</div>\r\n    	</div>\r\n    	<div class=\"col-md-4 col-xs-4 destination\">\r\n    		<img src="
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.destImg : depth0)) != null ? stack1.destinationImageLarge : stack1), depth0))
+    + ">\r\n    		<div>\r\n    			<h3>"
+    + alias2(((helper = (helper = helpers.destTitle || (depth0 != null ? depth0.destTitle : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(depth0,{"name":"destTitle","hash":{},"data":data}) : helper)))
+    + "</h3>\r\n    			<p>"
+    + alias2(((helper = (helper = helpers.destDesc || (depth0 != null ? depth0.destDesc : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(depth0,{"name":"destDesc","hash":{},"data":data}) : helper)))
+    + "</p>\r\n    			<a href=\"#\">Explore</a>\r\n    		</div>\r\n    	</div>\r\n    </div>\r\n\r\n<!--\r\n	<div class=\"container\">\r\n	<div class=\"row\">\r\n	<h1>Todays Deals</h1>\r\n	<div class=\"col-sm-4\">\r\n		<div class=\"promotion\">\r\n			<img src=\"assets/img/promotions/promotion1.jpg\" />\r\n			<div>\r\n				<h3>Kids Stay and Eat Free</h3>\r\n				<p>Your VIP's stay and eat for free, and are free to eplore all the hotel has to offer</p>\r\n			</div>\r\n			<a href=\"#\">Find out more</a>\r\n		</div>\r\n	</div>\r\n	<div class=\"col-sm-4\">\r\n		<div class=\"promotion\">\r\n			<img src=\"assets/img/promotions/promotion1.jpg\" />\r\n			<div>\r\n				<h3>Kids Stay and Eat Free</h3>\r\n				<p>Your VIP's stay and eat for free, and are free to eplore all the hotel has to offer</p>\r\n			</div>\r\n			<a href=\"#\">Find out more</a>\r\n		</div>\r\n	</div>\r\n	<div class=\"col-sm-4\">\r\n		<div class=\"promotion\">\r\n			<img src=\"assets/img/promotions/promotion1.jpg\" />\r\n			<div>\r\n				<h3>Kids Stay and Eat Free</h3>\r\n				<p>Your VIP's stay and eat for free, and are free to eplore all the hotel has to offer</p>\r\n			</div>\r\n			<a href=\"#\">Find out more</a>\r\n		</div>\r\n	</div>\r\n</div>\r\n\r\n</div>-->";
 },"useData":true});
 
 this["JST"]["app/scripts/booking/bookingHome/bookingHome-partialPromotions.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1, helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
+    var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
-  return "\r\n<div id=\"promotions-carousel\" class=\"owl-carousel owl-theme\">\r\n     \r\n      <div class=\"item\"><div class=\"promotion\">\r\n      		"
-    + ((stack1 = ((helper = (helper = helpers.promoImg || (depth0 != null ? depth0.promoImg : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"promoImg","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + "\r\n			<div>\r\n				<h3>"
+  return "\r\n<div id=\"promotions-carousel\" class=\"owl-carousel owl-theme\">\r\n     \r\n      <div class=\"item\"><div class=\"promotion\">\r\n			<img src="
+    + alias3(((helper = (helper = helpers.promoImg || (depth0 != null ? depth0.promoImg : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"promoImg","hash":{},"data":data}) : helper)))
+    + "/>\r\n			<div>\r\n				<h3>"
     + alias3(((helper = (helper = helpers.promoTitle || (depth0 != null ? depth0.promoTitle : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"promoTitle","hash":{},"data":data}) : helper)))
     + "</h3>\r\n				<p>"
     + alias3(((helper = (helper = helpers.promoDesc || (depth0 != null ? depth0.promoDesc : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"promoDesc","hash":{},"data":data}) : helper)))
@@ -73,18 +105,6 @@ this["JST"]["app/scripts/booking/bookingHome/bookingHome-template.hbs"] = Handle
     + ((stack1 = this.invokePartial(partials.PopularDestinations,depth0,{"name":"PopularDestinations","data":data,"indent":"    ","helpers":helpers,"partials":partials})) != null ? stack1 : "")
     + "    </section>\r\n\r\n";
 },"usePartial":true,"useData":true});
-
-this["JST"]["app/scripts/booking/bookingHome/bookingHomeBotContainer-partialTemplate.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
-
-  return "<div id=\"botContainer\" class=\"container\">\r\n	<div class=\"row\">\r\n		<div id=\"firstCont\" class=\"col-sm-4\">\r\n			<h4>"
-    + alias3(((helper = (helper = helpers.promoTitle || (depth0 != null ? depth0.promoTitle : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"promoTitle","hash":{},"data":data}) : helper)))
-    + "</h4>\r\n			<p>ID: "
-    + alias3(((helper = (helper = helpers.nid || (depth0 != null ? depth0.nid : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"nid","hash":{},"data":data}) : helper)))
-    + "</p>\r\n			<p>"
-    + alias3(((helper = (helper = helpers.promoDesc || (depth0 != null ? depth0.promoDesc : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"promoDesc","hash":{},"data":data}) : helper)))
-    + "</p>\r\n		</div>\r\n		<div id=\"secondCont\" class=\"col-sm-4\">\r\n			\r\n		</div>\r\n		<div class=\"col-sm-4\"></div>\r\n	</div>\r\n</div>\r\n<style>\r\n	#botContainer {\r\n	}\r\n	#botContainer .col-sm-4{\r\n		border: 1px solid blue;\r\n	}\r\n</style>";
-},"useData":true});
 
 this["JST"]["app/scripts/booking/common/booking-template.hbs"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     return "<!-- <div class=\"page-header-sm\"></div>-->\r\n<section id=\"modifySearch\" ></section>\r\n<section id=\"headerContainer\" class=\"page-header container-overlflown fixed\r\n			page-header-book page-header-sm\" \r\n			data-cover=\"assets/img/recommended3.jpg\" data-cover-alt data-cover-size=\"header\" >\r\n    <div id=\"book-header\" class=\"page-header-wrapper\"></div>\r\n</section>\r\n<section id=\"filter\" ></section>\r\n<section id=\"content-page\" class=\"main-wrapper booking\"></section>\r\n";

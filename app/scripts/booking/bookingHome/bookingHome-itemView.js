@@ -10,10 +10,11 @@ define([
 	'vendor/webshim/js-webshim/dev/polyfiller.js',
     'booking/bookingHome/data/bookingHome-model',
     'booking/bookingHome/data/bookingHomePromo-model',
+    'booking/bookingHome/data/bookingHomeDestinations-model',
 	'moment',
     'rangedatepicker',
     'owlcarousel'
-], function ($, _, Backbone, Marionette, Handlebars, JST, Data, Calendar, BookingHomeModel, bookingHomePromoModel, moment, dateRangePicker, owlcarousel) {
+], function ($, _, Backbone, Marionette, Handlebars, JST, Data, Calendar, BookingHomeModel, bookingHomePromoModel, bookingHomeDestinationsModel, moment, dateRangePicker, owlcarousel) {
     'use strict';
     var bookingChannel;
     return Marionette.ItemView.extend({
@@ -28,8 +29,6 @@ define([
                 JST['app/scripts/booking/bookingHome/bookingHome-HomeCarousel.hbs']);
             Handlebars.registerPartial('PopularDestinations',
                 JST['app/scripts/booking/bookingHome/bookingHome-partialPopularDestinations.hbs']);
-            Handlebars.registerPartial('BotContainer',
-                JST['app/scripts/booking/bookingHome/bookingHomeBotContainer-partialTemplate.hbs']);
         },
         /**
          *
@@ -50,8 +49,10 @@ define([
         },
         model : new BookingHomeModel(),
         promoModel : new bookingHomePromoModel(),
+        DestModel: new bookingHomeDestinationsModel(),
         onBeforeRender: function () {
             this.loadBotContainerData();
+            this.loadDestinationsData();
         },
         onRender: function () {
             /**
@@ -391,10 +392,17 @@ define([
         },
         loadBotContainerData: function () {
             var promo = this.promoModel.attributes[0];
-            var backAdImg = promo.fieldAdImage;
+            var backAdImg = promo.adImage;
             this.model.set({'promoTitle': promo.title});
-            this.model.set({'promoDesc' : promo.fieldDescription});
+            this.model.set({'promoDesc' : promo.adDescription});
             this.model.set({'promoImg' : backAdImg});
+        },
+        loadDestinationsData: function () {
+            var destination = this.DestModel.attributes[0];
+            var backDestImg = destination;
+            this.model.set({'destTitle': destination.title});
+            this.model.set({'destDesc' : destination.description});
+            this.model.set({'destImg' : backDestImg});
         },
         prevent : function (event) {
             event.preventDefault();

@@ -29,24 +29,35 @@ define([
                 require(['booking/bookingHome/bookingHome-itemView',
                          'common/utility/misc/mainViewManager-utility',
                         'booking/common/utility/misc/bookingViewManager-util',
-                        'booking/bookingHome/data/bookingHomePromo-model'],
-                        function (HomeView, mainViewManager, bookingViewManager, bookingPromoModel) {
+                        'booking/bookingHome/data/bookingHomePromo-model',
+                        'booking/bookingHome/data/bookingHomeDestinations-model'],
+                        function (HomeView, mainViewManager, bookingViewManager, bookingPromoModel, bookingDestModel) {
                     var currentRoute =  Backbone.history.getFragment();
                     var homeView = new HomeView({brand : currentRoute});
                     var mainLayout = mainViewManager.init();
                     var promoModel = new bookingPromoModel();
+                    var destModel = new bookingDestModel();
                     Data.themeSwitch(currentRoute);
                     var region = mainLayout.getRegion('content');
                     // mainLayout.changeLogo(currentRoute);
-                    promoModel.deferred.done(function () {
-                        mainLayout.getRegion('content').show(homeView);
-                        homeView.changeImg(currentRoute);
-                        homeView.renderDatepicker();
-                        homeView.renderCarousel();
-                        bookingViewManager.clearLayout();
-                        Data.fullBg('[data-cover]');
-                        mainLayout.changeToHeaderFloating();
-                    });
+                    $.when(
+                        promoModel.fetch({
+                            dataType: 'jsonp'
+                        }),
+                        destModel.fetch({
+                            dataType: 'jsonp'
+                        })
+                        ).done(function() {
+                            mainLayout.getRegion('content').show(homeView);
+                            homeView.changeImg(currentRoute);
+                            homeView.renderDatepicker();
+                            homeView.renderCarousel();
+                            bookingViewManager.clearLayout();
+                            Data.fullBg('[data-cover]');
+                            mainLayout.changeToHeaderFloating();
+                        });
+                    // promoModel.deferred.done(function () {
+                    // });
                 });
             },
         };
