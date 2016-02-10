@@ -24,11 +24,13 @@ define([
             return response;
         },
         initialize: function (query) {
-            var url2 = 'http://analopez-test.apigee.net/xbsservicemockup/hoteldata?ql=select%20*%20where%20cityname%20=%20%27chicago%27%20and%20hotelbrandcode%20=%20%27RADR%27';
-            var url1 = 'http://analopez-test.apigee.net/xbsservicemockup/hoteldata?ql=select%20*%20where%20cityname%20=%20%27chicago%27%20and%20hotelbrandcode%20=%20%27RADB%27'
-            this.queries = [url1, url2];
+            // var url2 = 'http://analopez-test.apigee.net/xbsservicemockup/hoteldata?ql=select%20*%20where%20cityname%20=%20%27chicago%27%20and%20hotelbrandcode%20=%20%27RADR%27';
+            var url1 = 'http://acnjrkickerbxhca6smut.devcloud.acquia-sites.com/rest/hotels'
+            this.queries = [url1];
             this.current = query;
-            this.deferred = this.fetch();
+            this.deferred = this.fetch({
+                dataType: 'jsonp'
+            });
         },
         sortByMiles: function(model) {
             return model.get('miles');

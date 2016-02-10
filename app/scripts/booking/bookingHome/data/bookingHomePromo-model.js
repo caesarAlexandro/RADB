@@ -4,18 +4,11 @@ define([
 ] , function (_, Backbone) {
     'use strict';
     return Backbone.Model.extend({
-        // url: 'http://acnjrkickerbxhca6smut.devcloud.acquia-sites.com/rest/ads',
-        // parse: function (response) {
-        //     return response[6];
-        // },
+        url: 'http://acnjrkickerbxhca6smut.devcloud.acquia-sites.com/rest/ads',
         initialize: function () {
-            // this.deferred = this.fetch({
-            //     dataType: 'jsonp'
-            // });
-        },
-        defaults: {
-            'title' : 'Kids Stay and Eat Free',
-            'description' : "Your VIP's stay and eat for free, and are free to eplore all the hotel has to offer"
+            this.deferred = this.fetch({
+                dataType: 'jsonp',
+            });
         }
     })
 });

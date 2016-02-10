@@ -390,10 +390,11 @@ define([
             $('div.coverImage').data('cover', 'assets/img/full_bg1.jpg');
         },
         loadBotContainerData: function () {
-            var x = this.promoModel.attributes;
-            this.model.set({'promoTitle': x.title});
-            this.model.set({'promoDesc' : x.description});
-            console.log(x.title);
+            var promo = this.promoModel.attributes[0];
+            var backAdImg = promo.fieldAdImage;
+            this.model.set({'promoTitle': promo.title});
+            this.model.set({'promoDesc' : promo.fieldDescription});
+            this.model.set({'promoImg' : backAdImg});
         },
         prevent : function (event) {
             event.preventDefault();

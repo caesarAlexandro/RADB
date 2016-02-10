@@ -30,7 +30,7 @@ define([
              * @description This code is used to separate the hotelName receive from the service.
              *  Once it's separated, we display the information in the view.
              **/
-            var name = $(response).attr('hotelName');
+            var name = $(response).attr('name');
             var match = name.match(/^[\s\S]{1,10}\S*/);
             var prefix = match[0];
             name = name.substring(prefix.length).replace(/^\s+/, '');
