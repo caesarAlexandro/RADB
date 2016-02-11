@@ -391,18 +391,30 @@ define([
             $('div.coverImage').data('cover', 'assets/img/full_bg1.jpg');
         },
         loadBotContainerData: function () {
-            var promo = this.promoModel.attributes[0];
-            var backAdImg = promo.adImage;
-            this.model.set({'promoTitle': promo.title});
-            this.model.set({'promoDesc' : promo.adDescription});
-            this.model.set({'promoImg' : backAdImg});
+            var promo = this.promoModel.attributes;
+            var adNumber = Object.keys(promo);
+            var currentPromos = [];
+            for (var i = 0; i < adNumber.length; i++) {
+                currentPromos.push(promo[i]);
+            }
+            this.model.set({'promo': currentPromos});
+            // var backAdImg = promo[i].adImage;
+            // this.model.set({'promoTitle': promo[i].title});
+            // this.model.set({'promoDesc' : promo[i].adDescription});
+            // this.model.set({'promoImg' : backAdImg});
         },
         loadDestinationsData: function () {
-            var destination = this.DestModel.attributes[0];
-            var backDestImg = destination;
-            this.model.set({'destTitle': destination.title});
-            this.model.set({'destDesc' : destination.description});
-            this.model.set({'destImg' : backDestImg});
+            var destination = this.DestModel.attributes;
+            var destNumber = Object.keys(destination);
+            var currentDest = [];
+            for (var i = 0; i < destNumber.length; i++) {
+                currentDest.push(destination[i]);
+            }
+            this.model.set({'destination': currentDest});
+            // var backDestImg = destination;
+            // this.model.set({'destTitle': destination.title});
+            // this.model.set({'destDesc' : destination.description});
+            // this.model.set({'destImg' : backDestImg});
         },
         prevent : function (event) {
             event.preventDefault();

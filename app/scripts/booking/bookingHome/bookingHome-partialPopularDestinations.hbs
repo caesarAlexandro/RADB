@@ -1,14 +1,16 @@
 <h2>Popular Destinations</h2>
 <div class="row destinations">
+    {{#each destination}}
     	<div class="col-md-4 destination col-xs-4">
-    		<img src={{destImg.destinationImageLarge}}>
+    		<img src={{destinationImageLarge}}>
     		<div>
-    			<h3>{{destTitle}}</h3>
-    			<p>{{destDesc}}</p>
+    			<h3>{{title}}</h3>
+    			<p>{{description}}</p>
     			<a href="#">Explore</a>
     		</div>
     	</div>
-    	<div class="col-md-4 col-xs-12">
+    {{/each}}
+    	{{!-- <div class="col-md-4 col-xs-12">
     		<div class="row">
     			<div class="col-md-6 destination col-xs-4">
     				<img src={{destImg.destinationImageSmall}}>
@@ -45,7 +47,7 @@
     			<p>{{destDesc}}</p>
     			<a href="#">Explore</a>
     		</div>
-    	</div>
+    	</div> --}}
     </div>
 
 <!--
