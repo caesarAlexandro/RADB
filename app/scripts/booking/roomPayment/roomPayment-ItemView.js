@@ -254,8 +254,23 @@
              Backbone.history.navigate('booking/confirmation' + ((brandName ? ('/' + brandName) : '')), true);
              $(window).scrollTop(0, 0);
          },
+         returningGuest: function() {
+             var signedIn = $('#signOut');
+             if (signedIn.hasClass('hidden') == false) {
+                 setTimeout(function() {
+                     $('#returnGuest').removeClass('hidden');
+                 }, 100);
+                 this.model.set({
+                     'selectedRoom': 'Deluxe'
+                 });
+                 this.model.set({
+                     'selectedBed': 'Queen'
+                 });
+             }
+         },
          onRender: function() {
              Data.fullBg('[data-cover]');
+             this.returningGuest();
          }
      });
  });

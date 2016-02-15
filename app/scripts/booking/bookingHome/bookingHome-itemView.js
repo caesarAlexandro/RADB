@@ -43,7 +43,6 @@ define([
             'click .list-group-item.calendar.check-in' : 'renderDatepicker',
             'click #findHotel' : 'findHotel',
             'click a[href=#]' : 'prevent',
-            'click #firstCont' : 'loadBotContainerData',
             'change #collapseRoomGuest #room #rooms': 'setRooms',
             'change #collapseRoomGuest #guest #guests': 'setGuests'
         },

@@ -19,11 +19,21 @@
           * @description Add the Partials for the navigation content.
           */
          events: {
-             'click .navbar-brand': 'goHome'
+             'click .navbar-brand': 'goHome',
+             'click #signIn' : 'signed',
+             'click #signOut' : 'signedOut'
          },
          initialize: function () {
              Handlebars.registerPartial('navContent',
                  JST['app/scripts/common/navigation/navContent_partialTemplate.hbs']);
+         },
+         signed: function () {
+             $('#signOut').removeClass('hidden');
+             $('#signIn').addClass('hidden');
+         },
+         signedOut: function () {
+             $('#signIn').removeClass('hidden');
+             $('#signOut').addClass('hidden');
          },
          changeLogo: function (imgSrc) {
              $('#brandLogo').attr('src', imgSrc);
