@@ -59,9 +59,8 @@ define([
                 case 'booking/guestInfo/radissonRed' :
                     //bodySelector.removeClass().addClass('page-guestInfo');
                     Data.pageSwitch('guestInfo');
-                    headerSelector.removeClass('page-header-lg hidden')
-                        .addClass('page-header-sm page-header-book fixed');
-                    containerSelector.addClass('container');
+                    headerSelector.addClass('page-header-sm page-header-book fixed hidden');
+                    containerSelector.addClass('container-fluid');
                     var headerBook = $('.page-header-book hidden', header);
                     headerBook.removeClass('hidden');
                     break;

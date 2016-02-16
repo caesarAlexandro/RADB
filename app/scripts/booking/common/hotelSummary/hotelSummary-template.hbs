@@ -1,11 +1,9 @@
 <div class="col-sm-8 page-header-body">
-    {{#ifCond currentPage 'booking/hotelList/hotelInfo'}} {{>hotelInfo}} {{>tripadvisorIcon}}
+    {{#ifCond currentPage 'booking/hotelList/hotelInfo'}} {{>hotelInfoHeader}}
     <h1 style="display: none">{{heading}}</h1> 
     {{else}}
     <h1>{{heading}}</h1>
     {{/ifCond}}
-    <h5 class="collapse"></h5>
-    <h2 class="collapse"></h2>
 </div>
 
 <div class="col-sm-4 page-header-book hidden">

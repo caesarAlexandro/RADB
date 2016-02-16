@@ -24,6 +24,8 @@ define([
                                        JST['app/scripts/booking/hotelInfo/utility/partials/bookNow-partialTemplate.hbs']);
             Handlebars.registerPartial('hotelInfo',
                                        JST['app/scripts/booking/common/utility/partials/hotelInfo-partialTemplate.hbs']);
+            Handlebars.registerPartial('hotelInfoHeader',
+                                       JST['app/scripts/booking/common/utility/partials/hotelInfo-partialTemplateHeader.hbs']);
         },
         template :  JST['app/scripts/booking/common/hotelSummary/hotelSummary-template.hbs'],
         serializeData : function () {

@@ -15,7 +15,7 @@ define([
     return Marionette.ItemView.extend({
         template:  JST['app/scripts/booking/hotelList/currentBranchResults/currentBranchList-template.hbs'],
         events : {
-            'click .owl-item .item' : 'hotelInformation',
+            'click .hotel-result' : 'hotelInformation',
             'click #selectHotel' : 'hotelPayment'
         },
         initialize : function () {

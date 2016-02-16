@@ -1,11 +1,13 @@
 .page-header, .main-wrapper
 {
-	.transition(height .2s ease-in-out);	
-	.transition(background-color .6s ease-in-out);
+	//.transition(height .2s ease-in-out);	
+	//.transition(background-color .6s ease-in-out);
 }
 .page-header
 {
 	padding: 0;	
+	margin-bottom: 0px;
+	margin-top: 0px;
     &.fixed
 	{
 		position: static;
@@ -29,7 +31,8 @@
 		}
 	}	
 	
-	height: @page-header-size;
+	//height: @page-header-size;
+	height: 480px;
 	&-xs
 	{
 		height: (@page-header-size*.5);
@@ -204,3 +207,25 @@
 		}		
 	}
 }
+ .page-header-cta{
+ 	width: 210px;
+ }
+ .page-header-body{
+ 	h5{
+ 		
+		background:@brand-primary;
+	    display: inline-block;
+	    font-size: 40px;
+	    padding: 5px 20px;
+	    text-shadow: initial;
+	    margin-bottom: 20px;
+ 	}
+ 	h4{
+ 		background:@brand-primary;
+		 display: inline-block;
+	    font-size:38px;
+	    padding: 5px 20px;
+	    text-shadow: initial;
+	    font-weight: 300;
+ 	}
+ }

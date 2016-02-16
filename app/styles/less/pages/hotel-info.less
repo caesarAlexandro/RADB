@@ -8,5 +8,81 @@ body.page-hotelInfo
 	{
 		height: 0px;
 	}
+	.hotel-info-top{
+		font-family: @font-family-lato;
+		h1,h2,h3,h4,h5{
+			font-weight: 300;
+			color:@brand-primary;
+			line-height: 140%;
+			text-transform: initial;
+		}
+		h3,h4{
+			font-weight: 300;
+		}
+		.infotop{
+			background:#e9e9e9;
+			p{
+				line-height: 175%
+			}
+		}
+		.infobottom{
 
+		}
+	}
+	.hotel-info-data{
+		background: @brand-primary;
+		color:#fff;
+	}
+#modifySearch{
+	height: auto !important;
+	margin-bottom: -85px;
+	background:rgba(255,255,255,.8);
+	width: 100%;
+	>div{
+		&:extend(.container);
+	} 
+}
+.ataglance{
+	h5{
+		background: #9e9fa2;
+		color:#fff;
+		line-height: 20px;
+		text-align: center;
+		ul{
+			list-style: none;
+		}
+	}
+}
+
+}
+
+.secondarynav { 
+	background: @brand-primary;
+	color:#fff;
+	font-family: @font-family-sans-serif;
+	text-transform: uppercase;
+	ul{
+		margin-bottom: 0px;
+		padding: 0px;
+		li{
+			display: inline-block;
+			line-height: 50px;
+			padding: 0 20px;
+			&.active, &:hover{
+				background: #0059b2;
+				a{
+
+				}
+			}
+			&:first-child{
+				//padding-left:0px;
+			}
+			a{
+				color:#fff;
+			}
+			i{
+				font-size: 25px;
+			}
+		}
+	}
 }

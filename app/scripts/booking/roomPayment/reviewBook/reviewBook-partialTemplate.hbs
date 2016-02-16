@@ -1,33 +1,47 @@
 <section class="panel panel-default">
     <a class="panel-heading reservation-accordion collapsed" role="tab" id="headingFive" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
         <h4 class="panel-title">
-              REVIEW &amp; BOOK
+              REVIEW Reservation Details
               <i class="fa chevron"></i>
             </h4>
     </a>
     <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
         <div class="panel-body">
             <div class="row inverse">
-                <div class="col-sm-5">
+                <div class="col-sm-7">
                     {{>summaryReservation}}
                 </div>
-                <div class="col-sm-7">                    
+                <div class="col-sm-5">                    
                     <!-- START review_pane.html -->
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <strong>Garanty Policy</strong>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <strong>Cancelation Policy</strong>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <strong>Taxes &amp; Fees</strong>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                        </li>
-                    </ul>
-                    <div class="col-sm-10 col-md-8 pull-right text-right">
+                    <section class="summary-reservation">
+                        <!--Subtotal and tax-->
+                        <section class="summary-reservation-calcs">
+                            <div class="summary-reservation-subtotal clearfix">
+                                <span class="summary-reservation-subtotal-title">Subtotal</span>
+                                <span class="summary-reservation-subtotal-price pull-right">${{price}}</span>
+                            </div>
+                            <div class="summary-reservation-tax clearfix">
+                                <span class="summary-reservation-tax-title">Taxes &amp; Fees</span>
+                                <span class="summary-reservation-tax-price pull-right">{{taxPrice}}</span>
+                            </div>
+                        </section>
+
+                        <!--Total and labels with guarantee-->
+                        <section class="summary-reservation-total">
+                            <div class="clearfix">
+                                <span class="summary-total-label">Total Price</span>
+                                <span class="summary-total-price pull-right">${{totalPrice}}</span>
+                            </div>
+                            <div class="summary-reservation-promise text-right">Best Rate Guaranteed</div>
+                            <div class="summary-reservation-terms text-right"></div>
+                            <div class="summary-reservation-additional"></div>
+                        </section>
+
+                    </section>
+                    <div class="col-sm-1">
+                        <input type="checkbox" style="display: block;">
+                    </div>
+                    <div class="col-sm-11">
                         <p class="small">
                             I acknowledge that I have read and agree to the <a href="javascript:void(0)">hotel policies</a>, <a href="javascript:void(0)">privacy policy</a> and <a href="javascript:void(0)">terms &amp; conditions</a> by completing this booking.
                         </p>

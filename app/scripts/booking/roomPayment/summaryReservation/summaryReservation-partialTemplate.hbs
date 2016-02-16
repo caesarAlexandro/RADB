@@ -1,49 +1,41 @@
 <section class="summary-reservation">
                 <header>
-                    <h1 class="summary-reservation-heading">Your Reservation</h1>
-                    <h2 class="summary-reservation-hotel">{{hotelBrandName}} {{hotelName}}</h2>
-                    <h3 class="summary-reservation-dates">{{dateIn}} - {{dateOut}}</h3>
-                    <h4 class="summary-reservation-room-guests">{{numRooms}} room, {{numGuests}} adults</h4>
+                    <h2 style="text-transform: none;">{{firstName}} {{lastName}}</h2>
+                    <h3 style="text-transform: none;">{{email}}</h3>
+                    <h4 style="text-transform: none;">Club CarlsonSM #: 29812</h4>
                 </header>
                 <div class="summary-reservations">
-
-
+                    <article class="summary-reservation-row">
+                        <h2 class="summary-reservation-hotel">{{hotelBrandName}} {{hotelName}}</h2>
+                        <br/>
+                        <h3 class="summary-reservation-dates">{{dateIn}} - {{dateOut}}</h3>
+                        <p>Arrangement: {{selectedArrangement}}</p>
+                        <p>Add On: {{selectedAddOn}}</p>
+                    </article>
+                    <section>
                     <article class="summary-reservation-row">
                         <div class="row">
                             <div class="col-xs-8 summary-reservation-row-left">
-                                <h1 class="summary-reservation-name"><strong>{{selectedRoom}} Room with {{#ifCond selectedBed 'Double'}}{{else}}One {{/ifCond}}{{selectedBed}} Bed</strong></h1>
-                                <span class="summary-reservation-room">1 night at {{price}} nightly rate</span>
+                                <h1 class="summary-reservation-name"><strong>{{selectedRoom}}{{#ifCond selectedRoom 'Business'}} Class Room{{else}} Room{{/ifCond}} - {{selectedView}} view, {{#ifCond selectedBed 'Queen'}} 2 {{selectedBed}} beds{{else}}1 {{selectedBed}} bed {{/ifCond}}</strong></h1>
+                                <br/>
+                                <h4 class="summary-reservation-room-guests">Room {{numRooms}}: {{numGuests}}{{#ifCond numGuests '1'}} Adult{{else}} Adults {{/ifCond}}, 0 children</h4>
+                                <span class="summary-reservation-room">Average Nightly Rate* ${{price}} per night</span>
                             </div>
                             <div class="col-xs-4 summary-reservation-row-right text-right">
-                                <span class="summary-reservation-price">${{price}}</span>
+                                <span>Change</span>
                             </div>
                         </div>
                     </article>
 
                 </div>
                 <footer>
-                    <!--Subtotal and tax-->
-                    <section class="summary-reservation-calcs">
-                        <div class="summary-reservation-subtotal clearfix">
-                            <span class="summary-reservation-subtotal-title">Subtotal</span>
-                            <span class="summary-reservation-subtotal-price pull-right">${{price}}</span>
-                        </div>
-                        <div class="summary-reservation-tax clearfix">
-                            <span class="summary-reservation-tax-title">Taxes &amp; Fees</span>
-                            <span class="summary-reservation-tax-price pull-right">{{taxPrice}}</span>
-                        </div>
+                    <section class="summary-reservation-row">
+                        <h4 class="summary-reservation-name" style="text-transform: none;">Optional services for an additional charge</h4>
+                        <br/>
+                        <p>Valet Parking <span style="display: inline-block; float: right;"><strong>$63.00 Per Day,</strong>In and Out Priviedges</span></p>
+                        <p>Self Parking <span style="display: inline-block; float: right;"><strong>$49.00 Per Day,</strong> No In and Out Priviedges</span></p>
+                        <br/>
+                        <p>All Carlson ClubSM Gold members get free standard Wi-Fi in-room and in the lobby.</p>
                     </section>
-
-                    <!--Total and labels with guarantee-->
-                    <section class="summary-reservation-total">
-                        <div class="clearfix">
-                            <span class="summary-total-label">Total Price</span>
-                            <span class="summary-total-price pull-right">${{totalPrice}}</span>
-                        </div>
-                        <div class="summary-reservation-promise text-right">Best Rate Guaranteed</div>
-                        <div class="summary-reservation-terms text-right"></div>
-                        <div class="summary-reservation-additional"></div>
-                    </section>
-
-                    <footer>
+                <footer>
             </section>

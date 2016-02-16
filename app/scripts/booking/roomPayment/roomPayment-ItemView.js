@@ -17,8 +17,14 @@
      var brandName,
          beds,
          rooms,
+         views,
+         addons,
+         arrangements,
          selectedRoom,
-         selectedBed;
+         selectedBed,
+         selectedView,
+         selectedArrangement,
+         selectedAddOn;
      return Marionette.ItemView.extend({
          /**
           * @function initialize
@@ -38,34 +44,72 @@
                  JST['app/scripts/booking/roomPayment/reviewBook/reviewBook-partialTemplate.hbs']);
              Handlebars.registerPartial('summaryReservation',
                  JST['app/scripts/booking/roomPayment/summaryReservation/summaryReservation-partialTemplate.hbs']);
+             Handlebars.registerPartial('rewards',
+                 JST['app/scripts/booking/roomPayment/rewards/rewards-partialTemplate.hbs']);
              brandName = option.brand;
              this.model.set({
                  'selectedRoom': 'Guest'
              });
              this.model.set({
-                 'selectedBed': 'Double'
+                 'selectedBed': 'Queen'
+             });
+             this.model.set({
+                 'selectedView': 'City'
+             });
+             this.model.set({
+                 'selectedArrangement': 'Standard'
+             });
+             this.model.set({
+                 'selectedAddOn': 'None'
              });
              this.model.set({
                  'email': ''
              });
 
-             beds = ['Double', 'Queen', 'King'];
-             rooms = ['Guest', 'Deluxe'];
+             beds = ['Queen', 'King'];
+             rooms = ['Guest', 'Business', 'Suite'];
+             views = ['City', 'Park'];
+             arrangements = ['Standard', 'Corner'];
+             addons = ['Balcony', 'Accesible', 'None'];
              selectedRoom = function() {
-                 for (var i = 0; i < 2; i++) {
+                 for (var i = 0; i < 3; i++) {
                      if ($('#radio-list-room-' + i)[0].checked) {
                          return rooms[i];
                      }
                  }
              };
+             selectedArrangement = function() {
+                 for (var i = 0; i < 2; i++) {
+                     if ($('#radio-list-arrangement-' + i)[0].checked) {
+                         return arrangements[i];
+                     }
+                 }
+             };
              selectedBed = function() {
-                 for (var i = 0; i < 3; i++) {
+                 for (var i = 0; i < 2; i++) {
                      if ($('#radio-list-bed-' + i)[0].checked) {
                          return beds[i];
                      }
                  }
              };
+             selectedView = function() {
+                 for (var i = 0; i < 2; i++) {
+                     if ($('#radio-list-view-' + i)[0].checked) {
+                         return views[i];
+                     }
+                 }
+             },
+             selectedAddOn = function() {
+                 for (var i = 0; i < 3; i++) {
+                     if ($('#radio-list-addon-' + i)[0].checked) {
+                         return addons[i];
+                     }
+                 }
+             };
              this.updateBill();
+             if ($('#signOut').hasClass('hidden') == false) {
+                 this.setDefaultClientInfo();
+             }
          },
          template: JST['app/scripts/booking/roomPayment/roomPayment-template.hbs'],
          serializeData: function() {
@@ -86,13 +130,28 @@
              'click .list-cc': 'setCardInfo',
              'click #radio-list-room-0': 'changeRoomSelection',
              'click #radio-list-room-1': 'changeRoomSelection',
+             'click #radio-list-room-2': 'changeRoomSelection',
              'click #radio-list-bed-0': 'changeBedSelection',
              'click #radio-list-bed-1': 'changeBedSelection',
-             'click #radio-list-bed-2': 'changeBedSelection',
+             'click #radio-list-view-0': 'changeViewSelection',
+             'click #radio-list-view-1': 'changeViewSelection',
+             'click #radio-list-arrangement-0': 'changeViewArrangement',
+             'click #radio-list-arrangement-1': 'changeViewArrangement',
+             'click #radio-list-addon-0': 'changeViewAddOn',
+             'click #radio-list-addon-1': 'changeViewAddOn',
+             'click #radio-list-addon-2': 'changeViewAddOn',
              'click #completeReservation': 'makeReservation'
          },
          modelEvents: {
              'change': 'modelChanged'
+         },
+         setDefaultClientInfo: function() {
+             this.model.set({'firstName' : 'Curt'});
+             this.model.set({'lastName' : 'Jackson'});
+             this.model.set({'email' : 'cj294@aol.com'});
+             this.model.set({'phoneNumber' : '5555555555'});
+             this.model.set({'country' : 'United States'});
+             this.model.set({'zip': '12345'});
          },
          setClientInfo: function() {
              var firstname = $('#firstname').val();
@@ -132,19 +191,29 @@
                  'selectedRoom': selectedRoom()
              });
              var currentPrice = this.model.get('price');
-             if (selectedRoom() === 'Deluxe') {
-                 var deluxePrice = parseInt(currentPrice) + 20;
-                 this.model.set({
-                     'price': deluxePrice
-                 });
-                 this.updateBill();
-             } else {
-                 var guestPrice = parseInt(currentPrice) - 20;
-                 this.model.set({
-                     'price': guestPrice
-                 });
-                 this.updateBill();
-             }
+             // if (selectedRoom() === 'Deluxe') {
+             //     var deluxePrice = parseInt(currentPrice) + 20;
+             //     this.model.set({
+             //         'price': deluxePrice
+             //     });
+             //     this.updateBill();
+             // } else {
+             //     var guestPrice = parseInt(currentPrice) - 20;
+             //     this.model.set({
+             //         'price': guestPrice
+             //     });
+             //     this.updateBill();
+             // }
+         },
+         changeViewSelection: function() {
+             this.model.set({
+                 'selectedView': selectedView()
+             });
+         },
+         changeViewArrangement: function() {
+             this.model.set({
+                 'selectedArrangement': selectedArrangement()
+             });
          },
          changeBedSelection: function() {
              var currentPrice = this.model.get('price');
@@ -186,6 +255,11 @@
                  });
                  this.updateBill();
              }
+         },
+         changeViewAddOn: function() {
+             this.model.set({
+                 'selectedAddOn': selectedAddOn()
+             });
          },
          setCardInfo: function() {
              var cardname;
@@ -261,10 +335,19 @@
                      $('#returnGuest').removeClass('hidden');
                  }, 100);
                  this.model.set({
-                     'selectedRoom': 'Deluxe'
+                     'selectedRoom': 'Suite'
                  });
                  this.model.set({
-                     'selectedBed': 'Queen'
+                     'selectedBed': 'King'
+                 });
+                 this.model.set({
+                     'selectedArrangement': 'Standard'
+                 });
+                 this.model.set({
+                     'selectedView': 'Park'
+                 });
+                 this.model.set({
+                     'selectedAddOn': 'Balcony'
                  });
              }
          },

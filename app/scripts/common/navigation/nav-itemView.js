@@ -20,8 +20,8 @@
           */
          events: {
              'click .navbar-brand': 'goHome',
-             'click #signIn' : 'signed',
-             'click #signOut' : 'signedOut'
+             'click #signIn .signin' : 'signed',
+             'click #signOut .signout' : 'signedOut'
          },
          initialize: function () {
              Handlebars.registerPartial('navContent',

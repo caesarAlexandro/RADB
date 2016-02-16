@@ -36,11 +36,11 @@ define([
         },
         changeToHeaderInverse : function () {
             Data.disabledWaypointNav();
-            $('#menu').addClass('navbar-inverse');
+            $('#menu').removeClass('navbar-inverse');
         },
         changeToHeaderFloating : function () {
             Data.waypointNav();
-            $('#menu').removeClass('navbar-inverse');
+            $('#menu').addClass('navbar-inverse');
         },
         changeLogo : function (query) {
             var imageSrc = 'assets/img/logo' + (query ? '-red.svg' : '.svg');

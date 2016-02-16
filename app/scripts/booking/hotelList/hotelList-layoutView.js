@@ -12,15 +12,14 @@ define([
         template : JST['app/scripts/booking/hotelList/hotelList-template.hbs'],
         regions : {
             'currentBranchResults' : '#currentBranchResults',
-            'recommendationsResults' : '#recommendedResults'
+            'promos' : '#popular-destinations'
+            //'recommendationsResults' : '#recommendedResults'
         },
         serializeData : function () {
             var currentRoute = Backbone.history.getFragment(),
-                cTotalResults = sessionStorage.getItem('currentTotalResults'),
-                rTotalResults = sessionStorage.getItem('recommendedTotalResults');
+                cTotalResults = sessionStorage.getItem('currentTotalResults');
             return _.extend({
-                currentTotalResults : cTotalResults,
-                recommendedTotalResults : rTotalResults
+                currentTotalResults : cTotalResults
             }, this.model);
         },
         renderCarousel : function() {
@@ -34,6 +33,7 @@ define([
         initialize: function () {
             this.render();
             setTimeout(this.renderCarousel, 1000);
+
         }
     });
 });

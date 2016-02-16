@@ -86,19 +86,28 @@
             });
         },
         waypointNav: function () {
-            waypoints = new Waypoint({
-                element: document.getElementById('promotions-carousel'),
+            /*waypoints = new Waypoint({
+                element: document.getElementById('searchbar'),
                 handler: function (direction) {
                     if (direction === 'down') {
-                        $('#menu').addClass('navbar-inverse');
-                        $('.search-pane').addClass('search-inverse');
-                    } else {
                         $('#menu').removeClass('navbar-inverse');
-                        $('.search-pane').removeClass('search-inverse');
+                        $('#modifySearch').removeClass('inverse');
+                        $('#menu').addClass('complete');
+                        $('#modifySearch').addClass('complete');
+                        $('#filter').addClass('complete');
+                        //$('.search-pane').addClass('search-inverse');
+                    } else {
+                        $('#menu').addClass('navbar-inverse');
+                        $('#modifySearch').addClass('inverse');
+
+                        $('#menu').removeClass('complete');
+                        $('#modifySearch').removeClass('complete');
+                        $('#filter').removeClass('complete');
+                        //$('.search-pane').removeClass('search-inverse');
                     }
                 },
                 offset: '30%'
-            });
+            });*/
         },
         disabledWaypointNav: function () {
             if (waypoints) {

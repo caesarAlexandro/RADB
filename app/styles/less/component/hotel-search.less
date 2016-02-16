@@ -19,14 +19,55 @@ svg#tripadvisor path {
 		.row(); 
 	}
 }
+
+.hotel-result.single{
+		color:#555555;
+		.hotel-type-name{
+    		color:@brand-primary;
+    		font-size: 24px;
+    		font-weight: 400;
+    		margin-bottom: 20px;
+    	}
+    	.hotel-type-description,.amount.value {
+    		font-family: @font-family-lato;
+    	}
+    	.hotel-type-description{
+    		margin-bottom: 20px;
+    	}
+		
+    	.pricecont{
+	    	background:#F8F8F8;
+	    	
+	    	.hotel-result-price-xs{
+	    		text-align: right;
+	    		margin: 30px 0 50px 0;
+	    		font-size: 18px;
+	    		text-transform: uppercase;
+	    		span{
+	    			font-size: 40px;
+	    		}
+	    		.per-night{
+	    			
+	    			font-size: 14px;
+	    			font-family: @font-family-lato;
+	    		}
+
+	    	}
+	    }
+    }
 .hotel-result
 {
 	margin-bottom: 15px;
 	cursor: pointer;
+	.row{
+		>div{height: 230px;}
+	}
 	&:extend(.clearfix all);
     background-color: @search-result-bg;
     border: 1px solid @search-result-border;
     .transition(all .5s ease);
+    
+    
 
     @media screen and (max-width:@screen-xs-max)
     {
@@ -39,15 +80,15 @@ svg#tripadvisor path {
     	border-color: darken(@search-result-border, 5%);
     	@media screen and (min-width:(@screen-sm-min*@search-result-scale)) and (max-width:@screen-sm-max)
     	{
-    		.scale(@search-result-scale);
+    		//.scale(@search-result-scale);
     	}
     	@media screen and (min-width:(@screen-md-min*@search-result-scale)) and (max-width:@screen-md-max)
     	{
-    		.scale(@search-result-scale);
+    		//.scale(@search-result-scale);
     	}
     	@media screen and (min-width:(@screen-lg-min*@search-result-scale))
     	{
-    		.scale(@search-result-scale);
+    		//.scale(@search-result-scale);
     	}
     }   
 	&-image
@@ -61,7 +102,7 @@ svg#tripadvisor path {
 		}
 		@media screen and (min-width:@screen-sm-min)
 		{
-			height: @search-result-height;
+			//height: @search-result-height;
 			padding-right: 0;
 		}
 	}
@@ -362,10 +403,10 @@ svg#tripadvisor path {
 }
 .search-filter
 {
-	background-color: @search-results-sort-bg;
+	background-color: @brand-primary;
 	color: @search-results-sort-color;
 	line-height: @search-results-sort-height;
-	height: @search-results-sort-height;
+	height:50px;
 	margin: 0 0 0 0;	
 	.sort-by
 	{
@@ -374,8 +415,9 @@ svg#tripadvisor path {
 	}
 	.btn
 	{
-		line-height: @search-results-sort-height;		
+		line-height: 48px;		
 		padding: 0;
+		text-transform: uppercase;
 		i
 		{
 			font-size: .8em;

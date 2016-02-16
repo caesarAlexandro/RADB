@@ -1,23 +1,28 @@
 <ul class="nav nav-tabs top-search-pane">
-  <li class="search-box no-shadow col-xs-8 col-sm-4 col-md-5">
-    <span class="fa fa-search"></span>
+  <li class="search-box no-shadow col-xs-8 col-sm-4 col-md-4">
     <input type="search" placeholder="{{ include.placeholder }}" value="{{city}}" class="input-value" />
   </li>
-  <li class="col-xs-2 col-sm-5 col-md-4">
+  <li class="col-xs-2 col-sm-5 col-md-2">
   		<a>
-	    <span class="fa fa-calendar"></span>
 	    <div class="reservation-info">
-	    	IN<label class="dateIn" id="dateIn"> {{dateIn}}</label>
-	    	OUT<label>{{dateOut}}</label>
+	    	<label class="dateIn" id="dateIn"> {{dateIn}}</label>
 	    </div>
 	    </a>
   </li>
-  <li class="col-xs-2 col-sm-3 col-md-3">
+  <li class="col-xs-2 col-sm-5 col-md-2">
+      <a>
+      <div class="reservation-info">
+        OUT<label>{{dateOut}}</label>
+      </div>
+      </a>
+  </li>
+  <li class="col-xs-2 col-sm-3 col-md-4">
   	<a>
     <span class="fa fa-hotel"></span>
     <div class="reservation-info">
 	    ROOMS<label>{{numRooms}}</label>
 	    GUESTS<label>{{numGuests}}</label>
+      <span class="btn-primary pull-right">CHANGE</span>
     </div>
     </a>
   </li>

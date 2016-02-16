@@ -1,6 +1,9 @@
 .navbar
 {
 	.transition(all 1s ease);
+	.nav-tabs{
+
+	}
 }
 .nav-clear
 {
@@ -46,8 +49,99 @@
 	}
 }
 
+#menu.complete,#modifySearch.complete{
+	.transition(all 1s ease);
+	//background:#fff;
+	a{
+		color:#222 !important;	
+	}
 
+	
+}
+#menu{
+	#brandLogoBL{
+		display: none;
+	}
+}
+#menu.complete{
+	background: #fff;
+	.navbar-brand{
+		padding: 25px 0;
+	}
+	.navbar-nav {
+		display: none;
+	}
+	#brandLogo{
+		display: none;
+	}
+	#brandLogoBL{
+		display: block;
+	}
+}
+#modifySearch{
+	position: relative;
+	//width: 100%;
+	height: 80px;
+	.transition(all 1s ease);
+	ul{
+		li{
+			text-transform: uppercase;
+			font-size: 14px;
+			color: @gray-light;
+			input{
+				height: 50px;
+				text-transform: uppercase;
+			}
+			span.btn-primary{
+				display: block;
+			    line-height: normal;
+			    margin-top: 8px;
+			    padding: 5px 40px;
+			}
+		}
+	}
+	
+	.top-search-pane{
+			margin: 0px;
+			.transition(all 1s ease);
+			background: none;
+			padding: 15px 0;
+			border-bottom: 0px;
+		li{
+			a{
+				line-height: 43px;}
+		}
+	}
+	&.complete{
+		//background: red none repeat scroll 0 0;
+	    position: fixed;
+	    right: 0;
+	    top: 35px;
+	    width: 80%;
+	    z-index: 9999;
+	    .transition(all 1s ease);
+	    .top-search-pane{
+	    	
+	    	border: 0px;
+	    	input{
+	    		background: none;
+	    	}
+	    	li{
+				a{
+					line-height: 50px;}
+			}
+	    }
 
+	}
+
+}
+#filter.complete{
+	position: fixed;
+	top: 120px;
+	width: 100%;
+	z-index: 100;
+	.transition(all 1s ease);
+}
 .navbar-inverse
 {
 	.navbar-brand {
@@ -61,6 +155,9 @@
 		line-height: @brand-size-inv;
 	}	
 	border-width: 0;
+	.pull-right{
+		margin-top: 0px !important;
+	}
 }
 
 .navbar-toggle {
@@ -75,4 +172,25 @@
 	top: 85px;
 	background: #000;
 	z-index: 1000;
+}
+.page-hotelList{
+	.navbar-inverse
+	{
+
+		.navbar-brand {
+			height: @brand-size-inv;
+	  		padding: @brand-padding-inv 0;
+		}
+
+		i.fa-navicon
+		{
+			font-size: 16px;
+			line-height: @brand-size-inv;
+		}	
+		border-width: 0;
+		.pull-right{
+			margin-top: 0px !important;
+		}
+	}
+
 }

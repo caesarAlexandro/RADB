@@ -27,8 +27,8 @@ define([
             $(bookingLayout.getRegion('bookHeader').el).append('<div id="book-header" class="page-header-wrapper"></div>');
         },
         hotelSummaryInit : function () {
-            bookingLayout.getRegion('filter').empty();
-            bookingLayout.getRegion('modifySearch').empty();
+            //bookingLayout.getRegion('filter').empty();
+            //bookingLayout.getRegion('modifySearch').empty();
             if (!hotelSummaryView) {
                 var bookingChannel = Backbone.Radio.channel('Booking');
                 var bookingModel = bookingChannel.request('BookModel');
@@ -68,7 +68,7 @@ define([
             }
             //bookingModel = new BookingHomeModel();
             mainLayout = mainViewManager.init();
-            mainLayout.changeToHeaderInverse();
+            //mainLayout.changeToHeaderInverse();
             hotelSummaryView = null;
             this.init();
             bookingLayout.getRegion('filter').show(new FilterView());
@@ -83,7 +83,7 @@ define([
                 Backbone.history.navigate('/', true);
             } else {
                 mainLayout = mainViewManager.init();
-                mainLayout.changeToHeaderInverse();
+                //mainLayout.changeToHeaderInverse();
                 this.init();
                 //bookingLayout.routeChange();
                 //bookingLayout.changeHeaderImg(query);
