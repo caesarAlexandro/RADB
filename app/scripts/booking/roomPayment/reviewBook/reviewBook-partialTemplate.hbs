@@ -13,26 +13,43 @@
                 </div>
                 <div class="col-sm-5">                    
                     <!-- START review_pane.html -->
-                    <section class="summary-reservation">
+                    <section class="summary-reservation" style="background: lightblue;">
                         <!--Subtotal and tax-->
+                        <section class="summary-reservation-calcs" style="border: none;">
+                            <div {{!-- class="summary-reservation-subtotal clearfix" --}}>
+                                <h4>Room Cost</h4>
+                                <span class="summary-reservation-subtotal-title">Rate (1 Nights x {{price}}):</span>
+                                <span class="summary-reservation-subtotal-price pull-right">${{price}} USD</span>
+                            </div>
+                        </section>
+
                         <section class="summary-reservation-calcs">
                             <div class="summary-reservation-subtotal clearfix">
-                                <span class="summary-reservation-subtotal-title">Subtotal</span>
-                                <span class="summary-reservation-subtotal-price pull-right">${{price}}</span>
+                                <span class="summary-reservation-subtotal-title"><strong>Room Subtotal</strong></span>
+                                <span class="summary-reservation-subtotal-price pull-right">${{price}} USD</span>
                             </div>
                             <div class="summary-reservation-tax clearfix">
                                 <span class="summary-reservation-tax-title">Taxes &amp; Fees</span>
-                                <span class="summary-reservation-tax-price pull-right">{{taxPrice}}</span>
+                                <span class="summary-reservation-tax-price pull-right">{{taxPrice}} USD</span>
+                            </div>
+                            <div class="summary-reservation-tax clearfix">
+                                <span class="summary-reservation-tax-title">Estimated Aditional Fees</span>
+                                <span class="summary-reservation-tax-price pull-right">0.00 USD</span>
                             </div>
                         </section>
 
                         <!--Total and labels with guarantee-->
                         <section class="summary-reservation-total">
                             <div class="clearfix">
-                                <span class="summary-total-label">Total Price</span>
-                                <span class="summary-total-price pull-right">${{totalPrice}}</span>
+                                <span class="summary-total-label">Total for Stay</span>
+                                <span class="summary-total-price pull-right">${{totalPrice}} USD</span>
                             </div>
-                            <div class="summary-reservation-promise text-right">Best Rate Guaranteed</div>
+                            <div class="clearfix">
+                                <span class="summary-total-label">Estimated Cost</span>
+                                <span class="summary-total-price pull-right"> USD</span>
+                            </div>
+                            <div class="summary-reservation-additional" style="display: inline;">I have an e-cert</div>
+                            <div class="summary-reservation-promise text-right" style=" display: inline; float: right;">Best Rate Guaranteed</div>
                             <div class="summary-reservation-terms text-right"></div>
                             <div class="summary-reservation-additional"></div>
                         </section>
@@ -45,8 +62,8 @@
                         <p class="small">
                             I acknowledge that I have read and agree to the <a href="javascript:void(0)">hotel policies</a>, <a href="javascript:void(0)">privacy policy</a> and <a href="javascript:void(0)">terms &amp; conditions</a> by completing this booking.
                         </p>
-                        <a class="btn btn-lg btn-primary btn-block btn-reservation" id="completeReservation">Complete My Reservation</a>
                     </div>
+                    <a class="btn btn-lg btn-primary btn-block btn-reservation" id="completeReservation" style="margin-top: 60px;">Complete My Reservation</a>
                     <!-- END review_pane.html -->
                 </div>
             </div>
