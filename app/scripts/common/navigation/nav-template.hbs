@@ -23,8 +23,26 @@
 </div>->
    <!-- Brand and toggle get grouped for better mobile display -->
 
-<div class="headerinfo">
-            
+<div id="signIn" class="headerinfo">
+    <div class="container">
+    <ul class="">
+        <li><a href="#" class="signin">Sign In</a></li>
+        <li><a href="#">English <i class="fa fa-caret-down"></i></a></li>
+    </ul>
+    <a href="#" class="ReservationLink"><i class="fa fa-mobile"></i> Reservations 18008305222</a>
+    </div>
+</div>
+<div id="signOut" class="headerinfo hidden">
+    <div class="container">
+    <a href="#">My Reservations</a>
+    <ul class="pull-right">
+        <li><a href="#" class="signout">Sign Out</a></li>
+        <li><a href="#">Welcome Curt!</a></li>
+        <li><a href="#">Status: <span style="color: gold !important;">Gold<span></a></li>
+    </ul>
+</div>
+  
+
 </div>
 <nav class="nav-right">
   <div class="container">
@@ -42,7 +60,7 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav pull-right">
+      <ul class="nav navbar-nav pull-right navMenuTop">
             {{>navContent}}
         </ul>
     </div><!-- /.navbar-collapse -->

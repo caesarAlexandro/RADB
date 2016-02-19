@@ -1,6 +1,6 @@
 .list-actions
 {
-	background: #fff;
+	background: none;
 	//width: 572px;
 	float: left;
 	padding: 0px;
@@ -53,18 +53,18 @@
 		{
 			//width: (100%/3);
 			&.check-in{
-				width: 23%;
-				border-left: 1px solid #d0d0d0;
-
+				width: 49%;
+				margin-right: 7px;
+				margin-bottom: 10px;
 			}
 			&.check-out{
-				width: 23%;
-				border-left: 1px solid #d0d0d0;
+				width: 49%;
+				margin-right: -10px;
 			}
 
 			&#room-toggler{
-				width: 31%;
-				border-left: 1px solid #d0d0d0;
+				width: 100%;
+				margin-bottom: 10px;
 				i{
 					color: @brand-primary;
 					line-height: @search-pane-input;
@@ -73,8 +73,11 @@
 				}
 			}
 			&#findHotel{
-				width: 23%;
-				background: @brand-primary;
+				width: 50%;
+				position: absolute;
+				bottom: -75px;
+				right: 0;
+				background: @brand-info;
 				text-align: center;
 				color:#fff;
 			}

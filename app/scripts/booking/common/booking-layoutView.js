@@ -82,9 +82,9 @@ define([
                 case 'booking/confirmation/radissonRed' :
                     //bodySelector.removeClass().addClass('page-confirmation');
                     Data.pageSwitch('confirmation');
-                    containerSelector.hide().removeClass('container');
-                    headerSelector.addClass('page-header-lg')
-                    .removeClass('page-header-sm fixed page-header-book hidden');
+                    //containerSelector.removeClass('container-fluid').addClass('container');
+                    //headerSelector.addClass('page-header-lg')
+                    //.removeClass('page-header-sm fixed page-header-book hidden');
                     break;
                 default :
                     Data.pageSwitch('default');

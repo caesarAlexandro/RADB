@@ -140,7 +140,10 @@
              'click #radio-list-addon-0': 'changeViewAddOn',
              'click #radio-list-addon-1': 'changeViewAddOn',
              'click #radio-list-addon-2': 'changeViewAddOn',
-             'click #completeReservation': 'makeReservation'
+             'click #completeReservation': 'makeReservation',
+             'click .joinnow': 'openCarlsonClub',
+             'click .closeform': 'openCarlsonClub',
+             'click .cls': 'closeAlert'
          },
          modelEvents: {
              'change': 'modelChanged'
@@ -152,6 +155,13 @@
              this.model.set({'phoneNumber' : '5555555555'});
              this.model.set({'country' : 'United States'});
              this.model.set({'zip': '12345'});
+         },
+         openCarlsonClub: function () {
+             $('.triangle').toggle();
+             $('.carlsonform').slideToggle(200);
+         },
+         closeAlert: function () {
+             $('.alertmsg ').hide(200);
          },
          setClientInfo: function() {
              var firstname = $('#firstname').val();
@@ -333,6 +343,8 @@
              if (signedIn.hasClass('hidden') == false) {
                  setTimeout(function() {
                      $('#returnGuest').removeClass('hidden');
+                     $('.rewardcurt').removeClass('hidden');
+                     $('.rewardadriana').addClass('hidden');
                  }, 100);
                  this.model.set({
                      'selectedRoom': 'Suite'

@@ -1,21 +1,20 @@
-<section class="panel panel-default">
+<section class="panel panel-default reviewpanel">
     <a class="panel-heading reservation-accordion collapsed" role="tab" id="headingFive" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
         <h4 class="panel-title">
-              REVIEW Reservation Details
-              <i class="fa chevron"></i>
+              <span>5</span> <strong>REVIEW Reservation Details</strong>
+              <i class="fa fa-angle-down "></i>
             </h4>
     </a>
     <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
         <div class="panel-body">
-            <div class="row inverse">
-                <div class="col-sm-7">
+            <div class="row inverse ">
+                <div class="col-sm-7 leftpanel">
                     {{>summaryReservation}}
                 </div>
-                <div class="col-sm-5">                    
-                    <!-- START review_pane.html -->
-                    <section class="summary-reservation" style="background: lightblue;">
+                <div class="col-sm-5 rightpanel">   <!-- START review_pane.html -->
+                    <section class="summary-reservation">
                         <!--Subtotal and tax-->
-                        <section class="summary-reservation-calcs" style="border: none;">
+                        <section class="summary-reservation-calcs">
                             <div {{!-- class="summary-reservation-subtotal clearfix" --}}>
                                 <h4>Room Cost</h4>
                                 <span class="summary-reservation-subtotal-title">Rate (1 Nights x {{price}}):</span>
@@ -58,7 +57,7 @@
                     <div class="col-sm-1">
                         <input type="checkbox" style="display: block;">
                     </div>
-                    <div class="col-sm-11">
+                    <div class="col-sm-11 checkboxlabel">
                         <p class="small">
                             I acknowledge that I have read and agree to the <a href="javascript:void(0)">hotel policies</a>, <a href="javascript:void(0)">privacy policy</a> and <a href="javascript:void(0)">terms &amp; conditions</a> by completing this booking.
                         </p>

@@ -1,86 +1,217 @@
- <div class="container-fluid">
-        {{!-- BOTTOM RIGHT --}}        
-
-        {{> hotelImages img1="assets/img/info_room_king_.jpg" img2="assets/img/blu/info_lobby.png" img3="assets/img/blu/info_pool.png" img4="assets/img/blu/info_veranda.png" }}    
-            
-
-    </div>
+<div class="container-fluid">
+   {{!-- BOTTOM RIGHT --}}        
+   {{> hotelImages img1="assets/img/info_room_king_.jpg" img2="assets/img/blu/info_lobby.png" img3="assets/img/blu/info_pool.png" img4="assets/img/blu/info_veranda.png" }}    
+</div>
 <div class="secondarynav container-fluid">
-  <ul class="container">
-    <li><a href="#"><i class="fa fa-home"></i></a></li>
-    <li><a href="#">Location</a></li>
-    <li><a href="#">Rooms</a></li>
-    <li><a href="#">Restaurant</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Meetings & Events</a></li>
-    <li><a href="#">Hotel Deals</a></li>
-    <li><a href="#">Gallery</a></li>
-    <li><a href="#">Contact</a></li>
-    <li><a href="#">Reviews</a></li>
-  </ul>
+   <ul class="container">
+      <li><a href="#"><i class="fa fa-home"></i></a></li>
+      <li><a href="#">Location</a></li>
+      <li><a href="#">Rooms</a></li>
+      <li><a href="#">Restaurant</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Meetings & Events</a></li>
+      <li><a href="#">Hotel Deals</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Reviews</a></li>
+   </ul>
 </div>
-<div class="hotel-info-top">
-   <div class="container-fluid">
-       <div class="row">
-        <div class="hotel-info-top-left col-sm-2">
-               {{!-- TOP LEFT --}}            
-               {{> hotelDescription }}
-            </div>
-            <div class="hotel-info-top-left col-sm-6">
-              <div class="row infotop">
-                <div class="col-sm-12 ">
-                  <h2>Discover Chicago from our Hotel’s Central Downtown Location</h2>
-                   {{!-- TOP LEFT --}}            
-                   <p>{{body}}</p>
-                   <a>More</a>
-                </div>
-              </div>
-              <div class="row infobottom">
-                <div class=" col-sm-6">
-                  <h3>Stay at our Hotel's Lakefront location in Downtown Chicago</h3>
-                  <p>An architectural marvel, the Radisson Blu Aqua hotel rises high in the city skyline and offers expansive views of Lakeshore East Park, Millennium Park and Lake Michigan. Visit numerous iconic attractions just minutes from our hotel’s location in downtown Chicago, from Navy Pier to North Michigan Avenue. We are also convenient for travelers, thanks to our on-site parking and a location within 18 miles of both Chicago O’Hare International Airport and Chicago Midway Airport. Whether you’re browsing art galleries along the Magnificent Mile or strolling by the lake, you’ll find a wealth of things to do near the Radisson Blu Aqua.</p>
-                 </div>
-                 <div class="col-sm-6">
-                    Nearby transport:
-                    <ul>
-                      <li>Chicago’s Union Station — 1.8 miles</li>
-                      <li>Chicago Midway Airport — 12 miles</li>
-                      <li>Chicago O’Hare International Airport —  18 miles</li>
-                    </ul> 
-                 </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <div id="TA_cdsratingsonlywide232" class="TA_cdsratingsonlywide">
-<ul id="vFDIqe5" class="TA_links vq8AhgegIUPy">
-<li id="rDRo7PETj19" class="Hzd7PN9U">
-<a target="_blank" href="http://www.tripadvisor.com/"><img src="http://www.tripadvisor.com/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor"/></a>
-</li>
-</ul>
-</div>
-<script src="http://www.jscache.com/wejs?wtype=cdsratingsonlywide&amp;uniq=232&amp;locationId=2042562&amp;lang=en_US&amp;border=true&amp;display_version=2"></script>
+<div class="container">
+   <div class="row hotel-info-top">
+      <div class="hotel-info-top-left col-sm-8">
+         <h2>Discover Chicago from our Hotel’s Central Downtown Location</h2>
+         {{!-- TOP LEFT --}}            
+         <p>{{body}}</p>
+         <a class="readmorebtn">Read More</a>
+         
+      </div>
+      <div class="hotel-info-top-right col-sm-4">
+         <div class="weather">
+            <span>Current Weather:</span>
+            <img src="assets/img/weather.png" />
+         </div>
+         <div class="social">
+            <span>Find us on:</span>
+            <p>
+               <i class="fa fa-facebook"></i>
+               <i class="fa fa-twitter"></i>
+               <i class="fa fa-instagram"></i>
+            </p>
+         </div>
+         <div class="tripadvisor">
+          <span>Trip Advisor Ratings:</span>
+            <div class="widSSPData">
 
-                </div>
-              </div>
-              
-            </div>
-            <div class="hotel-info-top-right col-sm-4">
-              <div class="ataglance">
-                <h5>At a Glance</h5>
-                <ul>
-                  <li><i class="fa fa-pencil"></i></li>
-                  <li><i class="fa fa-bed"></i></li>
-                  <li><i class="fa fa-pencil"></i></li>
-                  <li><i class="fa fa-paw"></i></li>
-                  <li><i class="fa fa-map-signs"></i></li>
-                  <li><i class="fa fa-map-spoon"></i></li>
-                  
-                </ul>
-              </div> 
-            </div>
-       </div>
+<div class="widSSPComponent">
+<div class="widSSPSummary">
+<dl>
+  <a href="http://www.tripadvisor.com/" target="_blank"><img alt="TripAdvisor" src="http://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png"></a>
+<a onclick="ta.cds.handleTALink(11900,this);return true;" href="http://www.tripadvisor.com/Hotel_Review-g35805-d2042562-Reviews-Radisson_Blu_Aqua_Hotel-Chicago_Illinois.html" target="_blank">
+</a>
+</dl>
+</div><!--/ cdsSummary-->
+</div><!--/ cdsComponent-->
+<div class="widSSPComponent widSSPOptional">
+<div class="widSSPTrvlRtng">
+<dl>
+ <dd>
+<div class="widSSPOverall">
+<img class="rsImg" alt="4.5 of 5 stars" src="http://static.tacdn.com/img2/ratings/traveler/s4.5.gif">
+<div>Based on <b>3,168</b> traveler reviews</div>
+</div><!--/ overall -->
+</dd>
+</dl>
+</div>
+</div><!--/ cdsComponent -->
+<div class="widSSPComponent widSSPOptional">
+<dl class="widSSPReviews">
+<dt class="widSSPH11">Recent Traveler Review:</dt>
+<dd class="widSSPOneReview">
+<span class="widSSPDate">Feb 15, 2016:</span> <span class="widSSPQuote">“BEST PLACE TO STAY”</span>
+</dd><!--/ hReview-->
+</dl>
+</div>
+<a class="readmorebtn" onclick="ta.cds.handleTALink(11900,this);window.open(this.href, 'newTAWindow', 'toolbar=1,resizable=1,menubar=1,location=1,status=1,scrollbars=1,width=800,height=600'); return false" id="allreviews" href="http://www.tripadvisor.com/Hotel_Review-g35805-d2042562-Reviews-Radisson_Blu_Aqua_Hotel-Chicago_Illinois.html">Read More</a>
+
+</div>
+         </div>
+         <!--<div class="ataglance">
+            <h5>At a Glance</h5>
+            <ul>
+               <li><i class="fa fa-pencil"></i></li>
+               <li><i class="fa fa-bed"></i></li>
+               <li><i class="fa fa-pencil"></i></li>
+               <li><i class="fa fa-paw"></i></li>
+               <li><i class="fa fa-map-signs"></i></li>
+               <li><i class="fa fa-map-spoon"></i></li>
+            </ul>
+            </div>-->
+      </div>
+   </div>
+   <div class="row hotel-info-bottom">
+      <div class="hotel-info-bottom-left col-sm-6">
+         <h3>Stay at our Hotel's Lakefront location in Downtown Chicago</h3>
+         <p>An architectural marvel, the Radisson Blu Aqua hotel rises high in the city skyline and offers expansive views of Lakeshore East Park, Millennium Park and Lake Michigan. Visit numerous iconic attractions just minutes from our hotel’s location in downtown Chicago, from Navy Pier to North Michigan Avenue. We are also convenient for travelers, thanks to our on-site parking and a location within 18 miles of both Chicago O’Hare International Airport and Chicago Midway Airport. Whether you’re browsing art galleries along the Magnificent Mile or strolling by the lake, you’ll find a wealth of things to do near the Radisson Blu Aqua.</p>
+         Nearby transport:
+         <ul>
+            <li>Chicago’s Union Station — 1.8 miles</li>
+            <li>Chicago Midway Airport — 12 miles</li>
+            <li>Chicago O’Hare International Airport —  18 miles</li>
+         </ul>
+      </div>
+      <div class="hotel-info-bottom-right col-sm-6">
+        {{> hotelDescription }}
+         <img src="assets/img/map_details.jpg" />
+      </div>
    </div>
 </div>
+
+<section class="popular-destinations ataglanceCurt hidden">
+  <h2>At a Glance</h2>
+  <div class="row destinations">
+    <div class="col-md-4 destination col-xs-4">
+        <img src="assets/img/glance-c-1.jpg">
+        <div>
+          <h3>Title 1</h3>
+          <p>Description 1</p>
+          <a href="#">Explore</a>
+        </div>
+      </div>
+       <div class="col-md-4 col-xs-12">
+        <div class="row">
+          <div class="col-md-12 destination col-xs-4">
+            <img src="assets/img/glance-c-2.jpg">
+            <div>
+              <h3>Title 4</h3>
+          <p>Description 4</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 destination col-xs-4">
+            <img src="assets/img/glance-c-3.jpg">
+            <div>
+              <h3>Title 2</h3>
+          <p>Description 2</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+          <div class="col-md-6 destination col-xs-4">
+            <img src="assets/img/glance-c-4.jpg">
+            <div>
+              <h3>Title 3</h3>
+          <p>Description 3</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-4 col-xs-4 destination">
+        <img src="assets/img/glance-c-5.jpg">
+        <div>
+          <h3>Title 5</h3>
+          <p>Description 5</p>
+          <a href="#">Explore</a>
+        </div>
+      </div>
+
+  </div>
+  </section>
+  <section class="popular-destinations ataglanceAdriana">
+  <h2>At a Glance</h2>
+ <div class="row destinations">
+    <div class="col-md-4 destination col-xs-4">
+        <img src="assets/img/glance-c-1.jpg">
+        <div>
+          <h3>Title 1</h3>
+          <p>Description 1</p>
+          <a href="#">Explore</a>
+        </div>
+      </div>
+       <div class="col-md-4 col-xs-12">
+        <div class="row">
+          <div class="col-md-12 destination col-xs-4">
+            <img src="assets/img/glance-c-2.jpg">
+            <div>
+              <h3>Title 4</h3>
+          <p>Description 4</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 destination col-xs-4">
+            <img src="assets/img/glance-c-3.jpg">
+            <div>
+              <h3>Title 2</h3>
+          <p>Description 2</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+          <div class="col-md-6 destination col-xs-4">
+            <img src="assets/img/glance-c-4.jpg">
+            <div>
+              <h3>Title 3</h3>
+          <p>Description 3</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-4 col-xs-4 destination">
+        <img src="assets/img/glance-c-5.jpg">
+        <div>
+          <h3>Title 5</h3>
+          <p>Description 5</p>
+          <a href="#">Explore</a>
+        </div>
+      </div>
+  </div>
+  </section>
+
 
 
 {{> mobileButtons}}

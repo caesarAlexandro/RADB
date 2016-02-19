@@ -21,7 +21,8 @@ define([
             'blur #lastname':'validateLastName',
             'blur #email':'validateEmail',
             'blur #telephone': 'validatePhone',
-            'blur #zipcode': 'validateZipCode'
+            'blur #zipcode': 'validateZipCode',
+            'click .joinnow': 'openCarlsonClub'
         },
         initialize: function () {
         },

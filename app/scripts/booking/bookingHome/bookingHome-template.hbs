@@ -4,10 +4,18 @@
 
 {{> HomeCarousel}}
     
-
+<div class="container">
+    {{!-- <ul class="nav nav-tabs">
+        <li class="active">Find Hotels</li>
+        <li>My Reservations</li>
+    </ul> --}}
  <section class="search-pane fixTop" id="searchbar">
-    <div class="container">
-                    <div class="search-box col-xs-12 col-md-5">
+    <ul class="nav nav-tabs homeTabs">
+        <li class="active homeTab"><a href="#">Find Hotels</a></li>
+        <li class="homeTab"><a href="#">My Reservations</a></li>
+    </ul>
+    <div class="">
+                    <div class="search-box col-xs-12">
                         
                         <input type="search" placeholder="Where do you want to go?" class="user-success">
                         <section class="list-actions list-results collapse slideUp" style="display: none;">
@@ -71,18 +79,20 @@
                     </section>
                     </div>
                     
-                    <section class="list-actions list-details list-selection col-xs-12 col-md-7" id="accordion"  role="tablist" aria-multiselectable="true">
+                    <section class="list-actions list-details list-selection col-xs-12" id="accordion"  role="tablist" aria-multiselectable="true">
                         {{> DatePicker}}
+                    </section>
+                    <section>
+                        <input type="checkbox" style="display: inline-block">
+                        <p class="bookPoints">Book with Points</p>
                     </section>
                     
                 </section>
             </div>
 </section>
+</div>
 
 <section class="promotions">
     {{> PromotionsHome}}
 </section>
-<section class="popular-destinations">
-    {{> PopularDestinations}}
-    </section>
 

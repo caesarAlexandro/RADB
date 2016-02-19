@@ -52,8 +52,21 @@ define([
                 singleItem:true
             });
         },
-        //devComment The model attribute in a future should get their data from the HotelList page.
+        returningGuest: function() {
+            var signedIn = $('#signOut');
+            if (signedIn.hasClass('hidden') == false) {
+                setTimeout(function() {
+                    $('.ataglanceAdriana').removeClass('hidden');
+                    $('.ataglanceAdrianaCurt').addClass('hidden');
+                }, 100);
 
+            }
+        },
+        onRender: function() {
+            this.returningGuest();
+        },
+        //devComment The model attribute in a future should get their data from the HotelList page.
         template :  JST['app/scripts/booking/hotelInfo/hotelInfo-template.hbs']
+
     });
 });

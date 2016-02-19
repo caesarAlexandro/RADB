@@ -1,7 +1,8 @@
-@radio-list-height: 150px;
+@radio-list-height: 180px;
 
 .radio-list
 {
+	
 	.cover
 	{
 		.grid-bg-block(@gray-darker);
@@ -23,20 +24,24 @@
 					{
 						.title
 						{
-							font-size: 36px;
+							//font-size: 36px;
 						}
 						.subtitle
 						{
-							font-size: 20px;
+							//font-size: 20px;
 						}
 						.price
 						{
-							font-size: 24px;
+							//font-size: 24px;
 						}
 
-						&:before
+						&:after
 						{
-							//content: @fa-var-check-circle;
+							content: @fa-var-check-circle-o;
+							font-family: FontAwesome;   font-weight: 400;
+						    left: 45%;
+						    position: absolute;
+						    font-size: 3em;
 						}
 					}
 				}
@@ -58,7 +63,7 @@
 	{
 		display: table-cell;
 		vertical-align: middle;
-		text-align: left;
+		text-align: center;
 		color: #fff;		
 		.title, .subtitle, .price
 		{
@@ -77,7 +82,7 @@
 		{
 			font-size: 20px;
 		}
-		padding-left: 100px;
+		//padding-left: 100px;
 		&:before
 		{
 			/*.fa();

@@ -15,11 +15,16 @@ define([
     return Marionette.ItemView.extend({
         template:  JST['app/scripts/booking/hotelList/currentBranchResults/currentBranchList-template.hbs'],
         events : {
-            'click .hotel-result' : 'hotelInformation',
-            'click #selectHotel' : 'hotelPayment'
+            //'click .hotel-result' : 'hotelInformation',
+            'click .gotodetails' : 'hotelInformation',
+            'click #selectHotel' : 'hotelPayment',
+            'click .quickview' : 'quickView'
         },
         initialize : function () {
             bookingChannel = Backbone.Radio.channel('Booking');
+        },
+        quickView : function () {
+            $('.hotelsummary').slideToggle(200);
         },
         /**
          * @function hotelInformation
