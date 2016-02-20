@@ -2,16 +2,17 @@
 <div id="promotions-carousel" class="owl-carousel owl-theme">
      
   	{{#each promo}}
-      <div class="item"><div class="promotion">
+    <div class="item" style="width: 250px; position: relative; left: 60px;">
+    	<div class="promotion">
 			<img src={{adImage}}/>
 			<div>
-				<h3>{{title}}</h3>
-				<p>{{adDescription}}</p>
-				<a href="#">Find out more</a>
+				<h3><a href="">{{title}}</a></h3>
+				{{!-- <p>{{adDescription}}</p> --}}
 			</div>
-		</div></div>
+		</div>
+	</div>
 	{{/each}}
-      {{!-- <div class="item"><div class="promotion">
+{{!--       <div class="item"><div class="promotion">
 			<img src="assets/img/promotions/promotion1.jpg" />
 			<div>
 				<h3>{{promoTitle}}</h3>
@@ -60,11 +61,11 @@
 			</div>
 			
 		</div>
-	</div>
+	</div> --}}
      
 </div>
 
- --}}
+
 <!--
 	<div class="container">
 	<div class="row">

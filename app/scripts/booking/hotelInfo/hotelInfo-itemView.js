@@ -36,6 +36,8 @@ define([
                                        JST['app/scripts/booking/hotelInfo/utility/partials/carousel-partialTemplate.hbs']);
             Handlebars.registerPartial('mobileButtons',
                                        JST['app/scripts/booking/hotelInfo/utility/partials/mobileButtons-partialTemplate.hbs']);
+            Handlebars.registerPartial('SearchBar',
+                JST['app/scripts/booking/bookingHome/bookingHome-searchbar.hbs']);
         },
         serializeData : function () {
             var currentRoute = Backbone.history.getFragment();
@@ -43,6 +45,9 @@ define([
                 currentPage : currentRoute,
                 heading : 'ROOM, BEDS AND PAYMENT'
             }, this.model.toJSON());
+        },
+        events : {
+            'click #BookNow' : 'bookNow'
         },
         renderCarousel : function() {
             $('#hotelinfo-carousel').owlCarousel({
@@ -64,6 +69,15 @@ define([
         },
         onRender: function() {
             this.returningGuest();
+        },
+        bookNow : function () {
+            if (query) {
+                Backbone.history.navigate('booking/guestInfo/' + query, true);
+            } else {
+                Backbone.history.navigate('booking/guestInfo', true);
+            }
+            console.log(query);
+            $(window).scrollTop(0, 0);
         },
         //devComment The model attribute in a future should get their data from the HotelList page.
         template :  JST['app/scripts/booking/hotelInfo/hotelInfo-template.hbs']

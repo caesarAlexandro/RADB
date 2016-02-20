@@ -53,6 +53,7 @@ define([
             } else {
                 Backbone.history.navigate('booking/guestInfo', true);
             }
+            console.log(query);
             $(window).scrollTop(0, 0);
         },
         /**

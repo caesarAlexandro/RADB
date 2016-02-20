@@ -29,6 +29,8 @@ define([
                 JST['app/scripts/booking/bookingHome/bookingHome-HomeCarousel.hbs']);
             Handlebars.registerPartial('PopularDestinations',
                 JST['app/scripts/booking/bookingHome/bookingHome-partialPopularDestinations.hbs']);
+            Handlebars.registerPartial('SearchBar',
+                JST['app/scripts/booking/bookingHome/bookingHome-searchbar.hbs']);
         },
         /**
          *
@@ -83,8 +85,11 @@ define([
                 singleItem:true
             });
             $('#promotions-carousel').owlCarousel({
-                autoPlay: 3000, //Set AutoPlay to 3 seconds
-                items : 4,
+                // autoPlay: 3000, //Set AutoPlay to 3 seconds
+                navigation : true,
+                navigationText : ['<i class="fa fa-chevron-left"></i>' , '<i class="fa fa-chevron-right"></i>'],
+                slideSpeed : 300,
+                // items : 4,
                 itemsDesktop : [1199 , 3],
                 temsDesktopSmall : [979 , 3]
             });
@@ -221,13 +226,13 @@ define([
                 this.model.set({'dateOut' : formattedCheckOut ? formattedCheckOut : ''});
                 bookingChannel.reply('SearchModel', this.model);
             }
-            $('.wrapper-check-in .title').html(formattedCheckIn);
+            // $('.wrapper-check-in .title').html(formattedCheckIn);
 
             if (formattedCheckOut)
             {
                 days = moment(formattedCheckOut).diff(moment(formattedCheckIn), 'days');
                 formattedNights = days > 0 ? (days > 1 ? days + ' Nights' : '1 Night') : '';
-                $('.wrapper-check-out .title').html(formattedCheckOut);
+                // $('.wrapper-check-out .title').html(formattedCheckOut);
                 $('.wrapper-check-out .subtitle .nights .value').html(formattedNights);
             }
 
