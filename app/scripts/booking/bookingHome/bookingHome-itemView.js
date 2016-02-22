@@ -226,6 +226,9 @@ define([
             formattedCheckIn = moment(value1).format('ddd MMM DD YYYY');
             formattedCancelFree = moment(value1).subtract(1, 'days').format('ddd MMM DD YYYY');
             formattedCheckOut = moment(value2).format('ddd MMM DD YYYY');
+            var diffDays = moment(formattedCheckOut).diff(moment(formattedCheckIn), 'days');
+            this.model.set({'diffDays' : diffDays});
+            console.log(this.model.get('diffDays'));
 
             if (store)
             {
