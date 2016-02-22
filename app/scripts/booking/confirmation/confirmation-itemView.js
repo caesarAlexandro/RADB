@@ -14,6 +14,18 @@ define([
 ], function ($, _, Backbone, Marionette, Handlebars, JST) {
     'use strict';
     return Marionette.ItemView.extend({
-        template :  JST['app/scripts/booking/confirmation/confirmation-template.hbs']
+        template :  JST['app/scripts/booking/confirmation/confirmation-template.hbs'],
+        returningGuest: function() {
+            var signedIn = $('#signOut');
+            if (signedIn.hasClass('hidden') == false) {
+                setTimeout(function() {
+                    $('.showadriana').addClass('hidden');
+                    $('.showcurt').removeClass('hidden');
+                }, 1000);
+            }
+        },
+        onRender: function() {
+            this.returningGuest();
+        }
     });
 });

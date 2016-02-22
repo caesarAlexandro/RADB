@@ -1,15 +1,18 @@
 <div class="inner-wrap">
-   <div class="container hotelsingles">
+   <div class="hotelsingles">
       <article class="hotel-result single">
          <a>
             <div class="row">
-               <div class="col-xs-12 col-sm-3 hotel-result-image">
+               <div class="col-xs-12 col-sm-4 hotel-result-image">
                   <div data-cover="assets/img/{{image}}" data-cover-size="sm" class="coverImage"></div>
+                  <span class="quickview">Quick View <i class="fa fa-caret-down"></i>
+</span>
                </div>
-               <div class="col-xs-12 col-sm-7 hotel-result-content">
+               <div class="col-xs-12 col-sm-8 hotel-result-content">
                   <header class="col-xs-12 col-sm-12 col-md-12 hotel-result-description">
                      <div class="results-centered">
                         <h5 class="hotel-type-name">{{hotelBrandName}} {{hotelName}}</h5>
+                        <span class="hotellocation">{{field_address.locality}}, {{field_address.administrative_area}}</span>
                         <div class="hotel-type-description">
                            <p>{{field_address.thoroughfare}}, {{field_address.postal_code}} </p>
                            <p>{{field_address.locality}}, {{field_address.administrative_area}}</p>
@@ -17,28 +20,51 @@
                         </div>
                      </div>
                   </header>
-                  <section class="col-xs-6 col-sm-8 col-md-8 ">
+                  <section class="col-xs-6 col-sm-8 col-md-8 hoteldistance ">
                      <div class="amount value"><i class="fa fa-map-marker"></i> {{miles}} from Downtown</div>
-                  </section>
-                  <section class="col-xs-6 col-sm-4 col-md-4">
+
                      <script src="http://www.jscache.com/wejs?wtype=cdsratingsonlywide&amp;uniq=586&amp;locationId=2042562&amp;lang=en_US&amp;border=false&amp;shadow=false&amp;display_version=2"></script>
                   </section>
-               </div>
-               <div class="col-xs-12 col-sm-2 pricecont">
-                  <div class="results-centered">
+                  <div class="results-centered hprice">
                      <div class="hotel-result-price-xs">
-                        <div class="amount price">From <span>{{field_price}}</span></div>
-                        <div class="per-night">Per Night</div>
+                        <div class="amount price"><span class="from">From</span> <span>{{field_price}}</span></div>
+                        <div class="per-night">USD/Per Night</div>
                      </div>
                      <span id="selectHotel" class="btn btn-primary btn-block">Book Now</span>
                   </div>
                </div>
             </div>
-         </a>
+            </a>
+            <div class="row hotelsummary">
+               <div class="col-sm-8">
+                  <ul class="hoteltabs">
+                     <li class="active">Details</li>
+                     <li>Map</li>
+                     <li>Review</li>
+                  </ul>
+                  <p>{{body}}</p>
+                  <ul class="col-sm-6">
+                    
+                         <li>Pet friendly rooms</li>
+                         <li>Free Wi-Fi</li>
+                         <li>Business center</li>
+                         <li>Meeting / Banquet facilities</li>
+                  </ul>
+                  <ul class="col-sm-6">
+                     <li>Parking</li>
+                     <li>Internet access</li>
+                     <li>Laundry service</li>
+                     <li>Rooftop swimming</li>
+                  </ul>
+
+               </div>
+               <div class="col-sm-4 gotodetails">
+                  <a>See full hotel details</a>
+               </div>
+            </div>
+         
       </article>
-      <article class="horizontal-promotion">
-         <img src="assets/img/promotions/horizontal1.jpg" />
-      </article>
+     
       <!--<article class="hotel-result single">
          <a>
             <div class="row">

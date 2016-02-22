@@ -25,7 +25,7 @@ define([
         },
         initialize: function (query) {
             // var url2 = 'http://analopez-test.apigee.net/xbsservicemockup/hoteldata?ql=select%20*%20where%20cityname%20=%20%27chicago%27%20and%20hotelbrandcode%20=%20%27RADR%27';
-            var url1 = 'http://acnjrkickerbxhca6smut.devcloud.acquia-sites.com/rest/hotels'
+            var url1 = 'http://acnjrkickerbxhca6smut.devcloud.acquia-sites.com/rest/hotels/?args[0]=IL'
             this.queries = [url1];
             this.current = query;
             this.deferred = this.fetch({

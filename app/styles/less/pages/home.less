@@ -4,7 +4,10 @@ h1,h2,h3,h4,h5,h6{
 #home-search
 {
 	position: relative;
-	height: 644px;
+	@media screen and (min-width:@screen-sm-min) {
+			height: 644px;
+		}
+	
 	.container
 	{
 		position: relative;
@@ -330,7 +333,9 @@ body.page-hotelList, .page-hotelInfo{
     text-align: center;
     top: 200px;*/
     position: relative;
-    height: 644px;
+    @media screen and (min-width:@screen-sm-min) {
+			height: 644px;
+		}
     z-index: 1;
 	    h1{ 
 	    	color:#fff;
@@ -467,5 +472,217 @@ body.page-hotelList, .page-hotelInfo{
 	}
 	.btn.active{
 		background:#005AB2;
+	}
+}
+.form-control{
+	box-shadow: none;
+	border-color:#CCCCCC;
+}
+
+@media screen and (max-width:@screen-md-min) {
+	#appContainer{
+		.headerinfo{
+			font-size: 12px;
+			a{
+				font-size: 10px;
+    			padding: 0 15px;
+			}
+			.pull-right{
+				margin-left: 0px;
+				padding:0px
+
+			}
+		}
+		#modifySearch {
+			.top-search-pane {
+				li a{
+					line-height: initial;
+				}
+				span.btn-primary{
+					padding: 5px 10px;
+				}
+			}
+		}
+		.navbar-toggle{
+			position: absolute;
+			right: 0px;
+			border: 0px;
+			i{
+				font-size: 36px;
+			}
+		}
+		.nav.navbar-nav.pull-right{
+			float:none !important;
+		}
+		#content{
+			padding-top: 130px;
+		}
+		#home-search{
+
+	
+			h1{
+				width: 100%;
+				font-size: 2em;
+				display: none;
+			}
+			#owl-demo .item {
+				video{
+					position: relative;
+
+				}
+			}
+			#searchbar{
+				 height: auto;
+			    padding: 30px 0;
+			    position: absolute;
+			    top: 0;
+			}
+			.list-actions.list-selection #room-toggler.list-group-item i{
+				display: none;
+			}
+			.list-actions.list-selection #findHotel.list-group-item{
+				line-height: 55px;
+			}
+		}
+		.newsletter {
+			height: auto;
+			padding-bottom: 20px;
+			.container .stay-connected{
+				display: none;
+			}
+			.formnl {
+				div p{
+					width: 100%;
+				}
+				input{
+					margin-top: 0px;
+				}
+			}
+		}
+		#brand-footer{
+			header{
+				margin-bottom: 20px;
+				span{
+					display: block;
+				}
+			}
+			.col-sm-8{
+				width: 100%;
+			}
+		}
+		.popular-destinations{
+			padding: 0 15px;
+		}
+
+	}
+	
+	.page-hotelList{
+		.hotel-result{
+			.row{
+				div{
+					//height: auto;
+				}
+				.hotel-result-image{
+					height: 230px;
+				}
+			}
+		}
+		.showfilters{
+			 margin: 0 auto;
+    		width: 80%;
+		}
+		.hotel-result-description,.hotel-type-description{
+			position: static;
+			color: #333;
+
+		}
+		.hotel-result-description{
+			padding: 15px 0;
+		}
+		.hoteldistance {
+			padding: 0 0 15px 0;
+		}
+		.page-hotelList .hotel-result .row div{
+			height: inherit;
+		}
+		.hotel-result-price-xs{
+			float: none;
+		}
+		.hotel-result.single .hprice .hotel-result-price-xs span{
+			font-size: 25px;
+		}
+		.hotel-result.single .gotodetails a{
+			left: 0px;
+		}
+		.hotel-result.single .hotel-result-image{
+			padding: 0px;
+		}
+		.hotel-result.single .hprice .from {
+		    top: 0;
+
+		}
+	}
+
+	.page-hotelInfo{
+		.hotel-description{
+			position: static;
+			width: 100%;
+		}
+	}
+	body.page-guestInfo{
+		#content-page{
+			margin-top: 0px;
+		}
+		.alertmsg{
+			line-height: initial !important;
+			padding: 10px 0 15px 0;
+			text-align: center;
+		}
+		.radio-list-block:first-child{
+			padding-left: 8px;
+		}
+		.guestinfopanel {
+			.carlsonform {
+				margin: 25px 0 0;
+	   			padding: 0;
+				p:first-child{
+					margin-bottom: 15px;
+				}
+				.form-group {
+					label,input{
+						width: 100%;
+					}
+				}
+			}
+			.joinclub {
+				>div{
+					&.pull-right{
+					float: none !important;
+						div{
+							padding:0 0 15px 0;
+							text-align: center;
+						}
+					}
+				}
+				
+			}
+		}
+		.paymentpanel{
+			 img{
+			 	display: none;
+			 }
+		}
+
+		
+
+	}
+
+}
+@media screen and (max-width:@screen-sm-min) {
+	.page-hotelList{
+		
+		.hotel-result.single .hprice .hotel-result-price-xs span{
+			font-size: 1.5em;
+		}
 	}
 }

@@ -24,7 +24,7 @@ define([
         },
         clearSummary : function () {
             bookingLayout.getRegion('bookHeader').empty();
-            $(bookingLayout.getRegion('bookHeader').el).append('<div id="book-header" class="page-header-wrapper"></div>');
+            $(bookingLayout.getRegion('bookHeader').el).append('<div id="book-header" class="page-header-wrapper container"></div>');
         },
         hotelSummaryInit : function () {
             //bookingLayout.getRegion('filter').empty();

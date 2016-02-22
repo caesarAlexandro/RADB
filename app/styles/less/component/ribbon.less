@@ -14,7 +14,26 @@
 
 .ribbon
 {
-	.clearfix();	
+	.clearfix();
+	font-family: @font-family-lato;
+	color:@ribbon-default-text;	
+	padding:35px 0;
+	p{
+		color:@ribbon-default-text;
+	}
+	h4{
+		font-weight: 300;
+		font-size: 40px;
+		text-transform: initial;
+		color:@ribbon-success-text;
+	}
+
+	i{
+		font-weight: 300;
+		font-size: 30px;
+
+		color:@ribbon-success-text;
+	}
 	.ribbon-heading
 	{
 		padding: @ribbon-padding;
@@ -34,6 +53,7 @@
 	.ribbon-actions
 	{
 		float: right;		
+		
 	}
 	&-default
 	{
@@ -48,6 +68,9 @@
 	&-success
 	{
 		.ribbon-theme(@ribbon-success-text, @ribbon-success-bg);
+		.icon-inverse-success{
+			color:@ribbon-default-text;
+		}
 	}
 	&-danger
 	{

@@ -1,89 +1,204 @@
-<h2>Popular Destinations</h2>
-<div class="row destinations">
-    {{#each destination}}
-    	<div class="col-md-4 destination col-xs-4">
-    		<img src={{destinationImageLarge}}>
-    		<div>
-    			<h3>{{title}}</h3>
-    			<p>{{description}}</p>
-    			<a href="#">Explore</a>
-    		</div>
-    	</div>
-    {{/each}}
-    	{{!-- <div class="col-md-4 col-xs-12">
-    		<div class="row">
-    			<div class="col-md-6 destination col-xs-4">
-    				<img src={{destImg.destinationImageSmall}}>
-    				<div>
-    					<h3>{{destTitle}}</h3>
-    					<p>{{destDesc}}</p>
-    					<a href="#">Explore</a>
-    				</div>
-    			</div>
-    			<div class="col-md-6 destination col-xs-4">
-    				<img src={{destImg.destinationImageSmall}}>
-    				<div>
-    					<h3>{{destTitle}}</h3>
-    					<p>{{destDesc}}</p>
-    					<a href="#">Explore</a>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="row">
-    			<div class="col-md-12 destination col-xs-4">
-    				<img src={{destImg.destinationImageMedium}}>
-    				<div>
-    					<h3>{{destTitle}}</h3>
-    					<p>{{destDesc}}</p>
-    					<a href="#">Explore</a>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    	<div class="col-md-4 col-xs-4 destination">
-    		<img src={{destImg.destinationImageLarge}}>
-    		<div>
-    			<h3>{{destTitle}}</h3>
-    			<p>{{destDesc}}</p>
-    			<a href="#">Explore</a>
-    		</div>
-    	</div> --}}
-    </div>
-
-<!--
-	<div class="container">
-	<div class="row">
-	<h1>Todays Deals</h1>
-	<div class="col-sm-4">
-		<div class="promotion">
-			<img src="assets/img/promotions/promotion1.jpg" />
-			<div>
-				<h3>Kids Stay and Eat Free</h3>
-				<p>Your VIP's stay and eat for free, and are free to eplore all the hotel has to offer</p>
-			</div>
-			<a href="#">Find out more</a>
-		</div>
-	</div>
-	<div class="col-sm-4">
-		<div class="promotion">
-			<img src="assets/img/promotions/promotion1.jpg" />
-			<div>
-				<h3>Kids Stay and Eat Free</h3>
-				<p>Your VIP's stay and eat for free, and are free to eplore all the hotel has to offer</p>
-			</div>
-			<a href="#">Find out more</a>
-		</div>
-	</div>
-	<div class="col-sm-4">
-		<div class="promotion">
-			<img src="assets/img/promotions/promotion1.jpg" />
-			<div>
-				<h3>Kids Stay and Eat Free</h3>
-				<p>Your VIP's stay and eat for free, and are free to eplore all the hotel has to offer</p>
-			</div>
-			<a href="#">Find out more</a>
-		</div>
-	</div>
+<div class="destinationAdriana">
+   <h2>At a Glance</h2>
+   <div class="row destinations">
+      {{#with destination.[0]}}
+      <div class="col-md-4 destination col-xs-4">
+         <img src={{destinationImageLarge}}>
+         <div>
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <a href="#">Explore</a>
+         </div>
+      </div>
+      {{/with}}
+      <div class="col-md-4 col-xs-12">
+         <div class="row">
+            {{#with destination.[1]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+            {{#with destination.[2]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+         </div>
+         <div class="row">
+            {{#with destination.[3]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+            {{#with destination.[7]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+         </div>`
+         <!--<div class="row">
+            {{#with destination.[7]}}
+            <div class="col-md-12 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+         </div>-->
+      </div>
+      {{#with destination.[4]}}
+      <div class="col-md-4 col-xs-4 destination">
+         <img src={{destinationImageLarge}}>
+         <div>
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <a href="#">Explore</a>
+         </div>
+      </div>
+      {{/with}} 
+   </div>
 </div>
-
-</div>-->
+</div>
+<div class="destinationCurt hidden">
+   <h2>Popular Destinations</h2>
+   <div class="row destinations">
+      {{#with destination.[5]}}
+      <div class="col-md-4 destination col-xs-4">
+         <img src={{destinationImageLarge}}>
+         <div>
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <a href="#">Explore</a>
+         </div>
+      </div>
+      {{/with}}
+      <div class="col-md-4 col-xs-12">
+         <div class="row">
+            {{#with destination.[6]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+            {{#with destination.[7]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+         </div>
+         <!--<div class="row">
+            {{#with destination.[6]}}
+            <div class="col-md-12 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+         </div>-->
+         <div class="row">
+            {{#with destination.[3]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+            {{#with destination.[7]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+         </div>
+      </div>
+      {{#with destination.[8]}}
+      <div class="col-md-4 col-xs-4 destination">
+         <img src={{destinationImageLarge}}>
+         <div>
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <a href="#">Explore</a>
+         </div>
+      </div>
+      {{/with}} 
+   </div>
+</div>
+<!--
+   <div class="container">
+   <div class="row">
+   <h1>Todays Deals</h1>
+   <div class="col-sm-4">
+    <div class="promotion">
+      <img src="assets/img/promotions/promotion1.jpg" />
+      <div>
+        <h3>Kids Stay and Eat Free</h3>
+        <p>Your VIP's stay and eat for free, and are free to eplore all the hotel has to offer</p>
+      </div>
+      <a href="#">Find out more</a>
+    </div>
+   </div>
+   <div class="col-sm-4">
+    <div class="promotion">
+      <img src="assets/img/promotions/promotion1.jpg" />
+      <div>
+        <h3>Kids Stay and Eat Free</h3>
+        <p>Your VIP's stay and eat for free, and are free to eplore all the hotel has to offer</p>
+      </div>
+      <a href="#">Find out more</a>
+    </div>
+   </div>
+   <div class="col-sm-4">
+    <div class="promotion">
+      <img src="assets/img/promotions/promotion1.jpg" />
+      <div>
+        <h3>Kids Stay and Eat Free</h3>
+        <p>Your VIP's stay and eat for free, and are free to eplore all the hotel has to offer</p>
+      </div>
+      <a href="#">Find out more</a>
+    </div>
+   </div>
+   </div>
+   
+   </div>-->

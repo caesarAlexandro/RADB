@@ -22,18 +22,9 @@ define([
                 currentTotalResults : cTotalResults
             }, this.model);
         },
-        renderCarousel : function() {
-            $('#resultscarousel').owlCarousel({
-                navigation : true, // Show next and prev buttons
-                slideSpeed : 300,
-                paginationSpeed : 400,
-                singleItem:true
-            });
-        },
         initialize: function () {
             this.render();
-            setTimeout(this.renderCarousel, 1000);
-
+            //setTimeout(this.renderCarousel, 1000);
         }
     });
 });

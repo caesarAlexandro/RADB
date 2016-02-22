@@ -137,7 +137,7 @@ define([
                             Data.themeSwitch(query);
                             Data.fullBg('[data-cover]');
                         });
-                        setTimeout(renderCarousel, 2000);
+                        //setTimeout(renderCarousel, 2000);
                     }
                 });
             },

@@ -16,7 +16,7 @@ define([
             'miles' : '15.7',
             'cityName' : 'Chicago',
             'address.stateCode' : 'IL',
-            'price' : '120',
+            'price' : '150',
             'image' : 'full_bg1-lg.jpg',
             'rating' : '4.7'
         },

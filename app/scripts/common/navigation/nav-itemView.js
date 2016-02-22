@@ -30,10 +30,14 @@
          signed: function () {
              $('#signOut').removeClass('hidden');
              $('#signIn').addClass('hidden');
+             $('.destinationAdriana').addClass('hidden');
+             $('.destinationCurt').removeClass('hidden');
          },
          signedOut: function () {
              $('#signIn').removeClass('hidden');
              $('#signOut').addClass('hidden');
+             $('.destinationAdriana').removeClass('hidden');
+             $('.destinationCurt').addClass('hidden');
          },
          changeLogo: function (imgSrc) {
              $('#brandLogo').attr('src', imgSrc);

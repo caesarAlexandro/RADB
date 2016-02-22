@@ -36,6 +36,7 @@ define([
                                        JST['app/scripts/booking/hotelInfo/utility/partials/carousel-partialTemplate.hbs']);
             Handlebars.registerPartial('mobileButtons',
                                        JST['app/scripts/booking/hotelInfo/utility/partials/mobileButtons-partialTemplate.hbs']);
+            this.returningGuest();
         },
         serializeData : function () {
             var currentRoute = Backbone.history.getFragment();
@@ -52,8 +53,19 @@ define([
                 singleItem:true
             });
         },
+        returningGuest: function() {
+            var signedIn = $('#signOut');
+            if (signedIn.hasClass('hidden') == false) {
+                setTimeout(function() {
+                    $('.ataglanceAdriana').addClass('hidden');
+                    $('.ataglanceCurt').removeClass('hidden');
+                }, 1000);
+            }
+        },
+        onRender: function() {
+        },
         //devComment The model attribute in a future should get their data from the HotelList page.
-
         template :  JST['app/scripts/booking/hotelInfo/hotelInfo-template.hbs']
+
     });
 });

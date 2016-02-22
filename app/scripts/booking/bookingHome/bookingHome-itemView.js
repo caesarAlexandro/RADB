@@ -73,6 +73,16 @@ define([
             });
             webshim.polyfill('forms forms-ext');*/
             // this.loadBotContainerData();
+            this.returningGuest();
+        },
+        returningGuest: function() {
+            var signedIn = $('#signOut');
+            if (signedIn.hasClass('hidden') == false) {
+                setTimeout(function() {
+                    $('.destinationAdriana').addClass('hidden');
+                    $('.destinationCurt').removeClass('hidden');
+                }, 1000);
+            }
         },
         renderCarousel : function () {
             $('#owl-demo').owlCarousel({
@@ -83,10 +93,13 @@ define([
                 singleItem:true
             });
             $('#promotions-carousel').owlCarousel({
-                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                autoPlay: false, //Set AutoPlay to 3 seconds
                 items : 4,
+                navigation : true,
+                navigationText : ['<i class="fa fa-chevron-left"></i>' , '<i class="fa fa-chevron-right"></i>'],
                 itemsDesktop : [1199 , 3],
-                temsDesktopSmall : [979 , 3]
+                temsDesktopSmall : [979 , 3],
+                itemsMobile : [479 , 2]
             });
         },
         renderDatepicker: function ()
